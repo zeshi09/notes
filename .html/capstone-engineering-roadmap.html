@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<title>capstone-engineering-roadmap</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🚀 Capstone Roadmap: Превращение базы знаний в автономную исследовательскую лабораторию</h1>
+<blockquote>
+<p><strong>Стратегический документ по переходу от пассивного коллекционирования заметок к активной инженерной разработке.</strong><br />
+<strong>Цель:</strong> Собрать из изученных открытых компонентов целостную персональную систему — <strong>Autonomous Research &amp; Engineering Workbench</strong> — и овладеть современным AI-стеком на практике.</p>
+</blockquote>
+<hr />
+<h2>🛑 1. Проблема «Синдрома коллекционера» (Collector’s Fallacy)</h2>
+<p>Когда инженер просто конспектирует репозитории, возникает иллюзия компетентности: <em>«я записал, значит, я это знаю»</em>.<br />
+На практике 95% заметок забываются через месяц, если они не были <strong>пропущены через руки в реальном коде</strong>.</p>
+<h3>Решение: Единый связующий проект (Capstone Project)</h3>
+<p>Вместо того чтобы изучать 20 разрозненных репозиториев по отдельности, мы собираем <strong>одну работающую боевую систему</strong>, где каждый репозиторий закрывает конкретный архитектурный слой.</p>
+<hr />
+<h2>🏛 2. Архитектура целевой системы: «Autonomous Research Workbench»</h2>
+<pre><code class="language-text">┌──────────────────────────────────────────────────────────────────────────────────┐
+│                     AUTONOMOUS RESEARCH &amp; ENGINEERING WORKBENCH                  │
+│                                                                                  │
+│  ┌────────────────────────────────────────────────────────────────────────────┐  │
+│  │ 1. ПОЛЬЗОВАТЕЛЬСКИЙ ИНТЕРФЕЙС (UI/UX)                                      │  │
+│  │ • Фронтенд на React + Tailwind, сверстанный строго по дизайн-спецификации  │  │
+│  │   [Linear DESIGN.md](../02_agent_runtimes_and_harnesses/awesome-design-md.md) │  │
+│  │ • Монохромные интерактивные HTML-графики                                    │  │
+│  │   [Lieflat Charts](../02_agent_runtimes_and_harnesses/awesome-design-md.md)    │  │
+│  └──────────────────────────────────────┬─────────────────────────────────────┘  │
+│                                         │                                        │
+│                                         ▼                                        │
+│  ┌────────────────────────────────────────────────────────────────────────────┐  │
+│  │ 2. ОРКЕСТРАЦИЯ И СТРАТЕГИЧЕСКОЕ ПЛАНИРОВАНИЕ (Harness Core)                │  │
+│  │ • Агентный жизненный цикл и хуки событий                                   │  │
+│  │   [learn-harness-engineering](../02_agent_runtimes_and_harnesses/learn-harness-engineering.md) │
+│  │ • Архитектура промптов на базе утекших промптов мировых лабораторий        │  │
+│  │   [CL4R1T4S](../05_security_osint_and_guardrails/CL4R1T4S.md)               │  │
+│  │ • Сократовский диалог и научный цикл (Plan → Write → Review → Revise)       │  │
+│  │   [academic-research-skills](../04_scientific_research_and_discovery/academic-research-skills.md) │
+│  └──────────────────────────────────────┬─────────────────────────────────────┘  │
+│                                         │                                        │
+│                     ┌───────────────────┴───────────────────┐                    │
+│                     ▼                                       ▼                    │
+│  ┌─────────────────────────────────────┐ ┌────────────────────────────────────┐  │
+│  │ 3. ДОЛГОСРОЧНАЯ ПАМЯТЬ И ОНТОЛОГИИ  │ │ 4. БЕЗОПАСНАЯ СРЕДА ИСПОЛНЕНИЯ     │  │
+│  │ • Графы контекста и W3C PROV-O      │ │ • Изолированные микро-VM на Rust   │  │
+│  │   [Semantica AGI](../03_knowledge_graphs_and_ontologies/semantica.md)        │ │   (холодный старт &lt;100 мс)           │  │
+│  │ • Преобразование документов         │ │   [ArcBox](../02_agent_runtimes_and_harnesses/arcbox.md) │
+│  │   в онтологии без утечки в облако   │ │ • Контроль версий кода агентов     │  │
+│  │   [Utopia Workbench](../03_knowledge_graphs_and_ontologies/utopia.md)       │ │   [Atlas VCS](../02_agent_runtimes_and_harnesses/atlas.md)  │
+│  └─────────────────────────────────────┘ └────────────────────────────────────┘  │
+│                     │                                       │                    │
+│                     └───────────────────┬───────────────────┘                    │
+│                                         │                                        │
+│                                         ▼                                        │
+│  ┌────────────────────────────────────────────────────────────────────────────┐  │
+│  │ 5. СЕТЕВОЙ СБОР ДАННЫХ И ИНФЕРЕНС МОДЕЛЕЙ                                  │  │
+│  │ • Сверхбыстрый headless-скрейпинг с обходом защит Cloudflare/капчи         │  │
+│  │   [Obscura Browser на чистом Rust](../06_developer_tools_and_apps/obscura.md) │
+│  │ • Локальные легковесные модели (64M–1B параметров)                         │  │
+│  │   [MiniMind](../01_llm_architecture_and_training/minimind.md)               │  │
+│  │ • Высокоскоростной инференс с RadixAttention и квантованием                 │  │
+│  │   [SGLang / vLLM](../01_llm_architecture_and_training/dive-into-llms.md)   │  │
+│  └────────────────────────────────────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>🏃 3. Пошаговый конвейер освоения: «Метод 4-х спринтов»</h2>
+<h3>🎯 Спринт 1: Фундамент и понимание внутренностей LLM (2 недели)</h3>
+<ul>
+<li><strong>Цель:</strong> Полностью демистифицировать языковые модели и понять их математику и механику обучения.</li>
+<li><strong>Практические задачи:</strong>
+<ol>
+<li>Клонировать <code>MiniMind</code> и запустить скрипт предварительного обучения <code>1-pretrain.py</code> на локальной GPU. Увидеть сходимость функции потерь.</li>
+<li>Пройти ключевые блокноты из <code>dive-into-llms</code> и <code>LLMs-from-scratch</code>: написать вручную <code>Multi-Head Attention</code>, расчет <code>RoPE</code> и слой <code>RMSNorm</code>.</li>
+<li>Провести эксперимент с <code>LoRA</code> дообучением компактной модели на собственном датасете вопросов-ответов.</li>
+</ol>
+</li>
+<li><strong>Артефакт на выходе:</strong> Работающая мини-модель в формате Hugging Face и чистый, написанный своими руками трансформер на PyTorch.</li>
+</ul>
+<hr />
+<h3>🎯 Спринт 2: Агентный харнес, системные промпты и безопасность (2 недели)</h3>
+<ul>
+<li><strong>Цель:</strong> Научиться создавать надежные агентные циклы и защищенные среды исполнения.</li>
+<li><strong>Практические задачи:</strong>
+<ol>
+<li>Изучить курс <code>learn-harness-engineering</code> и реализовать базовый агентный рантайм с регистрацией тулов и перехватом вызовов (Hooks).</li>
+<li>Проанализировать архитектуру системных промптов из архива <code>CL4R1T4S</code> (особенно Cursor, Devin и Claude): перенять правила форматирования инструментов в XML/JSON и структурирования рассуждений.</li>
+<li>Развернуть рантайм <code>Arcbox</code> и настроить запуск кода агента в изолированных микро-VM вместо выполнения команд на хостовой машине.</li>
+</ol>
+</li>
+<li><strong>Артефакт на выходе:</strong> CLI-агент, способный автономно писать и запускать скрипты в безопасной песочнице с &lt;100 мс холодным стартом.</li>
+</ul>
+<hr />
+<h3>🎯 Спринт 3: Графы знаний, онтологии и веб-сбор (2 недели)</h3>
+<ul>
+<li><strong>Цель:</strong> Дать агенту долгосрочную структурированную память и способность собирать данные без галлюцинаций.</li>
+<li><strong>Практические задачи:</strong>
+<ol>
+<li>Развернуть <code>Utopia</code> и прогнать через нее корпус документов (PDF, статьи, заметки).</li>
+<li>Изучить принципы W3C PROV-O из <code>Semantica AGI</code>: связать принимаемые агентом решения с первоисточниками фактов.</li>
+<li>Скомпилировать headless-браузер <code>Obscura</code> на Rust и подключить его к агенту для извлечения очищенных деревьев доступности (Accessibility Tree).</li>
+</ol>
+</li>
+<li><strong>Артефакт на выходе:</strong> RAG-пайплайн нового поколения, объединяющий векторный поиск с графовыми путями и прямым веб-скрейпингом.</li>
+</ul>
+<hr />
+<h3>🎯 Спринт 4: Сборка целого, UI и решение реальной задачи (2 недели)</h3>
+<ul>
+<li><strong>Цель:</strong> Собрать все модули воедино, оформить интерфейс и решить прикладную исследовательскую задачу.</li>
+<li><strong>Практические задачи:</strong>
+<ol>
+<li>Сгенерировать веб-интерфейс дашборда на React/Tailwind с помощью Claude Code / Antigravity, используя спецификацию <code>linear.DESIGN.md</code> из каталога <code>awesome-design-md</code>.</li>
+<li>Интегрировать навыки из <code>academic-research-skills</code>: режим сократовского планирования статьи и автоматического фактчекинга.</li>
+<li>Провести сквозное исследование сложной темы (например, компаративный анализ языковых групп, ресерч архитектур или мониторинг рынка) и получить полноценный LaTeX-отчет.</li>
+</ol>
+</li>
+<li><strong>Артефакт на выходе:</strong> Готовый рабочий программный комплекс и сверстанная научная публикация или статья для профильного сообщества.</li>
+</ul>
+<hr />
+<h2>💎 4. Матрица соответствия: База знаний ➔ Роль в системе</h2>
+<p>| Модуль | Изучаемые репозитории | Какую роль играет в финальной системе |
+| :--- | :--- | :--- |
+| <strong>LLM Core</strong> | <code>MiniMind</code>, <code>dive-into-llms</code>, <code>LLMs-from-scratch</code>, <code>reasoning-from-scratch</code> | Движок локального инференса, понимание архитектуры и дообучение. |
+| <strong>Harness &amp; Agent Loop</strong> | <code>learn-harness-engineering</code>, <code>OpenMAIC</code>, <code>CL4R1T4S</code> | Скелет агентного рантайма, диспетчеризация тулов и ролевое планирование. |
+| <strong>Sandboxing &amp; VCS</strong> | <code>ArcBox</code>, <code>Atlas VCS</code> | Безопасная изоляция вычислений в микро-VM и версионирование правок кода агентов. |
+| <strong>Memory &amp; Graphs</strong> | <code>Semantica AGI</code>, <code>Utopia</code> | Долгосрочная графовая память, доказательная база решений и онтологии. |
+| <strong>Web &amp; Scraping</strong> | <code>Obscura</code>, <code>user-scanner</code> | Высокоскоростной headless-сбор сырых данных из открытых источников. |
+| <strong>Research Skills</strong> | <code>academic-research-skills</code>, <code>scientific-agent-skills</code>, <code>PRAXIST</code> | Готовые научные тулчейны, валидация цитат и симуляция рецензента. |
+| <strong>Design &amp; UI</strong> | <code>awesome-design-md</code>, <code>fastpotify</code> | Профессиональный минималистичный интерфейс без артефактов и перегруза. |</p>
+<hr />
+<h2>🏁 5. Первый шаг прямо сейчас (Action Item)</h2>
+<p>Чтобы запустить процесс и преодолеть инерцию:</p>
+<ol>
+<li>Перейти в терминале в каталог проектов: <code>cd ~/Projects/Git_projects</code></li>
+<li>Склонировать <strong>MiniMind</strong>: <code>git clone https://github.com/jingyaogong/minimind.git</code></li>
+<li>Запустить скрипт <code>1-pretrain.py</code> и понаблюдать за обучением собственной модели в реальном времени.</li>
+</ol>
+<hr />
+<p><em>Документ сохранен: 2026-09-02 в /home/blackzeshi/Documents/Notes/00_strategy_and_roadmaps/capstone-engineering-roadmap.md</em></p>

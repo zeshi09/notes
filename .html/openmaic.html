@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<title>openmaic</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🎓 OpenMAIC: Open Multi-Agent Interactive Classroom (Университет Цинхуа)</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/THU-MAIC/OpenMAIC">https://github.com/THU-MAIC/OpenMAIC</a><br />
+<strong>Официальный сайт / Демо:</strong> <a href="https://open.maic.chat/">https://open.maic.chat/</a><br />
+<strong>Разработчик:</strong> Лаборатория мульти-агентных систем Университета Цинхуа (THU-MAIC)<br />
+<strong>Звёзды GitHub:</strong> 26,500+ ★ (Лидер суточного рейтинга Trendshift)<br />
+<strong>Стек:</strong> TypeScript, Python, React, Next.js, FastAPI, WebSocket, WebRTC<br />
+<strong>Лицензия:</strong> MIT</p>
+</blockquote>
+<hr />
+<h2>🎯 1. Введение и концепция</h2>
+<p><strong>OpenMAIC</strong> (<em>Open Multi-Agent Interactive Classroom</em>) — это передовая открытая образовательная платформа, моделирующая полноценную интерактивную учебную аудиторию с помощью роя специализированных AI-агентов.</p>
+<p>Вместо привычного формата «один пользователь общается с одним чат-ботом», OpenMAIC разворачивает <strong>многопользовательскую ролевую экосистему</strong>, в которой пользователь погружается в живую дискуссию:</p>
+<pre><code class="language-text">                        ┌────────────────────────┐
+                        │   Студент (Человек)    │
+                        └───────────┬────────────┘
+                                    │ (вопросы, гипотезы, ответы)
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                    OPENMAIC VIRTUAL CLASSROOM                          │
+│                                                                        │
+│  ┌─────────────────────────┐             ┌─────────────────────────┐  │
+│  │   Professor Agent       │             │   Skeptical Peer Agent  │  │
+│  │   (Ведущий лектор:      │◄───────────►│   (Студент-оппонент:    │  │
+│  │    структура, концепты) │             │    критика, контрпримеры│  │
+│  └────────────┬────────────┘             └────────────┬────────────┘  │
+│               │                                       │               │
+│               ▼                                       ▼               │
+│  ┌─────────────────────────┐             ┌─────────────────────────┐  │
+│  │   Teaching Assistant    │             │   Curator &amp; Scribe      │  │
+│  │   (Тьютор: подсказки,   │◄───────────►│   (Секретарь: майндмапы,│  │
+│  │    персональные аналогии│             │    конспекты, таймлайны)│  │
+│  └─────────────────────────┘             └─────────────────────────┘  │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>💎 2. Ключевые возможности</h2>
+<ol>
+<li><strong>Иммерсивный многоагентный диалог (Multi-Agent Debate):</strong>
+<ul>
+<li>Агенты не просто отвечают по очереди — они спорят друг с другом, приводят альтернативные научные точки зрения, задают наводящие вопросы пользователю и разбирают парадоксы.</li>
+</ul>
+</li>
+<li><strong>Динамическая адаптация сложности (Cognitive Load Balancing):</strong>
+<ul>
+<li>Тьютор отслеживает понимание студента: если тема дается тяжело, ассистент перехватывает инициативу и приводит наглядные бытовые аналогии; если студент отвечает легко — оппонент усложняет граничные условия задачи.</li>
+</ul>
+</li>
+<li><strong>Генерация визуальных артефактов на лету:</strong>
+<ul>
+<li>В процессе лекции агент-секретарь автоматически строит интерактивные майндмапы, формулы LaTeX, блок-схемы и итоговый конспект урока.</li>
+</ul>
+</li>
+<li><strong>Голосовое общение в реальном времени (WebRTC / Fast Voice):</strong>
+<ul>
+<li>Поддержка живой голосовой дискуссии с минимальной задержкой (low-latency audio stream) с эмоциональной дифференциацией голосов разных агентов.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2>🚀 3. Быстрый запуск</h2>
+<pre><code class="language-bash"># Клонирование репозитория
+git clone https://github.com/THU-MAIC/OpenMAIC.git
+cd OpenMAIC
+
+# Установка зависимостей
+npm install
+cd backend &amp;&amp; pip install -r requirements.txt
+
+# Запуск
+npm run dev
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-08-31 в /home/blackzeshi/Documents/Notes/openmaic.md</em></p>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<title>atlas</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🔀 Atlas: Система контроля версий для параллельных AI-агентов на Rust</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/pacifio/atlas">https://github.com/pacifio/atlas</a><br />
+<strong>Официальный сайт:</strong> <a href="https://www.tryatlas.cc/">https://www.tryatlas.cc/</a><br />
+<strong>Организация:</strong> Pacifio<br />
+<strong>Звёзды GitHub:</strong> 2,100+ ★<br />
+<strong>Стек:</strong> 100% чистый Rust, Git Engine, Tree-sitter, Semantic Diff, SQLite<br />
+<strong>Лицензия:</strong> MIT</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем главная проблема работы с агентами кодинга?</h2>
+<p>Когда разработчик запускает несколько параллельных AI-агентов (Claude Code, Codex, Antigravity, OpenCode, Cursor):</p>
+<ol>
+<li><strong>Конфликты веток и файлов:</strong> Агенты перетирают изменения друг друга, ломают <code>git status</code> и создают конфликты слияния.</li>
+<li><strong>Сложность аудита:</strong> Невозможно быстро понять, <em>какой именно агент</em> внес конкретный фрагмент кода, почему он принял такое архитектурное решение и какую задачу решал.</li>
+<li><strong>Отсутствие семантического контроля:</strong> Обычный <code>git diff</code> показывает только строки, но не понимает изменений в AST-дереве функций и типов.</li>
+</ol>
+<p><strong>Atlas</strong> — это первая система контроля версий (<strong>Source Control for AI Agents</strong>), созданная на <strong>Rust</strong> специально для управления флотом автономных кодинг-агентов.</p>
+<pre><code class="language-text">                              Разработчик
+                                   │
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                              ATLAS CORE (Rust)                         │
+│                                                                        │
+│   • Semantic Branching: каждый агент получает изолированный контекст   │
+│   • Change Ledger: запись всех промптов, шагов и AST-диффов            │
+│   • Semantic Merge: автоматическое разрешение конфликтов через AST     │
+└──────────────┬───────────────────┼───────────────────┬─────────────────┘
+               │                   │                   │
+               ▼                   ▼                   ▼
+        ┌──────────────┐    ┌──────────────┐    ┌──────────────┐
+        │ Agent 1 (UI) │    │ Agent 2 (DB) │    │Agent 3(Tests)│
+        │ Claude Code  │    │ OpenAI Codex │    │ Antigravity  │
+        └──────────────┘    └──────────────┘    └──────────────┘
+</code></pre>
+<hr />
+<h2>💎 2. Ключевые возможности</h2>
+<ol>
+<li><strong>Семантический поиск по изменениям агентов:</strong> Можно делать запросы на естественном языке: <em>«Покажи все изменения, где агент модифицировал валидацию JWT»</em>.</li>
+<li><strong>Бесконфликтное слияние (AST-aware Merging):</strong> Использует парсер Tree-sitter для слияния изменений в коде на уровне синтаксических деревьев функций и классов, а не просто номеров строк.</li>
+<li><strong>Полный аудит рассуждений:</strong> К каждому коммиту привязывается полный контекст: промпт пользователя, промежуточные шаги рассуждения модели и вывод тестов.</li>
+</ol>
+<hr />
+<h2>🚀 3. Быстрый старт</h2>
+<pre><code class="language-bash"># Установка через cargo
+cargo install atlas-vcs
+
+# Инициализация воркспейса для агентов
+atlas init
+
+# Запуск агента в изолированной ветке
+atlas agent run --name &quot;frontend-refactor&quot; -- &quot;claude&quot;
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-09-01 в /home/blackzeshi/Documents/Notes/atlas.md</em></p>

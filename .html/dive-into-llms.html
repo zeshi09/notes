@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<title>dive-into-llms</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>📚 Dive into LLMs: Практический курс инженерии больших языковых моделей</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/Lordog/dive-into-llms">https://github.com/Lordog/dive-into-llms</a><br />
+<strong>Название:</strong> 《动手学大模型 Dive into LLMs》<br />
+<strong>Автор:</strong> Lordog &amp; Open Source Community<br />
+<strong>Звёзды GitHub:</strong> 51,300+ ★<br />
+<strong>Формат:</strong> Интерактивные Jupyter Notebooks, чистый PyTorch, Hugging Face, vLLM<br />
+<strong>Лицензия:</strong> Apache-2.0</p>
+</blockquote>
+<hr />
+<h2>🎯 1. Концепция и отличие от других курсов</h2>
+<p>Подобно легендарному курсу <em>Dive into Deep Learning (D2L)</em>, <strong>Dive into LLMs</strong> ставит во главу угла принцип: <strong>«Пойми через реализацию кода собственными руками»</strong>.</p>
+<p>Вместо абстрактной теории курс ведет инженера пошагово через все стадии жизненного цикла современных LLM: от перемножения матриц в блоке внимания до распределенного инференса с RadixAttention и квантования в 4 бита.</p>
+<hr />
+<h2>🗺 2. Программа курса и модули</h2>
+<pre><code class="language-text">┌────────────────────────────────────────────────────────────────────────┐
+│                        ПРОГРАММА DIVE INTO LLMS                        │
+│                                                                        │
+│  МОДУЛЬ 1: АРХИТЕКТУРА И ТОКЕНИЗАЦИЯ                                   │
+│  • Реализация BPE и SentencePiece токенизаторов с нуля                 │
+│  • Multi-Head Attention, Grouped-Query Attention (GQA), FlashAttention │
+│  • Позиционные эмбеддинги: RoPE (Rotary Position Embeddings), YaRN     │
+│  • Нормализации: RMSNorm, SwiGLU функции активации                     │
+│                                                                        │
+│  МОДУЛЬ 2: ПРЕДВАРИТЕЛЬНОЕ ОБУЧЕНИЕ (Pre-training)                     │
+│  • Подготовка терабайтных корпусов данных, дедупликация (MinHash)      │
+│  • Распределенное обучение: Data Parallel, Tensor Parallel, ZeRO (FSDP)│
+│                                                                        │
+│  МОДУЛЬ 3: ДООБУЧЕНИЕ И ВЫРАВНИВАНИЕ (SFT &amp; Alignment)                │
+│  • Supervised Fine-Tuning на диалогах (ChatML шаблоны)                 │
+│  • Параметрически эффективное дообучение: LoRA, QLoRA, DoRA            │
+│  • Обучение с подкреплением: RLHF (PPO), DPO (Direct Preference), GRPO │
+│                                                                        │
+│  МОДУЛЬ 4: СКОРОСТНОЙ ИНФЕРЕНС И РАЗВЕРТЫВАНИЕ                         │
+│  • Оптимизация KV-кэша, PagedAttention, vLLM, SGLang                   │
+│  • Квантование: GPTQ, AWQ, BitsAndBytes (4-bit/8-bit), GGUF            │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>🚀 3. Как запустить локально?</h2>
+<pre><code class="language-bash"># Клонирование репозитория
+git clone https://github.com/Lordog/dive-into-llms.git
+cd dive-into-llms
+
+# Установка окружения
+pip install -r requirements.txt
+
+# Запуск интерактивных блокнотов
+jupyter lab
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-09-02 в /home/blackzeshi/Documents/Notes/01_llm_architecture_and_training/dive-into-llms.md</em></p>

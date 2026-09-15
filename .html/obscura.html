@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<title>obscura</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🌐 Obscura: Высокопроизводительный Headless-Браузер для AI-Агентов на Rust</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/h4ckf0r0day/obscura">https://github.com/h4ckf0r0day/obscura</a><br />
+<strong>Официальный сайт:</strong> <a href="https://obscura.sh">https://obscura.sh</a><br />
+<strong>Звёзды GitHub:</strong> 23,300+ ★<br />
+<strong>Сфера:</strong> AI Agents Web Browsing, Headless Browser, Anti-Bot Bypass, Web Scraping<br />
+<strong>Стек:</strong> 100% чистый Rust, Chromium CDP, Tokio, Native DOM Parser<br />
+<strong>Лицензия:</strong> MIT</p>
+</blockquote>
+<hr />
+<h2>🎯 1. Зачем нужен Obscura?</h2>
+<p>Современные AI-агенты (Browser-Use, Claude Computer Use, Devin) постоянно взаимодействуют с интернетом. Традиционные решения (Selenium, Puppeteer, Playwright на Node/Python):</p>
+<ul>
+<li>Потребляют сотни мегабайт RAM на каждую вкладку.</li>
+<li>Легко детектируются антибот-системами (Cloudflare, Akamai, Datadome, reCAPTCHA).</li>
+<li>Возвращают огромные полотна сырого HTML, забивая контекстное окно LLM шумом.</li>
+</ul>
+<p><strong>Obscura</strong> — это открытый headless-браузер нового поколения на чистом <strong>Rust</strong>, спроектированный с нуля специально для AI-агентов:</p>
+<pre><code class="language-text">┌────────────────────────────────────────────────────────────────────────┐
+│                              OBSCURA (Rust)                            │
+│                                                                        │
+│   • Сверхнизкое потребление памяти: ~15-40 МБ на вкладку               │
+│   • Нативный обход антибот-систем (Zero-Detection Stealth CDP)         │
+│   • Автоматическая очистка DOM: отсекает рекламу, стили и SVG          │
+│   • Выдача Agent-Ready Accessibility Tree (Дерево доступности)         │
+│   • Поддержка протокола CDP (Chrome DevTools Protocol) и REST/WebSocket│
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                           AI AGENT (LLM)                               │
+│   Получает компактное дерево интерактивных элементов:                  │
+│   [#btn-login &quot;Войти&quot;, #inp-email &quot;Email&quot;, #link-docs &quot;Документация&quot;]  │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>💎 2. Ключевые возможности</h2>
+<ol>
+<li><strong>Stealth by Default (Стелс по умолчанию):</strong> Маскировка WebGL отпечатков, Canvas, аудио-контекста, навигационных таймингов и заголовков TLS Fingerprint.</li>
+<li><strong>Accessibility Tree Extraction:</strong> Преобразует сложный веб-интерфейс в компактный список интерактивных элементов, экономя до <strong>85% контекстных токенов</strong> модели.</li>
+<li><strong>Высокая скорость:</strong> Запуск и навигация в 3–5 раз быстрее традиционных Selenium/Playwright благодаря асинхронному рантайму Tokio на Rust.</li>
+</ol>
+<hr />
+<h2>🚀 3. Быстрый старт</h2>
+<pre><code class="language-bash"># Установка бинарника
+cargo install obscura-browser
+
+# Запуск в режиме сервера для агентов
+obscura serve --port 9222
+
+# Быстрый снимок страницы для агента
+obscura snapshot https://example.com --format accessibility-tree
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-09-01 в /home/blackzeshi/Documents/Notes/obscura.md</em></p>

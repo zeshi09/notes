@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<title>reasoning-from-scratch</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+          ],
+          macros: {"\\field":"\\mathbb"},
+          throwOnError : false
+        });
+    });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🧩 Build a Reasoning Model (From Scratch) — Sebastian Raschka</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/rasbt/reasoning-from-scratch">https://github.com/rasbt/reasoning-from-scratch</a><br />
+<strong>Автор:</strong> Себастьян Рашка (Sebastian Raschka, Lightning AI)<br />
+<strong>Официальная книга:</strong> <em>Build a Reasoning Model (From Scratch)</em> (Manning Publications, ISBN 9781633434677)<br />
+<strong>Статус:</strong> Официальный сиквел к бестселлеру <em>Build a Large Language Model (From Scratch)</em><br />
+<strong>Стек:</strong> Python, PyTorch, Jupyter Notebooks, Qwen3, GRPO, RL<br />
+<strong>Ключевые темы:</strong> Reasoning Models, DeepSeek-R1 архитектура, GRPO, Test-Time Compute, Inference-Time Scaling, Chain-of-Thought, Дистилляция</p>
+</blockquote>
+<hr />
+<h2>🎯 1. Введение: Почему Reasoning — это революция в LLM?</h2>
+<h3>Проблема классических языковых моделей (System 1)</h3>
+<p>Обычные авторегрессионные LLM (GPT-4, Llama 3) генерируют каждый следующий токен с фиксированным числом вычислений, действуя по принципу <strong>интуитивного мышления («System 1»)</strong>:</p>
+<ul>
+<li>Если модели задать сложную математическую задачу или логическую головоломку, она вынуждена давать ответ «на лету», что приводит к грубым ошибкам и галлюцинациям.</li>
+</ul>
+<h3>Что такое Reasoning Models («System 2»)?</h3>
+<p>Reasoning-модели (в стиле <strong>DeepSeek R1</strong>, <strong>OpenAI o1 / o3</strong>, <strong>Qwen-QwQ</strong>) тратят вычислительные ресурсы на «размышления» <strong>во время инференса</strong> (Inference-Time Scaling). Они генерируют скрытые цепочки рассуждений (<code>&lt;think&gt; ... &lt;/think&gt;</code>), проверяют промежуточные шаги, исправляют собственные ошибки и только потом дают финальный ответ.</p>
+<hr />
+<h2>🗺 2. Ментальная модель книги и курса</h2>
+<pre><code class="language-text">[ Предобученная базовая модель (Qwen3) ]
+                   │
+                   ▼
+┌────────────────────────────────────────────────────────┐
+│ ЭТАП 1: Inference-Time Scaling (без переобучения весов)│
+│ • Chain-of-Thought (цепочки рассуждений)               │
+│ • Best-of-N Sampling &amp; Majority Voting                 │
+│ • Self-Refinement &amp; Iterative Critique (самокоррекция) │
+└────────────────────────┬───────────────────────────────┘
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────┐
+│ ЭТАП 2: Обучение с подкреплением (Reinforcement Learn) │
+│ • Verifiable Rewards (награды за правильный ответ)     │
+│ • GRPO (Group Relative Policy Optimization)            │
+│ • Обучение рассуждениям в стиле DeepSeek-R1-Zero       │
+└────────────────────────┬───────────────────────────────┘
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────┐
+│ ЭТАП 3: Дистилляция (Distillation)                     │
+│ • Перенос цепочек рассуждений в компактные модели      │
+│ • Эффективный инференс на потребительских устройствах  │
+└────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>📖 3. Поглавная структура курса (Chapters 1–8)</h2>
+<h3>Глава 1: Understanding Reasoning Models</h3>
+<ul>
+<li>Разбор фундаментальных отличий между генерацией текста и логическим рассуждением.</li>
+<li>Эволюция подходов: от промптинга (CoT, Tree-of-Thoughts) к архитектурному масштабированию времени вычислений (Test-Time Compute).</li>
+</ul>
+<h3>Глава 2: Generating Text with a Pre-trained LLM</h3>
+<ul>
+<li>Подготовка базовой среды и загрузка весов открытой модели <strong>Qwen3</strong>.</li>
+<li>Организация цикла генерации токенов на чистом PyTorch.</li>
+</ul>
+<h3>Глава 3: Evaluating Reasoning Models</h3>
+<ul>
+<li>Метрики и бенчмарки для строгой оценки логики и математики: <strong>GSM8K</strong>, <strong>MATH</strong>, <strong>ARC-Challenge</strong>, <strong>AIME</strong>.</li>
+<li>Оценка точности по метрикам <strong>Pass@1</strong> и <strong>Pass@k</strong>.</li>
+</ul>
+<h3>Глава 4: Improving Reasoning with Inference-Time Scaling</h3>
+<ul>
+<li>Методы параллельного сэмплирования нескольких путей решения без изменения весов:
+<ul>
+<li><strong>Majority Voting (Self-Consistency):</strong> выбор ответа большинством голосов.</li>
+<li><strong>Best-of-N:</strong> генерация <span data-math-style="inline">$N$</span> вариантов с выбором лучшего через Reward Model или верификатор.</li>
+</ul>
+</li>
+</ul>
+<h3>Глава 5: Inference-Time Scaling via Self-Refinement</h3>
+<ul>
+<li>Архитектура <strong>самокоррекции (Self-Correction / Critique)</strong>:</li>
+<li>Модель сначала генерирует черновик решения, затем отдельным проходом критикует свои выкладки, находит логические нестыковки и переписывает решение начисто.</li>
+</ul>
+<h3>Глава 6: Training Reasoning Models with Reinforcement Learning</h3>
+<ul>
+<li>Полноценная реализация RL-пайплайна для обучения рассуждениям:</li>
+<li><strong>Verifiable Reward Functions (RLVR):</strong> детерминированная проверка правильности математического ответа или прохождения юнит-тестов в коде (вместо субъективной Human Feedback).</li>
+<li>Обучение модели генерировать длинные размышления через штрафы и поощрения.</li>
+</ul>
+<h3>Глава 7: Implementing GRPO (Group Relative Policy Optimization)</h3>
+<ul>
+<li>Пошаговая реализация алгоритма <strong>GRPO</strong> (ключевой алгоритм DeepSeek R1) с нуля на PyTorch:</li>
+<li><strong>В чем прорыв GRPO:</strong> в отличие от классического PPO, GRPO <strong>не требует отдельной тяжелой модели-критика (Value Network / Critic Model)</strong>, что снижает потребление видеопамяти на 50% и упрощает обучение.</li>
+<li>Расчет преимуществ (advantages) на основе относительного ранжирования группы сгенерированных ответов.</li>
+</ul>
+<h3>Глава 8: Distilling Reasoning Models</h3>
+<ul>
+<li>Как перенести способность рассуждать из гигантской модели (например, 70B/671B) в компактную (например, 1.5B/7B/8B).</li>
+<li>Тюнинг по шаблону SFT на синтетических рассуждениях DeepSeek R1 / QwQ.</li>
+</ul>
+<hr />
+<h2>🎁 4. Приложения и инженерные техники (Appendices)</h2>
+<ul>
+<li><strong>Appendix C: Qwen3 LLM Source Code</strong> — полный исходный код архитектуры модели Qwen3 на PyTorch.</li>
+<li><strong>Appendix D: Using Larger LLMs</strong> — техники работы с крупными моделями на доступных GPU.</li>
+<li><strong>Appendix E: Batching &amp; High-Throughput Execution</strong> — оптимизация батчинга при параллельной генерации деревьев рассуждений.</li>
+<li><strong>Appendix F: Common Approaches to LLM Evaluation</strong> — методология тестирования LLM против датасетов-ловушек.</li>
+<li><strong>Appendix G: Building a Chat Interface</strong> — создание интерактивного чат-интерфейса с раскрывающимися блоками <code>&lt;think&gt;...&lt;/think&gt;</code>.</li>
+</ul>
+<hr />
+<h2>⚖️ 5. Сравнение двух книг Себастьяна Рашки</h2>
+<p>| Характеристика | <em>Build an LLM (From Scratch)</em> | <em>Build a Reasoning Model (From Scratch)</em> |
+| :--- | :--- | :--- |
+| <strong>Основная цель</strong> | Создать базовую GPT-2/3 модель с нуля | Научить модель логике, рассуждениям и самокоррекции |
+| <strong>Фокус разработки</strong> | Архитектура: Attention, Transformer, SFT | Алгоритмы: <strong>GRPO, RL, Inference Scaling, CoT</strong> |
+| <strong>Базовая модель</strong> | Обучение собственной мини-модели с нуля | Предобученная открытая модель (<strong>Qwen3</strong>) |
+| <strong>Аналог в индустрии</strong> | GPT-2 / GPT-3.5 / Llama 3 | <strong>DeepSeek-R1 / OpenAI o1 / Qwen-QwQ</strong> |</p>
+<hr />
+<h2>🚀 6. Как запустить и изучать локально</h2>
+<pre><code class="language-bash"># 1. Клонирование репозитория
+git clone --depth 1 https://github.com/rasbt/reasoning-from-scratch.git
+cd reasoning-from-scratch
+
+# 2. Создание виртуального окружения
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 3. Установка зависимостей
+pip install -r setup/requirements.txt
+
+# 4. Запуск Jupyter Lab
+jupyter lab
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-08-24 в /home/blackzeshi/Documents/Notes/reasoning-from-scratch.md</em></p>

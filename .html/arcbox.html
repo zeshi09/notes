@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<title>arcbox</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>⚡ ArcBox: Изолированные контейнеры и микро-VM для AI-Агентов на Rust</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/arcboxlabs/arcbox">https://github.com/arcboxlabs/arcbox</a><br />
+<strong>Организация:</strong> ArcBox Labs<br />
+<strong>Звёзды GitHub:</strong> 1,500+ ★<br />
+<strong>Стек:</strong> 100% чистый Rust, OCI, macOS Virtualization.framework, Linux KVM<br />
+<strong>Лицензия:</strong> MIT / Apache-2.0</p>
+</blockquote>
+<hr />
+<h2>🎯 1. Зачем нужен ArcBox?</h2>
+<p>Главная проблема запуска автономных кодинг-агентов (Claude Code, Codex, Antigravity, OpenCode) — <strong>безопасность и скорость изоляции</strong>:</p>
+<ul>
+<li>Если дать агенту доступ к основной системе, он может случайно выполнить <code>rm -rf</code> или перезаписать системные файлы.</li>
+<li>Традиционный Docker Desktop или тяжелые виртуальные машины запускаются по несколько секунд, потребляют гигабайты RAM и создают большой оверхед.</li>
+</ul>
+<p><strong>ArcBox</strong> — это открытый сверхбыстрый контейнерный и VM-рантайм, написанный с нуля на <strong>Rust</strong>, оптимизированный под мгновенный запуск одноразовых песочниц (<em>Agent Sandboxes</em>):</p>
+<pre><code class="language-text">┌────────────────────────────────────────────────────────────────────────┐
+│                              ARCBOX RUNTIME                            │
+│                                                                        │
+│   • Холодный старт микро-VM: &lt;100 мс (в 10-20 раз быстрее Docker)      │
+│   • Полная изоляция: собственное ядро Linux, память, ФС и сеть         │
+│   • Потребление RAM в простое: &lt;30 МБ                                  │
+│   • 100% OCI-совместимость (Drop-in замена Docker CLI)                 │
+│   • Нативная интеграция с агентными рантаймами через сокет и API       │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>🛠 2. Ключевые возможности</h2>
+<ol>
+<li><strong>Agent Sandboxing:</strong> Создание изолированной среды для тестирования кода агента за миллисекунды с мгновенным сбросом состояния (Snapshots / Ephemeral VMs).</li>
+<li><strong>Local-First &amp; Zero Telemetry:</strong> Работает полностью локально на вашем компьютере без облачных зависимостей и учетных записей.</li>
+<li><strong>Кроссплатформенность:</strong> Нативная поддержка macOS (Apple Silicon Hypervisor) и Linux (KVM).</li>
+</ol>
+<hr />
+<h2>🚀 3. Быстрый старт</h2>
+<pre><code class="language-bash"># Установка бинарника ArcBox
+cargo install arcbox
+
+# Запуск изолированной песочницы для агента за 80 мс:
+arcbox run --rm -it alpine:latest sh
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-08-31 в /home/blackzeshi/Documents/Notes/arcbox.md</em></p>

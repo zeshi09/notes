@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<title>scientific-agent-skills</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🔬 Scientific Agent Skills (K-Dense AI)</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/K-Dense-AI/scientific-agent-skills">https://github.com/K-Dense-AI/scientific-agent-skills</a><br />
+<strong>Организация:</strong> K-Dense AI<br />
+<strong>Звёзды GitHub:</strong> 40,500+ ★ (Используется 190,000+ ученых по всему миру)<br />
+<strong>Стандарты:</strong> Совместимо со стандартом <a href="https://agentskills.io/">Agent Skills</a> и <a href="https://agent-plugins.org/">Agent Plugins</a><br />
+<strong>Поддерживаемые клиенты:</strong> Claude Code, Google Antigravity, OpenAI Codex, Cursor, Pi<br />
+<strong>Лицензия:</strong> MIT</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем главная ценность?</h2>
+<p><strong>Scientific Agent Skills</strong> — это крупнейшая в мире библиотека открытых, верифицированных и готовых к установке навыков (<strong>165+ валидированных скиллов</strong>) и коннекторов к <strong>100+ научным базам данных</strong>, которая превращает любого стандартного AI-агента в автономного ученого-исследователя в области биологии, химии, медицины, биоинформатики и дизайна лекарств.</p>
+<hr />
+<h2>🧬 2. Структура библиотеки навыков</h2>
+<pre><code class="language-text">┌────────────────────────────────────────────────────────────────────────┐
+│                        SCIENTIFIC AGENT SKILLS                         │
+│                                                                        │
+│  🧪 БИОЛОГИЯ И ГЕНОМИКА:                                               │
+│  • NCBI / BLAST / Ensembl API интеграции                               │
+│  • Анализ single-cell RNA-seq данных (Scanpy, Seurat)                  │
+│  • Предсказание структур белков через AlphaFold / ESMFold              │
+│                                                                        │
+│  💊 ХИМИЯ И ДИЗАЙН ЛЕКАРСТВ (Drug Discovery):                         │
+│  • Поиск по ChEMBL, PubChem, DrugBank, PDB                             │
+│  • Расчет молекулярных дескрипторов (RDKit)                            │
+│  • Молекулярный докинг (AutoDock Vina) и скрининг лигандов             │
+│                                                                        │
+│  📚 НАУЧНЫЙ ПОИСК И СИНТЕЗ ЛИТЕРАТУРЫ:                                 │
+│  • Прямой парсинг PubMed, bioRxiv, medRxiv, Europe PMC                 │
+│  • Извлечение структурированных фактов и таблиц из PDF                 │
+│  • Построение семантических карт доказательств (Evidence Trees)        │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>💻 3. Как подключить к своим AI-агентам?</h2>
+<p>Библиотека написана в стандартном формате Agent Skills и подключается за секунды:</p>
+<pre><code class="language-bash"># Установка через менеджер скиллов
+npx agent-skills install @k-dense/scientific-agent-skills
+
+# Или прямое клонирование в каталог .agents вашего проекта:
+git clone --depth 1 https://github.com/K-Dense-AI/scientific-agent-skills.git .agents/skills/science
+</code></pre>
+<p>После этого ваш агент (в Claude Code, Antigravity или Codex) автоматически получает доступ к специализированным научным тулам (<code>blast_sequence</code>, <code>query_chembl</code>, <code>dock_molecule</code>, <code>search_pubmed_papers</code>).</p>
+<hr />
+<p><em>Заметка сохранена: 2026-08-31 в /home/blackzeshi/Documents/Notes/scientific-agent-skills.md</em></p>

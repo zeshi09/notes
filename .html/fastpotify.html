@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<title>fastpotify</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🎵 Fastpotify: Нативный и молниеносный клиент Spotify на Rust</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/crmne/fastpotify">https://github.com/crmne/fastpotify</a><br />
+<strong>Официальный сайт:</strong> <a href="https://fastpotify.rocks">https://fastpotify.rocks</a><br />
+<strong>Автор:</strong> Carmine (@crmne)<br />
+<strong>Звёзды GitHub:</strong> 1,300+ ★<br />
+<strong>Стек:</strong> 100% чистый Rust, egui, librespot, rodio<br />
+<strong>Платформы:</strong> Linux, macOS, Windows<br />
+<strong>Лицензия:</strong> GPL-3.0</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем идея проекта?</h2>
+<p>Официальный десктопный клиент Spotify построен на базе Electron/Chromium: он потребляет от <strong>600 МБ до 1.5 ГБ оперативной памяти</strong>, запускается по несколько секунд и нагружает процессор фоновыми веб-процессами.</p>
+<p><strong>Fastpotify</strong> — это нативный клиент Spotify с графическим интерфейсом на фреймворке <strong>egui</strong>, написанный полностью на <strong>Rust</strong> с использованием открытой библиотеки <strong>librespot</strong>.</p>
+<pre><code class="language-text">| Характеристика | Официальный Spotify Desktop | Fastpotify (Rust) |
+| :--- | :--- | :--- |
+| **Стек** | Electron / CEF / Chromium | Чистый Rust + egui |
+| **Потребление RAM** | 600 МБ – 1.5 ГБ | **100 – 250 МБ** |
+| **Время запуска** | 3–6 секунд | **&lt; 0.5 секунды** |
+| **Движок браузера** | Полный Chromium | **Отсутствует (Чистый GPU-рендеринг)** |
+| **Управление устройствами** | Spotify Connect | **Полная поддержка Spotify Connect** |
+| **Качество звука** | До 320 kbps (Ogg Vorbis) | **До 320 kbps + Gapless Playback** |
+</code></pre>
+<hr />
+<h2>💎 2. Ключевые возможности</h2>
+<ol>
+<li><strong>Spotify Connect:</strong> Компьютер с Fastpotify отображается как устройство Spotify Connect в мобильном приложении на телефоне — можно переключать треки с любого гаджета.</li>
+<li><strong>Gapless Playback (Бесшовное воспроизведение):</strong> Плавный переход между треками альбома без пауз и задержек.</li>
+<li><strong>Локальный ауди Fast-кэш:</strong> Кэширование треков на диске для мгновенного повторного воспроизведения без расхода трафика.</li>
+<li><strong>Нормализация громкости:</strong> Встроенная поддержка ReplayGain / EBU R128.</li>
+</ol>
+<blockquote>
+<p><em>Примечание:</em> Для воспроизведения аудио требуется учетная запись Spotify Premium (ограничение протокола librespot). Бесплатные аккаунты могут просматривать треки, альбомы и тексты.</p>
+</blockquote>
+<hr />
+<h2>🚀 3. Быстрый запуск</h2>
+<pre><code class="language-bash"># Сборка и запуск на Linux / macOS / Windows
+git clone https://github.com/crmne/fastpotify.git
+cd fastpotify
+cargo run --release
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-09-01 в /home/blackzeshi/Documents/Notes/fastpotify.md</em></p>

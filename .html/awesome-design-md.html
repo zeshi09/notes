@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<title>awesome-design-md</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🎨 Awesome DESIGN.md: Спецификации дизайн-систем для AI-агентов кодинга</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/VoltAgent/awesome-design-md">https://github.com/VoltAgent/awesome-design-md</a><br />
+<strong>Организация:</strong> VoltAgent<br />
+<strong>Звёзды GitHub:</strong> 113,500+ ★ (Топ-3 суточного чарта Trendshift)<br />
+<strong>Количество спецификаций:</strong> 73+ готовых дизайн-манифестов<br />
+<strong>Поддерживаемые агенты:</strong> Claude Code, Cursor, OpenAI Codex, Antigravity, Windsurf<br />
+<strong>Лицензия:</strong> MIT</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем идея DESIGN.md?</h2>
+<p>Главная проблема AI-агентов при генерации веб-интерфейсов — <strong>визуальная халтура («AI Slop»)</strong>: случайные цвета, разнобой в скруглениях, уродливые тени и отсутствие общего стиля.</p>
+<p>Концепция <strong><code>DESIGN.md</code></strong> решает эту проблему элегантно:</p>
+<ul>
+<li>В корень вашего проекта кладется один файл <code>DESIGN.md</code>, описывающий строгие правила визуального языка (токены, цвета, отступы, типографику, анимации и состояния компонентов).</li>
+<li>Когда вы просите агента: <em>«Сделай страницу настроек»</em>, модель читает <code>DESIGN.md</code> и генерирует код, <strong>на 100% соответствующий фирменному стилю</strong>.</li>
+</ul>
+<pre><code class="language-text">┌────────────────────────┐
+│   DESIGN.md в проекте  │ ──► [ Цвета, токены, сетка, скругления, шрифты, компоненты ]
+└───────────┬────────────┘
+            │
+            ▼
+┌────────────────────────┐
+│  AI Кодинг-Агент       │ ──► Читает спецификацию как системное правило
+│ (Claude Code / Cursor) │
+└───────────┬────────────┘
+            │
+            ▼
+┌────────────────────────┐
+│  Идеальный брендовый   │ ──► Чистый React/Tailwind без дефектов и визуального шума
+│  интерфейс из коробки  │
+└────────────────────────┘
+</code></pre>
+<hr />
+<h2>💎 2. Что входит в каталог (73+ бренд-спецификаций)</h2>
+<p>В репозитории собраны глубоко проанализированные спецификации ведущих мировых дизайн-систем:</p>
+<ul>
+<li>🍏 <strong>Apple:</strong> Минимализм, размытия (Frosted Glass), сдержанные шрифты SF Pro.</li>
+<li>💳 <strong>Stripe:</strong> Фирменные многоцветные градиенты, четкие изометрические акценты, премиальная типографика.</li>
+<li>⚡ <strong>Linear:</strong> Глубокая темная тема, акцентные неоновые бордеры, микро-анимации, горячие клавиши.</li>
+<li>▲ <strong>Vercel (Geist):</strong> Монохромная строгая палитра, четкие сетки, шрифт Geist Mono.</li>
+<li>🏠 <strong>Airbnb, Supabase, Raycast, GitHub, Notion, Figma:</strong> Готовые токены и компонентные гайдлайны.</li>
+</ul>
+<hr />
+<h2>🚀 3. Как использовать на практике?</h2>
+<ol>
+<li>Скопируйте нужный файл спецификации в корень своего репозитория:
+<pre><code class="language-bash">cp design-systems/linear.DESIGN.md ./DESIGN.md
+</code></pre>
+</li>
+<li>Отдайте команду своему AI-агенту (в Claude Code, Cursor или Antigravity):
+<blockquote>
+<p><em>«Изучи DESIGN.md в корне проекта и сверстай дашборд аналитики на React + Tailwind, строго соблюдая цветовую палитру и правила компонентов из спецификации».</em></p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<p><em>Заметка сохранена: 2026-09-02 в /home/blackzeshi/Documents/Notes/02_agent_runtimes_and_harnesses/awesome-design-md.md</em></p>

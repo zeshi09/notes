@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<title>ai-engineering-from-scratch</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+          ],
+          macros: {"\\field":"\\mathbb"},
+          throwOnError : false
+        });
+    });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🚀 AI Engineering from Scratch: Полная энциклопедия и руководство</h1>
+<blockquote>
+<p><strong>Локальный путь:</strong> <a href="/home/blackzeshi/Git/ai-engineering-from-scratch">file:///home/blackzeshi/Git/ai-engineering-from-scratch</a><br />
+<strong>Ссылка на GitHub:</strong> <a href="https://github.com/rohitg00/ai-engineering-from-scratch">https://github.com/rohitg00/ai-engineering-from-scratch</a><br />
+<strong>Официальный сайт:</strong> <a href="https://aiengineeringfromscratch.com">https://aiengineeringfromscratch.com</a><br />
+<strong>Автор:</strong> Рохит Гумаре (Rohit Ghumare, @rohitg00 — создатель <a href="https://github.com/rohitg00/agentmemory">Agent Memory</a>)<br />
+<strong>Звёзды GitHub:</strong> 49,300+ ★<br />
+<strong>Объем:</strong> <strong>511 уроков</strong>, <strong>20 фаз</strong>, <strong>~329 часов практики</strong><br />
+<strong>Языки реализации:</strong> Python, TypeScript, Rust, Julia<br />
+<strong>Лицензия:</strong> MIT</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем главная ценность и масштабы курса?</h2>
+<blockquote>
+<p><em>«84% разработчиков уже используют AI-инструменты, но только 18% чувствуют себя готовыми создавать профессиональные AI-системы в продакшене.»</em></p>
+</blockquote>
+<p><strong>AI Engineering from Scratch</strong> — это одна из самых монументальных и структурированных открытых программ обучения в мире по сквозной AI-инженерии. Она закрывает пропасть между поверхностным вызовом API через чат и глубоким пониманием того, как проектировать, обучать, оптимизировать, оркестрировать и безопасно развертывать AI-системы.</p>
+<h3>Ключевые принципы курса:</h3>
+<ol>
+<li><strong>Каждый урок оставляет переиспользуемый артефакт:</strong> работающий скрипт, промпт-шаблон, архитектурную схему, оптимизированный слой нейросети или CLI-утилиту.</li>
+<li><strong>From Scratch (С нуля):</strong> ключевые алгоритмы пишутся руками (Backpropagation, Attention, RAG, RLVR/GRPO, Agent Loop, MCP Server).</li>
+<li><strong>Полиглотность:</strong> основные алгоритмы на Python, высокопроизводительный инференс на Rust и C++, интерфейсы на TypeScript/React, научные вычисления на Julia.</li>
+</ol>
+<hr />
+<h2>🗺 2. Карта 20 фаз обучения (Phases 00–19)</h2>
+<pre><code class="language-text">┌────────────────────────────────────────────────────────────────────────┐
+│                      БЛОК 1: БАЗОВЫЙ ФУНДАМЕНТ                         │
+│   Phase 00: Setup &amp; Tooling (Linux, Docker, GPU, Profiling)            │
+│   Phase 01: Math Foundations (Линейная алгебра, Анализ, Статистика)    │
+│   Phase 02: ML Fundamentals (Регрессия, Деревья, SVM, Ансамбли)        │
+│   Phase 03: Deep Learning Core (Backprop с нуля, PyTorch, CNN, LSTM)   │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                   БЛОК 2: МОДАЛЬНОСТИ И АРХИТЕКТУРЫ                    │
+│   Phase 04: Computer Vision (ViT, Object Detection, Сегментация)       │
+│   Phase 05: NLP Foundations to Advanced (Tokenizers, Embeddings)       │
+│   Phase 06: Speech &amp; Audio (Whisper, TTS, Audio Processing)            │
+│   Phase 07: Transformers Deep Dive (Self-Attention, RoPE, KV Cache)    │
+│   Phase 08: Generative AI (VAEs, GANs, Diffusion Models, Flow Matching)│
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                   БЛОК 3: REASONING, RL И LLM                          │
+│   Phase 09: Reinforcement Learning (PPO, DPO, GRPO, RLVR, RLHF)        │
+│   Phase 10: LLMs from Scratch (Претрейн, Файнтюнинг, LoRA, QLoRA)      │
+│   Phase 11: LLM Engineering (Advanced RAG, GraphRAG, Evals, Prompts)   │
+│   Phase 12: Multimodal AI (VLM, Audio-LLMs, Embodied AI)               │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                   БЛОК 4: АГЕНТЫ, РОИ И ПРОТОКОЛЫ                      │
+│   Phase 13: Tools &amp; Protocols (Model Context Protocol / MCP, Tools)    │
+│   Phase 14: Agent Engineering (ReAct, Память, Рефлексия, Планирование) │
+│   Phase 15: Autonomous Systems (Долгие сессии, Sandboxing, State)      │
+│   Phase 16: Multi-Agent &amp; Swarms (Иерархии, Blackboard, Рои агентов)   │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│             БЛОК 5: ПРОДАКШЕН, БЕЗОПАСНОСТЬ И ВЫПУСКНЫЕ ПРОЕКТЫ        │
+│   Phase 17: Infrastructure &amp; Production (vLLM, TensorRT-LLM, Квант.)   │
+│   Phase 18: Ethics, Safety &amp; Alignment (Guardrails, Jailbreak Defense) │
+│   Phase 19: Capstone Projects (Полноценные сквозные приложения)        │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>📚 3. Подробный разбор ключевых фаз</h2>
+<h3>🧠 Фаза 07: Transformers Deep Dive</h3>
+<ul>
+<li>Глубокий разбор математики матричного внимания: <span data-math-style="inline">$QK^T / \sqrt{d_k}$</span>.</li>
+<li><strong>Multi-Head Attention (MHA)</strong>, <strong>Multi-Query Attention (MQA)</strong> и <strong>Grouped-Query Attention (GQA)</strong>.</li>
+<li><strong>FlashAttention (v1/v2/v3):</strong> оптимизация работы с памятью GPU (SRAM vs HBM).</li>
+<li><strong>Positional Embeddings:</strong> Sinusoidal, Learned, <strong>RoPE (Rotary Position Embedding)</strong>, ALiBi.</li>
+<li><strong>KV-Caching:</strong> управление памятью генерации и оптимизация задержек Time-To-First-Token (TTFT).</li>
+</ul>
+<h3>⚡ Фаза 09: Reinforcement Learning &amp; Reasoning (GRPO/DPO)</h3>
+<ul>
+<li>От классического Q-learning до современных методов выравнивания LLM.</li>
+<li><strong>Direct Preference Optimization (DPO)</strong> против PPO.</li>
+<li><strong>Group Relative Policy Optimization (GRPO)</strong> — ключевой алгоритм моделей рассуждения в стиле <strong>DeepSeek R1</strong>.</li>
+<li><strong>RLVR (Reinforcement Learning with Verifiable Rewards)</strong> — обучение с проверяемыми критериями истинности.</li>
+</ul>
+<h3>🏗 Фаза 11: LLM Engineering &amp; GraphRAG</h3>
+<ul>
+<li><strong>Advanced RAG:</strong> гибридный поиск (BM25 + Dense Vectors), иерархический чанкинг, Re-ranking (Cross-Encoders).</li>
+<li><strong>GraphRAG:</strong> извлечение триплетов сущностей, построение графов знаний, интеграция с Neo4j и Memgraph.</li>
+<li><strong>Evaluation &amp; Benchmarks:</strong> фреймворки Ragas, TruLens, DeepEval, синтетическая генерация тестовых датасетов.</li>
+</ul>
+<h3>🔌 Фаза 13: Tools &amp; Model Context Protocol (MCP)</h3>
+<ul>
+<li>Реализация серверов и клиентов <strong>Model Context Protocol (MCP)</strong> от Anthropic на Python и TypeScript.</li>
+<li>Динамическое обнаружение инструментов (Tool Discovery), передача ресурсов и управление контекстом.</li>
+<li>Построение шлюзов с ротацией ключей и защитой от перерасхода квот.</li>
+</ul>
+<h3>🤖 Фазы 14–16: Agent Engineering &amp; Swarms</h3>
+<ul>
+<li><strong>Архитектурные паттерны агентов:</strong> ReAct (Reasoning + Acting), Plan-and-Solve, Reflexion, Tree-of-Thoughts.</li>
+<li><strong>Долговременная память:</strong> краткосрочный буфер, векторная семантическая память, процедурная память навыков.</li>
+<li><strong>Мульти-агентные системы:</strong> иерархические команды (Leader-Worker), архитектура общей доски (Blackboard), протоколы консенсуса в рое (Swarms).</li>
+</ul>
+<h3>🚀 Фаза 17: Infrastructure &amp; Production Serving</h3>
+<ul>
+<li>Высоконагруженный инференс через <strong>vLLM</strong> (PagedAttention), <strong>TGI (Text Generation Inference)</strong> и <strong>TensorRT-LLM</strong>.</li>
+<li><strong>Квантование моделей:</strong> GPTQ, AWQ, GGUF/llama.cpp, FP8, bitsandbytes (INT8/INT4).</li>
+<li>Оптимизация пропускной способности (Continuous Batching, Speculative Decoding).</li>
+<li>Мониторинг и наблюдаемость: OpenTelemetry, Langfuse, Arize Phoenix, сбор метрик задержек (P95/P99).</li>
+</ul>
+<hr />
+<h2>🛠 4. Встроенные интерактивные скиллы (<code>skills/</code>)</h2>
+<p>В репозитории есть готовые AI-скиллы для работы с Claude Code, Antigravity, Cursor и Codex:</p>
+<p>| Скилл | Назначение |
+| :--- | :--- |
+| <strong><code>find-your-level</code></strong> | Интерактивный тест для определения вашего текущего уровня знаний и подбора оптимальной точки старта. |
+| <strong><code>start-learning</code></strong> | Автоматическая загрузка материалов, задач и чек-листов по выбранной фазе. |
+| <strong><code>check-understanding</code></strong> | Генерация проверочных вопросов, код-ревью ваших решений и разбор ошибок. |
+| <strong><code>learn-mcp</code></strong> | Специализированный интерактивный трек по созданию MCP-серверов. |
+| <strong><code>learn-agent-skills</code></strong> | Обучение проектированию и стандартизации навыков для AI-агентов. |
+| <strong><code>claude-certification</code></strong> | Подготовка к сертификациям по архитектуре Claude и агентным системам. |</p>
+<hr />
+<h2>💻 5. Как запустить и изучать локально</h2>
+<p>Репозиторий уже склонирован на вашей машине в директорию:<br />
+📁 <code>/home/blackzeshi/Git/ai-engineering-from-scratch</code></p>
+<pre><code class="language-bash"># 1. Переход в директорию проекта
+cd /home/blackzeshi/Git/ai-engineering-from-scratch
+
+# 2. Установка Python зависимостей (при необходимости)
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# 3. Запуск локального веб-сайта документации
+cd site
+node build.js
+# Открытие локального интерфейса в браузере
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-08-26 в /home/blackzeshi/Documents/Notes/ai-engineering-from-scratch.md</em></p>

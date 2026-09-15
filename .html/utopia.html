@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<title>utopia</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🏛️ Utopia: Open-Source Enterprise World Model &amp; Ontology Workbench</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/deeplethe/utopia">https://github.com/deeplethe/utopia</a><br />
+<strong>Официальный сайт:</strong> <a href="https://utopia.bi">https://utopia.bi</a><br />
+<strong>Разработчик:</strong> DeepLethe<br />
+<strong>Звёзды GitHub:</strong> 1,300+ ★<br />
+<strong>Стек:</strong> 100% чистый Rust, WebAssembly, SQLite, MCP, React<br />
+<strong>Лицензия:</strong> Apache-2.0</p>
+</blockquote>
+<hr />
+<h2>🎯 1. Введение и концепция</h2>
+<p><strong>Utopia</strong> позиционируется как <strong>«Первая открытая модель мира для предприятий»</strong> (<em>Open-Source Enterprise World Model</em>). Это локальное (<em>Local-First</em>) рабочее пространство, которое преобразует разрозненные корпоративные документы (PDF, Word, Excel, Markdown, базы данных) в <strong>структурированные онтологии и семантические графы знаний</strong>, с которыми могут безопасно работать AI-агенты.</p>
+<h3>Главная проблема, которую решает Utopia:</h3>
+<p>Обычный RAG и векторный поиск не понимают логических связей бизнеса (кто кому подчиняется, какие регламенты к каким отделам применимы, как рассчитываются KPI). Utopia извлекает из документов не просто фрагменты текста, а <strong>строгую онтологическую схему сущностей, правил и взаимосвязей</strong>.</p>
+<pre><code class="language-text">[ Корпоративные документы (PDF, DOCX, XLSX, DB) ]
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────┐
+│                   UTOPIA RUST WORKBENCH                │
+│                                                        │
+│   • Semantic Parsing &amp; Entity Recognition              │
+│   • Автоматическое построение онтологий (OWL/RDF)      │
+│   • Детекция конфликтов и валидация связей             │
+│   • Local-First: данные не покидают ваш сервер         │
+└────────────────────────┬───────────────────────────────┘
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────┐
+│                 ENTERPRISE WORLD MODEL                 │
+│   • Единый проверяемый источник истины                 │
+│   • Доступ для агентов через Model Context Protocol    │
+└────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>💎 2. Ключевые возможности</h2>
+<ol>
+<li><strong>Local-First &amp; Высокая производительность на Rust:</strong> Ядро написано на чистом Rust со встроенной базой SQLite и векторным индексом, обеспечивая обработку документов со скоростью сотен страниц в секунду без облачных сервисов.</li>
+<li><strong>Model Context Protocol (MCP) интеграция:</strong> Встроенный MCP-сервер позволяет подключать построенную онтологию напрямую к Claude Code, Codex, Cursor и Antigravity.</li>
+<li><strong>Визуальный редактор графов и онтологий:</strong> Интерактивный веб-интерфейс для просмотра и ручной корректировки извлеченных связей и сущностей.</li>
+</ol>
+<hr />
+<h2>🚀 3. Быстрый запуск</h2>
+<pre><code class="language-bash"># Запуск через Docker
+docker run -d -p 8080:8080 ghcr.io/deeplethe/utopia:latest
+
+# Или сборка из исходников на Rust
+git clone https://github.com/deeplethe/utopia.git
+cd utopia
+cargo run --release
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-09-01 в /home/blackzeshi/Documents/Notes/utopia.md</em></p>

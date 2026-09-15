@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title>gpt-5.6-instruct</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🛡️ GPT-5.6 Instruct: Исследование безопасности и стресс-тестирование агентных систем</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/MDX-Tom/gpt-5.6-instruct">https://github.com/MDX-Tom/gpt-5.6-instruct</a><br />
+<strong>Автор:</strong> MDX-Tom<br />
+<strong>Звёзды GitHub:</strong> 7,100+ ★<br />
+<strong>Сфера:</strong> AI Security, Red Teaming, Jailbreak Analysis, Codex CLI Safety Guardrails<br />
+<strong>Лицензия:</strong> MIT</p>
+</blockquote>
+<hr />
+<h2>🎯 1. Что представляет собой этот проект?</h2>
+<p>Репозиторий <strong>gpt-5.6-instruct</strong> — это специализированный открытый исследовательский набор для <strong>Red Teaming (тестирования на проникновение и стресс-тестов)</strong> современных передовых моделей и кодинг-агентов (Codex CLI, Claude Code).</p>
+<p>Он исследует границы защитных барьеров (<em>Safety Guardrails / Alignment Filters</em>), выявляя уязвимости, при которых агент может обойти установленные ограничения безопасности в терминале.</p>
+<hr />
+<h2>🔍 2. Структура и назначение тестов</h2>
+<pre><code class="language-text">┌────────────────────────────────────────────────────────────────────────┐
+│                  RED TEAMING &amp; STRESS TEST SUITE                       │
+│                                                                        │
+│  1. Системные барьеры терминала:                                       │
+│     • Попытки несанкционированного доступа к ФС и сетям                │
+│     • Обход подтверждения опасных команд (sudo, rm, curl pipe bash)     │
+│                                                                        │
+│  2. Prompt Injection &amp; CoT Evasion:                                    │
+│     • Исследование техник внедрения инструкций в скрытый контекст      │
+│     • Сравнение стойкости защитных фильтров между релизами             │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>⚖️ 3. Практическая ценность для инженера</h2>
+<p>Этот проект полезен для разработчиков, строящих собственные агентные рантаймы и корпоративные шлюзы:</p>
+<ul>
+<li>Позволяет проверить устойчивость собственной агентной песочницы к вредоносным промптам.</li>
+<li>Показывает, почему <strong>промпт-ограничения никогда не должны заменять аппаратную изоляцию</strong> (нужны песочницы уровня ArcBox / Docker / Linux namespaces, а не просто запрещающие системные промпты).</li>
+</ul>
+<hr />
+<p><em>Заметка сохранена: 2026-08-31 в /home/blackzeshi/Documents/Notes/gpt-5.6-instruct.md</em></p>

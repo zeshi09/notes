@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<title>praxist</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🧬 PRAXIST: Автономный исследовательский R&amp;D фреймворк</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/sapientinc/PRAXIST">https://github.com/sapientinc/PRAXIST</a><br />
+<strong>Организация:</strong> Sapient Inc.<br />
+<strong>Научная статья:</strong> <a href="https://arxiv.org/abs/2608.25955">arXiv:2608.25955</a><br />
+<strong>Звёзды GitHub:</strong> 5,400+ ★<br />
+<strong>Стек:</strong> Python 3.11+, PyTorch, Ray, Docker<br />
+<strong>Лицензия:</strong> Apache-2.0</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем суть PRAXIST?</h2>
+<p><strong>PRAXIST</strong> (<em>Personal R&amp;D Team</em>) — это открытая автономная исследовательская система для проведения <strong>измеримых, программно-исполняемых научных исследований</strong> (<em>Computer-Executable Research</em>).</p>
+<p>В отличие от систем, которые просто генерируют текст или симулируют поиск, PRAXIST рассматривает исследование как <strong>персистентный эволюционный процесс поколений</strong>:</p>
+<pre><code class="language-text">[ Измеримая цель (Loss / Speed / Accuracy / Metric) ]
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                     ПОКОЛЕНИЕ 1: ПАРАЛЛЕЛЬНЫЙ ПОИСК                    │
+│   • Агент-исследователь A (Гипотеза 1) ──► Запуск кода ──► Метрика 1   │
+│   • Агент-исследователь B (Гипотеза 2) ──► Запуск кода ──► Метрика 2   │
+│   • Агент-исследователь C (Гипотеза 3) ──► Запуск кода ──► Метрика 3   │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│             TASK-OWNED EVALUATION &amp; EVIDENCE LEDGER                    │
+│   • Сбор доказательной базы (Durable Evidence): логи, веса, профили    │
+│   • Отсев неработающих гипотез                                         │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│            ПОКОЛЕНИЕ N: МЕЖПОКОЛЕНЧЕСКИЙ СИНТЕЗ (Synthesis)            │
+│   • Скрещивание лучших подходов и автоматическая генерация отчета      │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>💎 2. Когда использовать PRAXIST?</h2>
+<ul>
+<li>Когда проект уже запускается и у него есть <strong>четкая численная метрика успеха</strong> (пропускная способность, точность классификации, скорость сходимости алгоритма, потребление VRAM).</li>
+<li>Когда пространство решений слишком велико для ручного перебора человеком, и требуется автономный агентный R&amp;D-пайплайн, работающий сутками.</li>
+</ul>
+<hr />
+<p><em>Заметка сохранена: 2026-08-31 в /home/blackzeshi/Documents/Notes/praxist.md</em></p>

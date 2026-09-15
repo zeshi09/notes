@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<title>learn-harness-engineering</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>📘 Learn Harness Engineering: Руководство и конспект</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/walkinglabs/learn-harness-engineering">https://github.com/walkinglabs/learn-harness-engineering</a><br />
+<strong>Автор / Организация:</strong> walkinglabs<br />
+<strong>Основной стек:</strong> TypeScript, React, Electron, VitePress, Bash<br />
+<strong>Совместимость с агентами:</strong> Claude Code, OpenAI Codex CLI, Google Antigravity, Cursor, OpenCode</p>
+</blockquote>
+<hr />
+<h2>🎯 1. Введение: Главная идея Harness Engineering</h2>
+<h3>Проблема «голых» AI-агентов</h3>
+<p>Современные большие языковые модели (LLM) обладают огромным объемом знаний и логических способностей, однако при автономной работе в реальных кодовых базах они регулярно терпят неудачу:</p>
+<ol>
+<li><strong>Преждевременное объявление победы (Premature Victory):</strong> Агент пишет код и заявляет <em>«Все готово и работает идеально»</em>, не запустив линтер, компилятор или тесты.</li>
+<li><strong>Потеря контекста и деградация в длинных сессиях:</strong> Модель забывает начальные цели, зацикливается или переписывает уже работающие модули.</li>
+<li><strong>Распыление скоупа (Overreach &amp; Under-finish):</strong> Агент берется за 10 задач одновременно, вносит хаотичные диффы и оставляет кодовую базу в сломанном состоянии.</li>
+</ol>
+<hr />
+<h3>Архитектурный сдвиг: Model vs. Harness</h3>
+<pre><code class="language-text">┌────────────────────────────────────────────────────────────────────────┐
+│                              AGENT HARNESS                             │
+│                                                                        │
+│   ┌────────────────────────────────────────────────────────────────┐   │
+│   │                         MODEL (LLM)                            │   │
+│   │   «Процессор рассуждений»: генерация диффов, чтение кода,      │   │
+│   │   принятие локальных решений.                                  │   │
+│   └──────────────────────────────┬─────────────────────────────────┘   │
+│                                  │                                     │
+│   ЖИЗНЕННЫЙ ЦИКЛ И ПРАВИЛА (Governed by Harness):                      │
+│   1. System of Record (Git, state files, feature_list.json)            │
+│   2. Строгие фазы: Init -&gt; Plan -&gt; Edit -&gt; Test -&gt; Verify -&gt; Commit   │
+│   3. Объективная верификация (linters, typecheck, unit/e2e tests)      │
+│   4. Чистое состояние при завершении сессии (clean session handoff)    │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<blockquote>
+<p><strong>Ключевой вывод курса:</strong><br />
+Качество и стабильность автономной работы агента на <strong>80% зависят от конструкции среды (Harness)</strong> и лишь на <strong>20% — от «ума» конкретной модели</strong>.</p>
+</blockquote>
+<hr />
+<h2>📚 2. Структура учебного курса (14 Лекций)</h2>
+<h3>Модуль 1: Фундамент и анатомия сбоев</h3>
+<ul>
+<li><strong>Lecture 01: Why capable agents still fail</strong><br />
+Разбор реальных сценариев сбоя передовых моделей на реальном коде. Анализ «слепых зон» и причин деградации рассуждений.</li>
+<li><strong>Lecture 02: What a harness actually is</strong><br />
+Четкое разграничение ответственности: что решает модель, а чем жестко управляет среда (Harness).</li>
+<li><strong>Lecture 03: Why the repository must become the system of record</strong><br />
+Память агента не должна зависеть от скрытого контекстного окна LLM. Единственный источник истины — это файлы репозитория (<code>progress.md</code>, <code>feature_list.json</code>, коммиты Git).</li>
+</ul>
+<h3>Модуль 2: Управление контекстом и инструкциями</h3>
+<ul>
+<li><strong>Lecture 04: Why one giant instruction file fails</strong><br />
+Антипаттерн монолитного <code>SYSTEM_PROMPT.md</code> на тысячи строк. Разделение инструкций на модульные, контекстно-загружаемые скиллы и правила.</li>
+<li><strong>Lecture 05: Why long-running tasks lose continuity</strong><br />
+Организация бесшовной передачи состояния между сессиями (<code>session-handoff</code>) без потери нити разработки.</li>
+<li><strong>Lecture 06: Why initialization needs its own phase</strong><br />
+Почему фаза первичного сканирования и анализа кодовой базы должна быть строго изолирована от фазы модификации кода.</li>
+</ul>
+<h3>Модуль 3: Верификация и контроль качества</h3>
+<ul>
+<li><strong>Lecture 07: Why agents overreach and under-finish</strong><br />
+Ограничение радиуса изменений за одну итерацию. Принцип атомарных инкрементальных правок.</li>
+<li><strong>Lecture 08: Why feature lists are harness primitives</strong><br />
+Использование структурированного списка фич (<code>feature_list.json</code>) как фундаментального примитива управления прогрессом.</li>
+<li><strong>Lecture 09: Why agents declare victory too early</strong><br />
+Замена субъективной оценки модели (<em>«looks good to me»</em>) на обязательную программную верификацию.</li>
+<li><strong>Lecture 10: Why end-to-end testing changes results</strong><br />
+Встраивание реальных прогонов E2E-тестов, юнит-тестов и тайпчека в цикл обратной связи агента.</li>
+</ul>
+<h3>Модуль 4: Наблюдаемость и сложные архитектуры</h3>
+<ul>
+<li><strong>Lecture 11: Why observability belongs inside the harness</strong><br />
+Сбор телеметрии, логов вызовов инструментов и аудит промежуточных шагов рассуждения.</li>
+<li><strong>Lecture 12: Why every session must leave a clean state</strong><br />
+Правила завершения сессии: откат сломанных временных файлов, запись статуса и обеспечение воспроизводимого перезапуска.</li>
+<li><strong>Lecture 13: Loop Engineering</strong><br />
+Проектирование и тонкая настройка автономных агентных циклов (ReAct, Plan-and-Execute, Reflection).</li>
+<li><strong>Lecture 14: Graph Engineering</strong><br />
+Оркестрация сложных мульти-агентных графов зависимостей и параллельного распределения задач.</li>
+</ul>
+<hr />
+<h2>🛠 3. Практические проекты (8 Hands-on Projects)</h2>
+<p>Каждый проект в курсе сравнивает результат выполнения задачи <strong>«голым» агентом (Baseline)</strong> против <strong>агента в среде Harness</strong>:</p>
+<ol>
+<li><strong>Project 01: Baseline vs Minimal Harness</strong> — демонстрация разницы при добавлении базового каркаса верификации.</li>
+<li><strong>Project 02: Agent-Readable Workspace</strong> — подготовка структуры проекта, оптимизированной под чтение AI-агентом.</li>
+<li><strong>Project 03: Multi-Session Continuity</strong> — решение задачи в 5 последовательных независимых сессий с передачей контекста.</li>
+<li><strong>Project 04: Incremental Indexing</strong> — инкрементальное индексирование архитектуры крупной кодовой базы.</li>
+<li><strong>Project 05: Grounded QA Verification</strong> — организация жесткого контура верификации фактов и работы функционала.</li>
+<li><strong>Project 06: Runtime Observability and Debugging</strong> — внедрение трейсинга и инструментов отладки агента в реальном времени.</li>
+<li><strong>Project 07: Loop Engineering (First Loop)</strong> — создание собственного агентного цикла на TypeScript с нуля.</li>
+<li><strong>Project 08: Graph Engineering (First Graph)</strong> — создание ориентированного графа взаимодействующих специализированных субагентов.</li>
+</ol>
+<hr />
+<h2>🧰 4. Встроенные утилиты репозитория</h2>
+<h3>1. <code>audit-harness.sh</code> — Скрипт аудита репозитория</h3>
+<p>Проверяет любую кодовую базу на соответствие 5 ключевым подсистемам Harness (L03–L12). Работает на чистом Bash без внешних зависимостей.</p>
+<pre><code class="language-bash"># Запуск напрямую через curl
+curl -fsSL https://raw.githubusercontent.com/walkinglabs/learn-harness-engineering/main/tools/audit-harness.sh | bash -s -- /путь/к/проекту
+
+# Или локально из склонированного репозитория
+bash tools/audit-harness.sh /путь/к/проекту
+</code></pre>
+<h3>2. <code>skills/harness-creator</code> — Генератор Harness для AI-агентов</h3>
+<p>Готовый скилл, который можно подключить в Claude Code / Codex / Antigravity для автоматической генерации конфигурационных файлов, чеклистов и тестов под новый проект.</p>
+<hr />
+<h2>📋 5. Чек-лист внедрения Harness в свой проект</h2>
+<p>Чтобы превратить обычный репозиторий в <strong>Agent-First Workspace</strong>, необходимо внедрить следующие артефакты:</p>
+<p>| Файл / Компонент | Назначение |
+| :--- | :--- |
+| <code>AGENTS.md</code> / <code>CLAUDE.md</code> | Лаконичные высокоуровневые правила, стек, команды сборки, запуска тестов и линтеров. |
+| <code>feature_list.json</code> | Машиночитаемый список требований и фич со статусами (<code>pending</code>, <code>in_progress</code>, <code>verified</code>). |
+| <code>progress.md</code> | Журнал текущей сессии: что сделано, какие ошибки встречены, следующий шаг для возобновления. |
+| <code>scripts/verify.sh</code> | Единый скрипт быстрой проверки (<code>lint + typecheck + test</code>), возвращающий <code>exit 0</code> только при 100% успехе. |
+| <code>.agents/skills/</code> | Модульные инструкции под узкие задачи (рефакторинг, миграции БД, генерация тестов). |</p>
+<hr />
+<h2>🚀 6. Как запустить учебник локально</h2>
+<p>Репозиторий оформлен в виде интерактивного портала документации на <strong>VitePress</strong>:</p>
+<pre><code class="language-bash"># 1. Клонирование репозитория
+git clone https://github.com/walkinglabs/learn-harness-engineering.git
+cd learn-harness-engineering
+
+# 2. Установка зависимостей
+npm install
+
+# 3. Запуск локального сервера документации
+npm run docs:dev
+</code></pre>
+<p>После этого перейдите по адресу <code>http://localhost:5173</code> в браузере для чтения лекций и просмотра интерактивных диаграмм.</p>
+<hr />
+<p><em>Заметка сохранена: 2026-08-23 в /home/blackzeshi/Documents/Notes/learn-harness-engineering.md</em></p>

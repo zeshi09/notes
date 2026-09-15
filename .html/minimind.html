@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<title>minimind</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🧠 MiniMind: Обучение собственной LLM (64M) с нуля за 2 часа</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/jingyaogong/minimind">https://github.com/jingyaogong/minimind</a><br />
+<strong>Автор:</strong> Jingyao Gong (@jingyaogong)<br />
+<strong>Слоган:</strong> <em>«Дао предельно просто» (大道至简)</em><br />
+<strong>Звёзды GitHub:</strong> 55,900+ ★<br />
+<strong>Стек:</strong> Python, чистый PyTorch, Hugging Face, Transformers<br />
+<strong>Требования к железу:</strong> 1 домашняя видеокарта (RTX 3060 / 3090 / 4090 / Mac M-серии)<br />
+<strong>Стоимость и время:</strong> ~3 юаня (или бесплатно на своей GPU), <strong>~2 часа обучения</strong><br />
+<strong>Лицензия:</strong> Apache-2.0</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем главная идея MiniMind?</h2>
+<p>Обучение промышленных LLM (Llama, DeepSeek, GPT) требует миллионов долларов и тысяч видеокарт H100. Это создает иллюзию, что понять претрейн и файнтюнинг на практике обычному инженеру невозможно.</p>
+<p><strong>MiniMind</strong> доказывает обратное: проект предлагает ультралегковесную языковую модель размером всего <strong>64 миллиона параметров</strong> (примерно 1/2700 от объема GPT-3), которую можно <strong>полностью обучить с нуля за 2 часа на обычном ноутбуке или домашнем ПК</strong>.</p>
+<hr />
+<h2>🗺 2. Полный цикл обучения (Training Lifecycle)</h2>
+<pre><code class="language-text">[ Сырой текстовый корпус (News, Wikipedia, QA) ]
+                       │
+                       ▼
+┌────────────────────────────────────────────────────────┐
+│ ЭТАП 1: Pre-training (Предварительное обучение)        │
+│ • Архитектура: Decoder-only Transformer                │
+│ • Кастомный BPE-токенизатор                            │
+│ • Обучение языковому предсказанию токенов              │
+└────────────────────────┬───────────────────────────────┘
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────┐
+│ ЭТАП 2: Supervised Fine-Tuning (SFT)                   │
+│ • Обучение следовать инструкциям в диалоге             │
+│ • Шаблоны промптов: User / Assistant                   │
+└────────────────────────┬───────────────────────────────┘
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────┐
+│ ЭТАП 3: LoRA &amp; DPO (Выравнивание и предпочтения)       │
+│ • Direct Preference Optimization (DPO)                 │
+│ • Дообучение через Low-Rank Adaptation (LoRA)          │
+└────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>📂 3. Структура проекта</h2>
+<ul>
+<li><code>model/LMConfig.py</code> — конфигурация гиперпараметров модели (число слоев, размерность скрытого состояния, головы внимания).</li>
+<li><code>model/model.py</code> — чистая и понятная реализация трансформера на PyTorch (Attention, RoPE, RMSNorm).</li>
+<li><code>1-pretrain.py</code> — скрипт предварительного обучения на неразмеченном тексте.</li>
+<li><code>2-full_sft.py</code> — скрипт дообучения на диалоговых данных.</li>
+<li><code>3-dpo_train.py</code> — обучение с подкреплением через алгоритм DPO.</li>
+<li><code>eval_model.py</code> — интерактивный чат с вашей собственной обученной моделью в терминале.</li>
+</ul>
+<hr />
+<h2>🚀 4. Как запустить локально?</h2>
+<pre><code class="language-bash"># 1. Клонирование репозитория
+git clone https://github.com/jingyaogong/minimind.git
+cd minimind
+
+# 2. Установка зависимостей
+pip install -r requirements.txt
+
+# 3. Запуск обучения (займет ~2 часа на RTX 3090)
+python 1-pretrain.py
+python 2-full_sft.py
+
+# 4. Общение со своей моделью
+python eval_model.py
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-08-31 в /home/blackzeshi/Documents/Notes/minimind.md</em></p>

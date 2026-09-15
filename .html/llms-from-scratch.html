@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<title>LLMs-from-scratch</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+          ],
+          macros: {"\\field":"\\mathbb"},
+          throwOnError : false
+        });
+    });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🧠 Build a Large Language Model (From Scratch) — Sebastian Raschka</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/rasbt/LLMs-from-scratch">https://github.com/rasbt/LLMs-from-scratch</a><br />
+<strong>Автор:</strong> Себастьян Рашка (Sebastian Raschka, Staff Research Engineer в Lightning AI, экс-профессор UW-Madison)<br />
+<strong>Официальная книга:</strong> <em>Build a Large Language Model (From Scratch)</em> (Manning Publications, ISBN 9781633437166)<br />
+<strong>Звёзды GitHub:</strong> 103,500+ ★<br />
+<strong>Стек:</strong> Python, PyTorch (чистый фреймворк без сторонних библиотек-обёрток), Jupyter Notebooks<br />
+<strong>Требования к железу:</strong> Обычный потребительский ноутбук (GPU опционален, код оптимизирован под CPU/MPS/CUDA)</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем главная ценность репозитория?</h2>
+<p>Большинство разработчиков используют LLM через API (OpenAI, Anthropic) или высокоуровневые библиотеки (<code>transformers</code>, <code>langchain</code>), воспринимая трансформеры как «черный ящик».</p>
+<p><strong>LLMs-from-scratch</strong> снимает эту магию:</p>
+<ul>
+<li><strong>0 сторонних высокоуровневых абстракций:</strong> Каждый компонент — токенизатор, позиционное кодирование, Multi-Head Attention, блок трансформера, слой нормализации и функция потерь — пишется <strong>на чистом PyTorch с нуля</strong>.</li>
+<li><strong>Полный цикл разработки:</strong> От загрузки сырого текста и предварительного обучения (Pre-training) до файнтюнинга инструкций (Instruction Tuning) и оценки сгенерированных ответов.</li>
+<li><strong>Доступность на потребительском железе:</strong> Все базовые примеры и обучение мини-моделей выполняются за разумное время на обычном ноутбуке. Также есть код загрузки весов оригинального <strong>GPT-2 (124M, 355M, 774M, 1558M)</strong> от OpenAI для дообучения.</li>
+</ul>
+<hr />
+<h2>🗺 2. Ментальная модель архитектуры LLM</h2>
+<pre><code class="language-text">[ Сырой текст ]
+      │
+      ▼
+┌────────────────────────────────────────────────────────┐
+│ Глава 2: Подготовка и токенизация                      │
+│ • BPE Tokenizer (Byte-Pair Encoding)                   │
+│ • Embedding Layer (Token + Positional Embeddings)      │
+│ • Sliding Window DataLoader (Input-Target pairs)       │
+└────────────────────────┬───────────────────────────────┘
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────┐
+│ Глава 3: Механизмы внимания (Attention)                │
+│ • Scaled Dot-Product Self-Attention                    │
+│ • Causal Attention (маскирование будущих токенов)      │
+│ • Multi-Head Attention (параллельные головы внимания)  │
+└────────────────────────┬───────────────────────────────┘
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────┐
+│ Глава 4: Архитектура GPT                               │
+│ • Transformer Block (LayerNorm + MHA + GELU + MLP)     │
+│ • Residual/Skip Connections (градиентные пробросы)     │
+│ • Linear Head + Softmax (вероятности следующих токенов)│
+└────────────────────────┬───────────────────────────────┘
+                         │
+                         ▼
+┌────────────────────────────────────────────────────────┐
+│ Глава 5: Предварительное обучение (Pretraining)        │
+│ • Cross-Entropy Loss &amp; Perplexity                      │
+│ • Training Loop &amp; Оптимизатор AdamW                    │
+│ • Сэмплирование текста (Temperature, Top-K, Top-P)     │
+└────────────────────────┬───────────────────────────────┘
+                         │
+       ┌─────────────────┴─────────────────┐
+       ▼                                   ▼
+┌──────────────────────────┐    ┌──────────────────────────┐
+│ Глава 6: Классификация   │    │ Глава 7: Instruction SFT │
+│ • Замена головы модели   │    │ • Формат Instruction/Ans │
+│ • Fine-tuning под спам/  │    │ • Дообучение ассистента  │
+│   сентимент-анализ       │    │ • Оценка через Ollama/LLM│
+└──────────────────────────┘    └──────────────────────────┘
+</code></pre>
+<hr />
+<h2>📖 3. Подробное содержание глав курса</h2>
+<h3>Глава 1: Understanding Large Language Models</h3>
+<ul>
+<li>Высокоуровневый обзор концепций: авторегрессионные модели, этапы pre-training vs. fine-tuning, архитектура декодера трансформера (GPT-style) против энкодера (BERT-style).</li>
+</ul>
+<h3>Глава 2: Working with Text Data</h3>
+<ul>
+<li>Реализация собственного простого токенизатора.</li>
+<li>Использование промышленного алгоритма <strong>BPE (Byte-Pair Encoding)</strong> через <code>tiktoken</code>.</li>
+<li>Построение скользящего окна (<code>sliding window</code>) для генерации пар <code>(X, y)</code> для авторегрессионного обучения.</li>
+<li>Создание слоев матриц токен-эмбеддингов и позиционных эмбеддингов (<code>Token + Positional Embedding</code>).</li>
+</ul>
+<h3>Глава 3: Coding Attention Mechanisms</h3>
+<ul>
+<li>Математический вывод и пошаговая реализация формулы <span data-math-style="inline">$Attention(Q, K, V) = softmax(\frac{QK^T}{\sqrt{d_k}})V$</span>.</li>
+<li><strong>Causal Attention Masking:</strong> зануление верхнего треугольника матрицы внимания, чтобы модель не подглядывала в будущие токены.</li>
+<li><strong>Dropout</strong> в матрицах внимания.</li>
+<li><strong>Multi-Head Attention:</strong> реализация объединения нескольких параллельных голов внимания в единый эффективный тензорный слой.</li>
+</ul>
+<h3>Глава 4: Implementing a GPT Model from Scratch</h3>
+<ul>
+<li>Сборка компонентов воедино:
+<ul>
+<li><strong>LayerNorm (Layer Normalization):</strong> нормализация активаций по фичам.</li>
+<li><strong>GELU Activation:</strong> функция активации Gaussian Error Linear Unit.</li>
+<li><strong>FeedForward Network (MLP):</strong> двухслойная полносвязная сеть с расширением размерности в 4 раза.</li>
+<li><strong>Shortcut / Residual Connections:</strong> проброс градиентов в обход слоев.</li>
+</ul>
+</li>
+<li>Класс <code>GPTModel</code> и генерация первых (пока случайных) токенов.</li>
+</ul>
+<h3>Глава 5: Pretraining on Unlabeled Data</h3>
+<ul>
+<li>Вычисление функции потерь <code>CrossEntropyLoss</code> над батчем последовательностей.</li>
+<li>Написание полноценного тренировочного цикла на чистом PyTorch.</li>
+<li>Загрузка весов оригинальной модели <strong>GPT-2 (124M parameters)</strong> от OpenAI в нашу собственную архитектуру.</li>
+<li>Алгоритмы декодирования: <strong>Temperature Scaling</strong>, <strong>Top-K Sampling</strong> для контроля креативности генерации.</li>
+</ul>
+<h3>Глава 6: Finetuning for Text Classification</h3>
+<ul>
+<li>Адаптация предобученной модели под прикладную задачу (например, классификация спама / отзывов).</li>
+<li>Замена финального проекционного слоя на классификационную голову (<code>Classification Head</code>).</li>
+<li>Заморозка весов трансформера и обучение только верхних слоев.</li>
+</ul>
+<h3>Глава 7: Finetuning to Follow Instructions (Instruction Tuning)</h3>
+<ul>
+<li>Превращение «генератора текста» в «полезного AI-ассистента».</li>
+<li>Подготовка датасетов в формате инструкций (Prompt-Response).</li>
+<li>Маскирование функции потерь (обучение градиентам только на ответе, а не на промпте).</li>
+<li>Автоматическая оценка качества модели с помощью локальных открытых LLM через <strong>Ollama</strong>.</li>
+</ul>
+<hr />
+<h2>🎁 4. Дополнительные модули и приложения (Appendices)</h2>
+<ul>
+<li><strong>Appendix A: Introduction to PyTorch</strong><br />
+Базовый практический курс по тензорам PyTorch, автодифференцированию <code>autograd</code> и распределенному обучению на нескольких GPU (<strong>DDP — Distributed Data Parallel</strong>).</li>
+<li><strong>Appendix D: Adding Bells and Whistles to the Training Loop</strong><br />
+Инженерные техники стабилизации обучения: <strong>Learning Rate Warmup</strong>, <strong>Cosine Annealing Scheduler</strong>, <strong>Gradient Clipping</strong>.</li>
+<li><strong>Appendix E: Parameter-Efficient Finetuning with LoRA (Low-Rank Adaptation)</strong><br />
+Реализация метода LoRA с нуля: декомпозиция матриц весов <span data-math-style="inline">$W_0 + B \cdot A$</span> для дообучения гигантских моделей при минимальных затратах VRAM.</li>
+</ul>
+<hr />
+<h2>🔮 5. Официальный сиквел: Build a Reasoning Model (From Scratch)</h2>
+<p>Себастьян Рашка выпустил продолжение книги:<br />
+<strong><a href="https://github.com/rasbt/reasoning-from-scratch">rasbt/reasoning-from-scratch</a></strong></p>
+<p>Книга и репозиторий посвящены реализации современных механизмов рассуждения (Reasoning Models à la DeepSeek R1 / OpenAI o1/o3):</p>
+<ul>
+<li><strong>Inference-time scaling</strong> (масштабирование вычислений во время генерации).</li>
+<li><strong>Reinforcement Learning with Verifiable Rewards (RLVR)</strong>.</li>
+<li><strong>Distillation</strong> цепочек рассуждений (CoT — Chain of Thought).</li>
+</ul>
+<hr />
+<h2>🚀 6. Как запустить и экспериментировать локально</h2>
+<pre><code class="language-bash"># 1. Клонирование репозитория
+git clone --depth 1 https://github.com/rasbt/LLMs-from-scratch.git
+cd LLMs-from-scratch
+
+# 2. Создание виртуального окружения (через venv или uv)
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 3. Установка зависимостей
+pip install -r setup/requirements.txt
+
+# 4. Запуск Jupyter Notebook
+jupyter lab
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-08-24 в /home/blackzeshi/Documents/Notes/LLMs-from-scratch.md</em></p>

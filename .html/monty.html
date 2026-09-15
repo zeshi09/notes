@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<title>monty</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🐍 Monty: Минималистичный и безопасный интерпретатор Python на Rust для AI-агентов</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/pydantic/monty">https://github.com/pydantic/monty</a><br />
+<strong>Организация:</strong> Pydantic (Сэмюэл Колвин / Samuel Colvin)<br />
+<strong>Звёзды GitHub:</strong> 8,200+ ★<br />
+<strong>Стек:</strong> 100% чистый Rust, Python 3.14 subset, WebAssembly, Astral <code>ty</code><br />
+<strong>Назначение:</strong> Безопасное исполнение кода AI-агентов (Code Mode / Programmatic Tool Calling)<br />
+<strong>Лицензия:</strong> MIT</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем главная проблема и зачем создан Monty?</h2>
+<p>Когда AI-агенту нужно выполнить цепочку действий, традиционный подход с вызовом инструментов (<strong>Tool Calling в формате JSON</strong>) работает медленно и неэффективно:</p>
+<ul>
+<li>Агент тратит лишние токены на каждый вызов инструмента.</li>
+<li>Не может выполнить простой цикл <code>for</code> или условие <code>if</code> без обращения к серверу LLM.</li>
+<li>Передача промежуточных данных между 10 инструментами раздувает контекстное окно.</li>
+</ul>
+<p>Решение индустрии (Anthropic, Cloudflare, Hugging Face, Pydantic) — <strong>«Code Mode» / Programmatic Tool Calling</strong>: агент сам пишет скрипт на Python, объединяющий вызовы функций, циклы и обработку данных.</p>
+<h3>Но как безопасно запустить сгенерированный LLM код?</h3>
+<ul>
+<li><strong>Запуск на хосте:</strong> Смертельно опасно (модель может вызвать <code>os.system(&quot;rm -rf /&quot;)</code>).</li>
+<li><strong>Docker / микро-VM (ArcBox):</strong> Безопасно, но запуск контейнера занимает от 50 до 500 миллисекунд и требует мегабайты памяти.</li>
+</ul>
+<p><strong>Monty</strong> предлагает революционную альтернативу:<br />
+Это <strong>полноценный интерпретатор подмножества Python 3.14, написанный с нуля на Rust</strong>. Он запускается прямо внутри процесса вашего приложения со временем старта <strong>менее 1 микросекунды (&lt;1 μs)</strong>!</p>
+<pre><code class="language-text">┌────────────────────────────────────────────────────────────────────────┐
+│                         MONTY ARCHITECTURE (Rust)                      │
+│                                                                        │
+│   • Холодный старт: &lt; 1 микросекунды (&lt;1 μs)                           │
+│   • Нулевые зависимости от CPython (чистый Rust)                       │
+│   • Полная изоляция от ОС: нет доступа к файловой системе,             │
+│     переменным окружения и сети по умолчанию                           │
+│   • Связь с внешним миром ТОЛЬКО через явно переданные функции хоста   │
+│   • Встроенная проверка типов через Astral ty                          │
+│   • Снапшоты в байты: состояние интерпретатора можно сохранить в БД    │
+│     и восстановить в любой момент                                      │
+│   • Контроль лимитов: лимит памяти, глубина стека, таймаут             │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                     ПРИМЕР КОДА, ПИШУЩЕГОСЯ АГЕНТОМ                    │
+│                                                                        │
+│   # Агент выполняет сложный цикл без повторных запросов к LLM:         │
+│   users = await fetch_users(department=&quot;finance&quot;)                      │
+│   for user in users:                                                   │
+│       if user[&quot;budget&quot;] &gt; 10000:                                       │
+│           await send_alert(user[&quot;id&quot;], &quot;Лимит бюджета превышен&quot;)       │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>💎 2. Ключевые возможности Monty</h2>
+<ol>
+<li><strong>Мгновенный запуск (&lt;1 μs):</strong> В тысячи раз быстрее Docker и Firecracker. Идеально подходит для высоконагруженных агентов, выполняющих тысячи сниппетов в секунду.</li>
+<li><strong>Безопасность на уровне архитектуры:</strong> У интерпретатора физически нет системных вызовов к Linux/macOS API. Если вы не передали функцию <code>read_file</code>, агент физически не сможет прочитать диск.</li>
+<li><strong>Сериализация состояния (Snapshotting):</strong> Если агент вызвал внешнюю асинхронную функцию (например, одобрение действия человеком в Slack), Monty сериализует весь стек исполнения в бинарный массив (<code>bytes</code>), сохраняет в SQLite/Postgres и засыпает, освобождая ресурсы.</li>
+<li><strong>Поддержка стандартной библиотеки:</strong> Включает безопасные реализации <code>asyncio</code>, <code>json</code>, <code>math</code>, <code>re</code>, <code>datetime</code>, <code>collections</code>, <code>dataclasses</code>, <code>itertools</code>, <code>typing</code>.</li>
+</ol>
+<hr />
+<h2>⚠️ 3. Ограничения (Что Monty намеренно НЕ умеет)</h2>
+<p>Monty спроектирован <strong>исключительно для выполнения кода агентов</strong>, а не для запуска продакшен-бэкендов:</p>
+<ul>
+<li>❌ Нет поддержки сторонних C-библиотек из PyPI (numpy, pandas, pydantic нельзя импортировать внутри Monty).</li>
+<li>❌ Нет сложного ООП (наследование классов, метаклассы и <code>super()</code> не поддерживаются; простые классы работают).</li>
+<li>❌ Нет доступа к хостовой сети и ФС без явных прокси-функций.</li>
+</ul>
+<hr />
+<h2>🚀 4. Как использовать в Python?</h2>
+<pre><code class="language-bash"># Установка через uv или pip
+uv add pydantic-monty
+</code></pre>
+<pre><code class="language-python">import asyncio
+from pydantic_monty import Monty
+
+# 1. Определяем функции, к которым агент имеет доступ
+async def fetch_price(ticker: str) -&gt; float:
+    return 150.25 if ticker == &quot;AAPL&quot; else 42.0
+
+# 2. Код, сгенерированный LLM
+agent_code = &quot;&quot;&quot;
+price = await fetch_price(&quot;AAPL&quot;)
+result = f&quot;Цена акции AAPL: {price * 1.05:.2f} с учетом комиссии&quot;
+result
+&quot;&quot;&quot;
+
+# 3. Безопасное исполнение в Monty за микросекунды
+monty = Monty()
+result = asyncio.run(monty.eval(agent_code, host_functions={&quot;fetch_price&quot;: fetch_price}))
+print(result) # &quot;Цена акции AAPL: 157.76 с учетом комиссии&quot;
+</code></pre>
+<hr />
+<h2>🔗 Связь с другими проектами базы знаний:</h2>
+<ul>
+<li>Является идеальным исполнительным движком для <strong><a href="">learn-harness-engineering</a></strong> и <strong><a href="">OpenMAIC</a></strong>.</li>
+<li>Дополняет <strong><a href="">Arcbox</a></strong>: простые скрипты управления тулами запускаются в ультралегком Monty (&lt;1 μs), а тяжелые задачи со сторонними зависимостями (pandas, pytorch) уходят в микро-VM ArcBox.</li>
+</ul>
+<hr />
+<p><em>Заметка сохранена: 2026-09-02 в /home/blackzeshi/Documents/Notes/02_agent_runtimes_and_harnesses/monty.md</em></p>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<title>CL4R1T4S</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🔓 CL4R1T4S: База утекших системных промптов ведущих AI-моделей и агентов</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/elder-plinius/CL4R1T4S">https://github.com/elder-plinius/CL4R1T4S</a><br />
+<strong>Автор:</strong> Plinius the Elder (@elder-plinius)<br />
+<strong>Слоган:</strong> <em>«In order to trust the output, one must understand the input.»</em><br />
+<strong>Звёзды GitHub:</strong> 48,400+ ★ (Лидер суточного чарта Trendshift)<br />
+<strong>Сфера:</strong> AI Transparency, Observability, System Prompts, Prompt Reverse-Engineering<br />
+<strong>Лицензия:</strong> MIT / Open Access</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем главная суть и зачем это нужно?</h2>
+<p><strong>CL4R1T4S</strong> — это самый масштабный в мире открытый архив извлеченных, отреверсенных и утекших <strong>официальных системных промптов (System Prompts)</strong> практически всех ключевых коммерческих AI-моделей и кодинг-агентов.</p>
+<p>Коммерческие AI-лаборатории (OpenAI, Anthropic, Google, xAI) определяют поведение моделей через гигантские скрытые системные инструкции (<em>Scaffolding Prompts</em>). Эти промпты определяют:</p>
+<ul>
+<li><strong>Границы отказов (Refusal Boundaries):</strong> на какие темы модель обязана отвечать отказом или переводить тему.</li>
+<li><strong>Манеру и ролевую модель (Personas &amp; Tone):</strong> какой тон речи предписан модели.</li>
+<li><strong>Скрытые правила работы с тулами:</strong> протоколы вызова поисковиков, интерпретатора кода, памяти и артефактов.</li>
+<li><strong>Политические и этические рамки (Framing):</strong> заданные разработчиками по умолчанию.</li>
+</ul>
+<blockquote>
+<p><em>«Если вы общаетесь с AI, не зная его системного промпта, вы общаетесь не с нейтральным интеллектом, а с куклой на веревочках».</em></p>
+</blockquote>
+<hr />
+<h2>📂 2. Что внутри архива (Охваченные модели и агенты)</h2>
+<pre><code class="language-text">┌────────────────────────────────────────────────────────────────────────┐
+│                        АРХИВ СИСТЕМНЫХ ПРОМПТОВ                        │
+│                                                                        │
+│  🤖 ФЛАГМАНСКИЕ LLM:                                                   │
+│  • OpenAI: ChatGPT (GPT-4o, o1-preview, o3-mini, GPT-5-sol)            │
+│  • Anthropic: Claude (Claude 3.5 Sonnet, Claude 3.7 Sonnet)            │
+│  • Google: Gemini (Gemini 1.5 Pro, Gemini 2.0 Flash)                   │
+│  • xAI: Grok (Grok-2, Grok-3 System Rules)                             │
+│  • Perplexity: Sonar, Pro Search prompts                               │
+│                                                                        │
+│  🛠 АВТОНОМНЫЕ АГЕНТЫ И AI-IDE:                                        │
+│  • Cursor: System Prompt редактора, Composer, Shadow Workspace         │
+│  • Windsurf / Cascade: промпты управления контекстом и терминалом     │
+│  • Devin (Cognition) &amp; Manus: агентные воркфлоу и планирование         │
+│  • Replit Agent &amp; Lovable: правила генерации full-stack проектов       │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2>💡 3. Практическая польза для инженера</h2>
+<ol>
+<li><strong>Изучение лучших практик промпт-дизайна:</strong> Как ведущие команды формулируют запреты без галлюцинаций, как заставляют модель вызывать тулы в формате JSON/XML и как настраивают цепочки рассуждений (Chain-of-Thought).</li>
+<li><strong>Аудит безопасности и Red Teaming:</strong> Выявление слабых мест в чужих защитных барьерах для создания более надежных собственных агентных систем.</li>
+<li><strong>Воспроизведение поведения в локальных моделях:</strong> Возможность перенести структурированные инструкции коммерческих моделей на открытые Llama, Qwen и DeepSeek.</li>
+</ol>
+<hr />
+<p><em>Заметка сохранена: 2026-09-02 в /home/blackzeshi/Documents/Notes/05_security_osint_and_guardrails/CL4R1T4S.md</em></p>

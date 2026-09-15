@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<title>user-scanner</title>
+<link rel="stylesheet" href="file:///home/blackzeshi/.config/rucola/default_dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+<h1>🕵️‍♂️ User Scanner: Профессиональный OSINT-комбайн по Email и Никнеймам</h1>
+<blockquote>
+<p><strong>Ссылка на репозиторий:</strong> <a href="https://github.com/kaifcodec/user-scanner">https://github.com/kaifcodec/user-scanner</a><br />
+<strong>Автор:</strong> Kaif Codec (@kaifcodec)<br />
+<strong>Звёзды GitHub:</strong> 4,500+ ★<br />
+<strong>Сфера:</strong> OSINT, Кибербезопасность, Digital Footprinting, Threat Intelligence<br />
+<strong>Стек:</strong> Python 3.8+, Asyncio, Aiohttp, Rich<br />
+<strong>Платформы:</strong> Linux, Windows, macOS, Android (Termux)<br />
+<strong>Лицензия:</strong> MIT</p>
+</blockquote>
+<hr />
+<h2>🎯 1. В чем назначение инструмента?</h2>
+<p><strong>User Scanner</strong> — это мощный открытый инструмент разведки по открытым источникам (<strong>OSINT 2-in-1</strong>), предназначенный для глубокого сбора цифрового следа (<em>Digital Footprint</em>) человека всего по одному параметру: <strong>адресу электронной почты</strong> или <strong>никнейму (username)</strong>.</p>
+<p>В отличие от устаревших утилит (вроде классического Sherlock), User Scanner ориентирован на современные платформы, защищенные от спама и требующие сложных сигнатурных проверок.</p>
+<pre><code class="language-text">[ Входные данные: Email или Username ]
+                   │
+                   ▼
+┌────────────────────────────────────────────────────────┐
+│               USER SCANNER (465+ VECTORS)              │
+│                                                        │
+│   📧 Email Scanner (175+ активных векторов):           │
+│   • Проверка привязки к Google, GitHub, Spotify,       │
+│     Telegram, Twitter, Discord, Amazon, ProtonMail     │
+│   • Анализ утечек паролей и баз HaveIBeenPwned         │
+│   • Проверка MX/SPF записей и валидности домена        │
+│                                                        │
+│   👤 Username Scanner (290+ социальных платформ):      │
+│   • Социальные сети, форумы, криптокошельки, блоги     │
+│   • Поиск профилей на dev-порталах (GitLab, LeetCode)  │
+│   • Параллельный асинхронный опрос через aiohttp       │
+└────────────────────────┬───────────────────────────────┘
+                         │
+                         ▼
+[ Структурированный отчет: CLI таблица / JSON / HTML / PDF ]
+</code></pre>
+<hr />
+<h2>💎 2. Ключевые фичи</h2>
+<ol>
+<li><strong>465+ активно поддерживаемых векторов сканирования:</strong> Регулярные обновления базы платформ с отслеживанием изменений API.</li>
+<li><strong>Высокая скорость (Asyncio / Aiohttp):</strong> Полное сканирование сотен ресурсов занимает 10–25 секунд.</li>
+<li><strong>Умная обработка ложных срабатываний (False-Positive Filtration):</strong> Анализ статус-кодов, размера ответов, заголовков и редиректов.</li>
+<li><strong>Работа на мобильных устройствах:</strong> Нативная поддержка Android через Termux.</li>
+</ol>
+<hr />
+<h2>🚀 3. Быстрый запуск</h2>
+<pre><code class="language-bash"># Клонирование и установка зависимостей
+git clone https://github.com/kaifcodec/user-scanner.git
+cd user-scanner
+pip install -r requirements.txt
+
+# Сканирование по никнейму
+python user-scanner.py -u username
+
+# Сканирование по Email с экспортом отчета
+python user-scanner.py -e target@example.com --export html
+</code></pre>
+<hr />
+<p><em>Заметка сохранена: 2026-09-01 в /home/blackzeshi/Documents/Notes/user-scanner.md</em></p>
