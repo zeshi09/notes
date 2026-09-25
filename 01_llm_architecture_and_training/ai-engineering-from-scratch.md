@@ -3,8 +3,8 @@ title: "AI Engineering from Scratch (Рохит Гумаре: 511 уроков, 
 repo: "https://github.com/blackzeshi/Git/ai-engineering-from-scratch"
 category: "01_llm_architecture_and_training"
 tags: [ai-engineering, roadmap, mcp, vllm, grpo, rag, agent-orchestration]
-stars: "Local / 14k+"
-date: 2026-08-26
+stars: "57.2k+"
+date: 2026-09-25
 ---
 
 # 🚀 AI Engineering from Scratch: Полная энциклопедия и руководство
@@ -13,7 +13,7 @@ date: 2026-08-26
 > **Ссылка на GitHub:** [https://github.com/rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch)  
 > **Официальный сайт:** [https://aiengineeringfromscratch.com](https://aiengineeringfromscratch.com)  
 > **Автор:** Рохит Гумаре (Rohit Ghumare, @rohitg00 — создатель [Agent Memory](https://github.com/rohitg00/agentmemory))  
-> **Звёзды GitHub:** 49,300+ ★  
+> **Звёзды GitHub:** 57,200+ ★  
 > **Объем:** **511 уроков**, **20 фаз**, **~329 часов практики**  
 > **Языки реализации:** Python, TypeScript, Rust, Julia  
 > **Лицензия:** MIT  

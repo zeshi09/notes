@@ -12,20 +12,22 @@
 ## 📂 Тематические категории
 
 ### 🚀 00. Стратегия, дорожные карты и Capstone-проекты
-*Сквозные роадмапы превращения базы знаний в практическую инженерную экспертизу и работающие продукты.*
+*Сквозные роадмапы превращения базы знаний в практическую инженерную экспертизу, сборники технических интервью и системного дизайна AI (AI Engineering Interviews) и работающие продукты.*
 
 | Заметка | Репозиторий | Звёзды | Теги |
 | :--- | :--- | :--- | :--- |
+| 📄 **[AI Engineering Interviews: Всеобъемлющий сборник вопросов и системного дизайна для AI-инженеров](00_strategy_and_roadmaps/ai-engineering-interviews.md)** | [pallavi-shekhar/ai-engineering-interview-questions-company-wise](https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise) | `940+` | `#ai-engineering` `#interview-prep` `#system-design` `#llm-infra` `#vllm` `#rag` `#career-roadmap` `#curated-list` |
 | 📄 **[Capstone Roadmap: Как превратить базу знаний в персональную исследовательскую лабораторию](00_strategy_and_roadmaps/capstone-engineering-roadmap.md)** | [knowledge-base/strategy](local://knowledge-base/strategy) | `Master-Plan` | `#learning-roadmap` `#capstone-project` `#ai-engineering` `#autonomous-research` `#strategy` `#system-architecture` |
 
 ### 🧠 01. Архитектура LLM и обучение моделей с нуля
-*Трансформеры с нуля, модели рассуждения (DeepSeek-R1/GRPO), системный дизайн AI-инфраструктуры (AI Infra Book Ли Боцзе), ультралегкие LLM (MiniMind), мультиязычные неавторегрессионные движки решений (Laya), фундаментальные курсы (Dive into LLMs), полностековые роадмапы (LLM Master), локальный System-1 Option-Attention (OpenJev, Kev) и сквозная AI-инженерия.*
+*Трансформеры с нуля, модели рассуждения (DeepSeek-R1/GRPO), контрастивные модели действий System-1 (CLM), системный дизайн AI-инфраструктуры (AI Infra Book Ли Боцзе), ультралегкие LLM (MiniMind), мультиязычные неавторегрессионные движки решений (Laya), фундаментальные курсы (Dive into LLMs), полностековые роадмапы (LLM Master), локальный System-1 Option-Attention (OpenJev, Kev) и сквозная AI-инженерия.*
 
 | Заметка | Репозиторий | Звёзды | Теги |
 | :--- | :--- | :--- | :--- |
 | 📄 **[LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md)** | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | `47.5k+` | `#llm` `#pytorch` `#transformers` `#from-scratch` `#education` `#deep-learning` |
-| 📄 **[AI Engineering from Scratch (Рохит Гумаре: 511 уроков, 20 фаз)](01_llm_architecture_and_training/ai-engineering-from-scratch.md)** | [blackzeshi/Git/ai-engineering-from-scratch](https://github.com/blackzeshi/Git/ai-engineering-from-scratch) | `Local / 14k+` | `#ai-engineering` `#roadmap` `#mcp` `#vllm` `#grpo` `#rag` `#agent-orchestration` |
+| 📄 **[AI Engineering from Scratch (Рохит Гумаре: 511 уроков, 20 фаз)](01_llm_architecture_and_training/ai-engineering-from-scratch.md)** | [blackzeshi/Git/ai-engineering-from-scratch](https://github.com/blackzeshi/Git/ai-engineering-from-scratch) | `57.2k+` | `#ai-engineering` `#roadmap` `#mcp` `#vllm` `#grpo` `#rag` `#agent-orchestration` |
 | 📄 **[AI Infra Book: Количественный анализ и системный дизайн AI-инфраструктуры (Ли Боцзе / Bojie Li)](01_llm_architecture_and_training/ai-infra-book.md)** | [bojieli/ai-infra-book](https://github.com/bojieli/ai-infra-book) | `2.2k+` | `#ai-infra-book` `#ai-infrastructure` `#system-design` `#hardware-constraints` `#kv-cache` `#roofline-model` `#distributed-inference` `#distributed-training` `#rdma` `#vllm` `#bojie-li` `#open-source-book` |
+| 📄 **[CLM: Фреймворк контрастивного обучения языковых моделей и оптимизации семантических представлений](01_llm_architecture_and_training/clm.md)** | [Contrastive-LM/CLM](https://github.com/Contrastive-LM/CLM) | `1.1k+` | `#clm` `#contrastive-learning` `#embeddings` `#infonce` `#representation-learning` `#rag` `#semantic-search` `#python` `#pytorch` |
 | 📄 **[Dive into LLMs (动手学大模型): Практический курс инженерии больших языковых моделей](01_llm_architecture_and_training/dive-into-llms.md)** | [Lordog/dive-into-llms](https://github.com/Lordog/dive-into-llms) | `51.3k+` | `#llm` `#transformers` `#pretraining` `#sft` `#lora` `#rlhf` `#dpo` `#quantization` `#vllm` `#deep-learning` `#jupyter` |
 | 📄 **[Kev: Компактная System-1 модель Option-Attention на базе Qwen2.5-0.5B для обучения и запуска на MacBook](01_llm_architecture_and_training/kev.md)** | [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | `2.9k+` | `#kev` `#jaredpalmer` `#option-attention` `#system-1-models` `#qwen` `#local-training` `#macbook` `#apple-silicon` `#mlx` `#pytorch` `#python` |
 | 📄 **[Laya: Неавторегрессионный мультиязычный System-1 движок типизированных решений (100+ языков за 33 мс)](01_llm_architecture_and_training/laya.md)** | [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) | `13.6k+` | `#laya` `#system-1-models` `#non-autoregressive` `#typed-decisions` `#rlcd` `#multilingual-ai` `#option-attention` `#direct-logits` `#inference-optimization` `#python` |
@@ -35,7 +37,7 @@
 | 📄 **[Reasoning from Scratch (Себастьян Рашка: DeepSeek-R1, GRPO, RLVR)](01_llm_architecture_and_training/reasoning-from-scratch.md)** | [rasbt/reasoning-from-scratch](https://github.com/rasbt/reasoning-from-scratch) | `18.2k+` | `#reasoning` `#deepseek-r1` `#grpo` `#rlvr` `#reinforcement-learning` `#inference-scaling` |
 
 ### 🤖 02. Агентные рантаймы, харнесы и оркестрация
-*Декларативные кластерные оркестраторы агентов от Google (AX), кросс-агентная долговременная память на Rust (AI-Memory), децентрализованные P2P-сети агентов (EnvoyMesh), управляемое исполнение действий (Evenfire), экранные мобильные копилоты (Jev-Chat Jarvis), экосистемы Option-Attention (Awesome-Jev), ультрабыстрые браузерные агенты (Jev Ultrafast), спецификации (OpenSpec), учебники по архитектуре агентов (AI Agent Book), защищенные реестры навыков (Agent-Skills), гибридное код-ревью (Open Code Review) и микро-VM песочницы (ZeroBoot, Arcbox).*
+*Операционные системы управления штатом агентов (Paperclip), самообучающаяся долговременная память (Hindsight), непрерывное обучение агентов (Reef), офисные рантаймы документов (Univer), кластерные оркестраторы от Google (AX), кросс-агентная память на Rust (AI-Memory), децентрализованные P2P-сети агентов (EnvoyMesh), управляемое исполнение (Evenfire), экранные копилоты (Jev-Chat Jarvis), экосистемы Option-Attention (Awesome-Jev), ультрабыстрые браузерные агенты (Jev Ultrafast), спецификации (OpenSpec) и учебники по агентам.*
 
 | Заметка | Репозиторий | Звёзды | Теги |
 | :--- | :--- | :--- | :--- |
@@ -52,6 +54,7 @@
 | 📄 **[EnvoyMesh: Децентрализованная P2P-сеть для автономных AI-агентов с суверенной идентичностью (SSI)](02_agent_runtimes_and_harnesses/envoymesh.md)** | [allenpeng0705/EnvoyMesh](https://github.com/allenpeng0705/EnvoyMesh) | `1.5k+` | `#envoymesh` `#p2p-mesh` `#decentralized-agents` `#ssi` `#self-sovereign-identity` `#agent-to-agent` `#typescript` `#peer-to-peer` `#edge-ai` |
 | 📄 **[Evenfire: Защищенная платформа исполнения транзакционных действий AI-агентов на приватной инфраструктуре](02_agent_runtimes_and_harnesses/evenfire.md)** | [evenfire-ai/evenfire](https://github.com/evenfire-ai/evenfire) | `360+` | `#evenfire` `#action-execution` `#agent-runtime` `#enterprise-guardrails` `#api-gateway` `#rbac` `#self-hosted` `#typescript` `#workflow-automation` |
 | 📄 **[Google AX: Декларативный кластерный оркестратор агентных воркфлоу (Kubernetes для AI-агентов)](02_agent_runtimes_and_harnesses/google-ax.md)** | [google/ax](https://github.com/google/ax) | `6.6k+` | `#google-ax` `#agent-orchestration` `#cluster-runtime` `#declarative-workflows` `#agent-substrate` `#sandboxing` `#go` `#kubernetes-for-agents` `#enterprise-ai` |
+| 📄 **[Hindsight: Самообучающаяся долговременная память для автономных AI-агентов (arXiv:2512.12818)](02_agent_runtimes_and_harnesses/hindsight.md)** | [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | `28.8k+` | `#hindsight` `#agent-memory` `#continual-learning` `#episodic-memory` `#vector-search` `#arxiv` `#ai-agent` `#python` |
 | 📄 **[i-have-adhd: Скилл и поведенческий слой для кодинг-агентов (ADHD-friendly output без «воды»)](02_agent_runtimes_and_harnesses/i-have-adhd.md)** | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | `42.5k+` | `#agent-skills` `#prompt-engineering` `#ux` `#productivity` `#claude-code` `#cursor` `#codex` `#adhd` `#formatting` |
 | 📄 **[Jev-Chat Jarvis: Неинвазивный экранный диалоговый AI-копилот для Android через Option-Attention](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md)** | [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | `2.7k+` | `#jev-chat-jarvis` `#mobile-agent` `#android` `#kotlin` `#option-attention` `#non-invasive` `#accessibility-api` `#chat-copilot` `#system-1` |
 | 📄 **[Jev Ultrafast: Сверхбыстрый браузерный агент на базе Option-Attention и динамического пространства действий](02_agent_runtimes_and_harnesses/jev-ultrafast.md)** | [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) | `1.2k+` | `#jev-ultrafast` `#browser-use` `#browser-agent` `#option-attention` `#system-1` `#web-automation` `#ultrafast` `#agent-harness` `#python` |
@@ -61,16 +64,20 @@
 | 📄 **[Open Code Review: Промышленный гибридный инструмент код-ревью от Alibaba (Deterministic Engineering × Agent)](02_agent_runtimes_and_harnesses/open-code-review.md)** | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | `25.2k+` | `#open-code-review` `#alibaba` `#code-review` `#deterministic-engineering` `#agent-hybrid` `#ast-analysis` `#line-level-precision` `#token-efficiency` `#git-diff` `#security-rules` `#go` `#aacr-bench` |
 | 📄 **[OpenMAIC: Мульти-агентная интерактивная аудитория (Цинхуа)](02_agent_runtimes_and_harnesses/openmaic.md)** | [THU-MAIC/OpenMAIC](https://github.com/THU-MAIC/OpenMAIC) | `28.9k+` | `#multi-agent` `#education` `#typescript` `#webrtc` `#interactive-learning` |
 | 📄 **[OpenSpec: Спецификационно-ориентированная разработка (SDD) для AI кодинг-ассистентов](02_agent_runtimes_and_harnesses/openspec.md)** | [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | `68.8k+` | `#openspec` `#spec-driven-development` `#sdd` `#coding-agents` `#context-engineering` `#claude-code` `#cursor` `#specs` `#planning` `#typescript` |
+| 📄 **[Paperclip: Открытая операционная система управления штатом AI-агентов (Workforce OS)](02_agent_runtimes_and_harnesses/paperclip.md)** | [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | `83.8k+` | `#paperclip` `#agent-workforce` `#agent-orchestration` `#enterprise-ai` `#multi-agent` `#workflow-automation` `#typescript` `#react` `#self-hosted` |
+| 📄 **[Reef: Открытая инфраструктура непрерывного обучения (Continual Learning) и сохранения опыта агентов](02_agent_runtimes_and_harnesses/reef.md)** | [Human-Agent-Society/reef](https://github.com/Human-Agent-Society/reef) | `5.1k+` | `#reef` `#continual-learning` `#agent-memory` `#experience-replay` `#catastrophic-forgetting` `#trajectory-logging` `#human-agent-society` `#python` |
 | 📄 **[SoL-Pi: Оптимизация агентных харнесов и исследовательских циклов от Nvidia Research](02_agent_runtimes_and_harnesses/sol-pi.md)** | [NVlabs/SoL-Pi](https://github.com/NVlabs/SoL-Pi) | `1.3k+` | `#nvidia` `#agent-harness` `#efficiency` `#context-compression` `#action-fusion` `#observation-pack` `#pi-agent` `#auto-research` `#token-diet` |
 | 📄 **[Архитектура Tool Broker & Execution Blocker: Проектирование шлюзов вызова и защиты инструментов AI-агентов](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)** | [agent-architecture/tool-broker](local://agent-architecture/tool-broker) | `Master-Architecture` | `#tool-broker` `#tool-gateway` `#mcp-router` `#agent-runtime` `#tool-rag` `#lethal-trifecta` `#loop-breaker` `#security` `#credential-offloading` |
+| 📄 **[Univer: Офисный рантайм и харнес для AI-агентов (Таблицы, Документы, Слайды, Canvas, PDF)](02_agent_runtimes_and_harnesses/univer.md)** | [dream-num/univer](https://github.com/dream-num/univer) | `18.2k+` | `#univer` `#office-harness` `#spreadsheets` `#docs` `#slides` `#canvas` `#pdf` `#agent-runtime` `#typescript` `#ui-components` |
 | 📄 **[ZeroBoot: Суб-миллисекундные песочницы микро-VM для AI-агентов на чистом Rust](02_agent_runtimes_and_harnesses/zeroboot.md)** | [zerobootdev/zeroboot](https://github.com/zerobootdev/zeroboot) | `2.4k+` | `#agent-sandbox` `#rust` `#micro-vm` `#copy-on-write` `#virtualization` `#code-execution` `#high-performance` |
 | 📄 **[zvec-grep (zg): Локальный гибридный поиск по кодовой базе для людей и AI-агентов](02_agent_runtimes_and_harnesses/zvec-grep.md)** | [zvec-ai/zvec-grep](https://github.com/zvec-ai/zvec-grep) | `1.8k+` | `#search` `#local-first` `#semantic-search` `#vector-search` `#ai-agents` `#code-search` `#bm25` `#hybrid-search` |
 
 ### 🏛️ 03. Графы знаний, контекст и онтологии
-*Графовая инфраструктура контекста (Semantica AGI) и Enterprise World Model воркбенчи на Rust (Utopia).*
+*Высокоскоростные графовые СУБД на Rust поверх объектных S3 хранилищ (HydraDB), графовая инфраструктура контекста (Semantica AGI) и Enterprise World Model воркбенчи на Rust (Utopia).*
 
 | Заметка | Репозиторий | Звёзды | Теги |
 | :--- | :--- | :--- | :--- |
+| 📄 **[HydraDB: Высокоскоростная графовая база данных на Rust поверх объектных S3-хранилищ](03_knowledge_graphs_and_ontologies/hydradb.md)** | [hydra-db/hydradb](https://github.com/hydra-db/hydradb) | `6.4k+` | `#hydradb` `#graph-database` `#rust` `#opencypher` `#s3-storage` `#object-storage` `#knowledge-graphs` `#enterprise-data` |
 | 📄 **[Semantica AGI: Графовая инфраструктура контекста и подотчетности](03_knowledge_graphs_and_ontologies/semantica.md)** | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | `11.4k+` | `#knowledge-graphs` `#prov-o` `#decision-intelligence` `#datalog` `#shacl` `#rete` |
 | 📄 **[Utopia: Open-Source Enterprise World Model & Ontology Workbench](03_knowledge_graphs_and_ontologies/utopia.md)** | [deeplethe/utopia](https://github.com/deeplethe/utopia) | `1.3k+` | `#ontologies` `#world-model` `#rust` `#local-first` `#mcp` `#knowledge-graphs` |
 
@@ -86,7 +93,7 @@
 | 📄 **[Scientific Agent Skills (K-Dense AI: 165 научных навыков и 100+ баз)](04_scientific_research_and_discovery/scientific-agent-skills.md)** | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | `41.3k+` | `#ai-science` `#agent-skills` `#biology` `#chemistry` `#drug-discovery` `#pubmed` `#alphafold` |
 
 ### 🛡️ 05. Кибербезопасность, OSINT и тестирование барьеров
-*Агентные навыки реверс-инжиниринга и патчинга Android APK (APK-Reverse), AI-Native AppSec экосистема и MITM-прокси (Ghost Security: Reaper, Poltergeist, Wraith), анатомия ядра Linux и харденинг контейнеров (Linux Insides & NCC Group), шестифазный агентный аудит уязвимостей от Cloudflare (Security Audit Skill), архитектура доверенных вычислений агентов (TCB & Reference Monitor), headless security воркбенчи на Rust (HuntProxy), наступательные навыки (Claude-Red), агентные файрволы (Pipelock) и Egress Anti-SSRF (Smokescreen).*
+*Аппаратные микро-ВМ песочницы для кодинг-агентов (Coop от Trail of Bits), агентные навыки реверс-инжиниринга Android APK (APK-Reverse), AI-Native AppSec экосистема и MITM-прокси (Ghost Security: Reaper, Poltergeist, Wraith), анатомия ядра Linux и контейнеры (Linux Insides & NCC Group), шестифазный аудит уязвимостей от Cloudflare (Security Audit Skill), TCB & Reference Monitor, headless security воркбенчи (HuntProxy) и агентные файрволы (Pipelock).*
 
 | Заметка | Репозиторий | Звёзды | Теги |
 | :--- | :--- | :--- | :--- |
@@ -94,6 +101,7 @@
 | 📄 **[API Relay Audit: Локальный аудит безопасности LLM-прокси, API-релеев и подмены моделей](05_security_osint_and_guardrails/api-relay-audit.md)** | [toby-bridges/api-relay-audit](https://github.com/toby-bridges/api-relay-audit) | `820+` | `#llm-security` `#api-proxy` `#audit` `#prompt-injection` `#model-substitution` `#sse-anomalies` `#tool-call-tampering` |
 | 📄 **[APK-Reverse: Автоматизированный конвейер статического и динамического анализа безопасности Android APK](05_security_osint_and_guardrails/apk-reverse.md)** | [newliver666/apk-reverse](https://github.com/newliver666/apk-reverse) | `850+` | `#apk-reverse` `#android-security` `#reverse-engineering` `#decompilation` `#jadx` `#smali` `#static-analysis` `#secret-scanner` `#appsec` `#python` |
 | 📄 **[Claude-Red: Кураторская библиотека наступательных навыков (Offensive Security Skills) для Claude](05_security_osint_and_guardrails/claude-red.md)** | [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) | `3.7k+` | `#claude-skills` `#red-teaming` `#offensive-security` `#skill-md` `#prompt-engineering` `#pen-testing` `#exploit-development` `#edr-evasion` `#vulnerability-research` `#authorized-testing` |
+| 📄 **[Coop: Изолированная микро-ВМ песочница от Trail of Bits для безопасного запуска Claude Code и Codex](05_security_osint_and_guardrails/coop.md)** | [trailofbits/coop](https://github.com/trailofbits/coop) | `560+` | `#coop` `#trailofbits` `#agent-sandbox` `#microvm` `#isolation` `#security` `#claude-code` `#codex` `#rust` `#appsec` |
 | 📄 **[Ghost Security: Экосистема AI-Native AppSec инструментов и агентных MITM-прокси (Reaper, Poltergeist, Wraith)](05_security_osint_and_guardrails/ghost-security.md)** | [ghostsecurity](https://github.com/ghostsecurity) | `1.3k+ (всего)` | `#ghost-security` `#reaper` `#appsec` `#ai-agents` `#mitm-proxy` `#dast` `#sast` `#sca` `#mcp` `#claude-code` `#go` `#security-audit` |
 | 📄 **[GPT-5.6 Instruct: Red Teaming и стресс-тестирование агентных систем](05_security_osint_and_guardrails/gpt-5.6-instruct.md)** | [MDX-Tom/gpt-5.6-instruct](https://github.com/MDX-Tom/gpt-5.6-instruct) | `7.1k+` | `#security` `#red-teaming` `#guardrails` `#alignment` `#jailbreak-testing` `#codex-cli` |
 | 📄 **[HuntProxy: Headless перехватывающий веб-прокси и Security Workbench для AI-агентов на Rust](05_security_osint_and_guardrails/huntproxy.md)** | [BehiSecc/HuntProxy](https://github.com/BehiSecc/HuntProxy) | `175+` | `#huntproxy` `#rust` `#agent-proxy` `#mcp` `#security-workbench` `#burp-alternative` `#headless-browser` `#fuzzing` `#sitemap-discovery` `#web-security` `#ai-pentesting` |
@@ -106,18 +114,20 @@
 | 📄 **[User Scanner: Профессиональный OSINT-комбайн по Email и Никнеймам](05_security_osint_and_guardrails/user-scanner.md)** | [kaifcodec/user-scanner](https://github.com/kaifcodec/user-scanner) | `4.5k+` | `#osint` `#security` `#digital-footprint` `#email-recon` `#username-scanner` `#python` |
 
 ### ⚡ 06. Инструменты разработчика, архитектура и нативный софт
-*Курирование мирового Open Source и архитектурные дайджесты (RuanYF Weekly), высокопроизводительное распределенное S3 хранилище на Rust (RustFS), агентная автоматизация браузера без перехвата фокуса (Tencent BrowserSkill), визуальная архитектура распределенных систем (System Design 101), невидимые браузерные агенты с MCP (AIHawk), краулеры и экстракторы для LLM (Crawl4AI) и десктопные клиенты (Fastpotify).*
+*Визуальное архитектурное код-ревью AI-генераций (Whiteboard), сверхбыстрые дисковые анализаторы на Rust и GPUI (Disktree Тоби Лютке), курирование мирового Open Source (RuanYF Weekly), распределенные S3 хранилища на Rust (RustFS), браузерная автоматизация (Tencent BrowserSkill), системный дизайн (System Design 101) и краулеры для LLM (Crawl4AI).*
 
 | Заметка | Репозиторий | Звёзды | Теги |
 | :--- | :--- | :--- | :--- |
 | 📄 **[AIHawk: Скрытный антибот-браузер и агент веб-автоматизации с поддержкой MCP (Undetected Browsing)](06_developer_tools_and_apps/ai-hawk.md)** | [feder-cr/AIHawk](https://github.com/feder-cr/AIHawk) | `31.5k+` | `#ai-hawk` `#stealth-browser` `#anti-detect` `#anti-bot-bypass` `#mcp` `#browser-agent` `#web-automation` `#computer-use` `#playwright` `#cloudflare-bypass` `#python` |
 | 📄 **[Tencent BrowserSkill: Агентная автоматизация реального браузера без перехвата фокуса (Rust + Chromium Extension)](06_developer_tools_and_apps/browserskill.md)** | [Tencent/BrowserSkill](https://github.com/Tencent/BrowserSkill) | `2.8k+` | `#browserskill` `#tencent` `#browser-automation` `#browser-agent` `#rust` `#bsk-cli` `#chromium-extension` `#human-in-the-loop` `#tab-borrowing` `#claude-code` `#cursor` |
 | 📄 **[Crawl4AI: Высокопроизводительный открытый веб-краулер и парсер для LLM, RAG и AI-агентов](06_developer_tools_and_apps/crawl4ai.md)** | [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | `82.8k+` | `#crawl4ai` `#web-crawler` `#web-scraping` `#llm-ready` `#markdown` `#rag` `#ai-agents` `#playwright` `#structured-extraction` `#bm25` `#docker` |
+| 📄 **[Disktree: Сверхбыстрый визуализатор дискового пространства на Rust и движке GPUI от Тоби Лютке](06_developer_tools_and_apps/disktree.md)** | [tobi/disktree](https://github.com/tobi/disktree) | `660+` | `#disktree` `#tobi-lutke` `#rust` `#gpui` `#zed` `#disk-analyzer` `#treemap` `#system-tools` `#high-performance` |
 | 📄 **[Fastpotify: Нативный и молниеносный клиент Spotify на Rust](06_developer_tools_and_apps/fastpotify.md)** | [crmne/fastpotify](https://github.com/crmne/fastpotify) | `1.3k+` | `#rust` `#desktop-app` `#spotify` `#egui` `#librespot` `#audio-player` |
 | 📄 **[Obscura: Высокопроизводительный Headless-Браузер для AI-Агентов на Rust](06_developer_tools_and_apps/obscura.md)** | [h4ckf0r0day/obscura](https://github.com/h4ckf0r0day/obscura) | `23.3k+` | `#headless-browser` `#rust` `#anti-bot-bypass` `#accessibility-tree` `#web-scraping` |
 | 📄 **[RuanYF Weekly: Инженерный феномен технологического дайджеста открытого ПО (104k+ ★)](06_developer_tools_and_apps/ruanyf-weekly.md)** | [ruanyf/weekly](https://github.com/ruanyf/weekly) | `104k+` | `#ruanyf-weekly` `#tech-digest` `#open-source-curation` `#developer-tools` `#engineering-ecosystem` `#curated-list` `#community-driven` |
 | 📄 **[RustFS: Высокопроизводительное распределенное S3-совместимое объектное хранилище на Rust](06_developer_tools_and_apps/rustfs.md)** | [rustfs/rustfs](https://github.com/rustfs/rustfs) | `33.0k+` | `#rustfs` `#object-storage` `#s3-compatible` `#rust` `#distributed-systems` `#minio-alternative` `#iceberg` `#storage-engine` `#high-performance` |
 | 📄 **[System Design 101: Визуальная энциклопедия архитектуры распределенных систем (ByteByteGo)](06_developer_tools_and_apps/system-design-101.md)** | [ByteByteGoHq/system-design-101](https://github.com/ByteByteGoHq/system-design-101) | `88.6k+` | `#system-design` `#distributed-systems` `#architecture` `#microservices` `#databases` `#caching` `#bytebytego` `#visual-guide` |
+| 📄 **[Whiteboard: Интерактивный архитектурный холст для визуального код-ревью AI-генераций](06_developer_tools_and_apps/whiteboard.md)** | [devdotfast/whiteboard](https://github.com/devdotfast/whiteboard) | `1.1k+` | `#whiteboard` `#ai-code-review` `#code-diff` `#visual-architecture` `#pull-requests` `#claude-code` `#cursor` `#typescript` `#devtools` |
 
 ---
 
@@ -138,21 +148,24 @@
 * **`#agent-firewall`** (1): [Pipelock](05_security_osint_and_guardrails/pipelock.md)
 * **`#agent-harness`** (2): [Jev Ultrafast](02_agent_runtimes_and_harnesses/jev-ultrafast.md), [SoL-Pi](02_agent_runtimes_and_harnesses/sol-pi.md)
 * **`#agent-hybrid`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
-* **`#agent-memory`** (1): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md)
-* **`#agent-orchestration`** (2): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [Google AX](02_agent_runtimes_and_harnesses/google-ax.md)
+* **`#agent-memory`** (3): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md), [Reef](02_agent_runtimes_and_harnesses/reef.md)
+* **`#agent-orchestration`** (3): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [Google AX](02_agent_runtimes_and_harnesses/google-ax.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
 * **`#agent-proxy`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#agent-reach`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
-* **`#agent-runtime`** (2): [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md), [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)
-* **`#agent-sandbox`** (3): [Dormice](02_agent_runtimes_and_harnesses/dormice.md), [Monty](02_agent_runtimes_and_harnesses/monty.md), [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md)
+* **`#agent-runtime`** (3): [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md), [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md), [Univer](02_agent_runtimes_and_harnesses/univer.md)
+* **`#agent-sandbox`** (4): [Dormice](02_agent_runtimes_and_harnesses/dormice.md), [Monty](02_agent_runtimes_and_harnesses/monty.md), [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md), [Coop](05_security_osint_and_guardrails/coop.md)
 * **`#agent-security`** (3): [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md), [SkillSpector](05_security_osint_and_guardrails/skillspector.md), [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 * **`#agent-skills`** (4): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md), [Scientific Agent Skills (K-Dense AI](04_scientific_research_and_discovery/scientific-agent-skills.md), [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md)
 * **`#agent-substrate`** (1): [Google AX](02_agent_runtimes_and_harnesses/google-ax.md)
 * **`#agent-to-agent`** (1): [EnvoyMesh](02_agent_runtimes_and_harnesses/envoymesh.md)
+* **`#agent-workforce`** (1): [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
 * **`#agents`** (1): [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md)
+* **`#ai-agent`** (1): [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md)
 * **`#ai-agent-book`** (1): [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md)
 * **`#ai-agents`** (7): [LLM-Master](01_llm_architecture_and_training/llm-master.md), [Atlas](02_agent_runtimes_and_harnesses/atlas.md), [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md), [Learn Harness Engineering (Курс WalkingLabs](02_agent_runtimes_and_harnesses/learn-harness-engineering.md), [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Crawl4AI](06_developer_tools_and_apps/crawl4ai.md)
+* **`#ai-code-review`** (1): [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
 * **`#ai-coding`** (3): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [M3E Canvas](02_agent_runtimes_and_harnesses/m3e-canvas.md)
-* **`#ai-engineering`** (2): [Capstone Roadmap](00_strategy_and_roadmaps/capstone-engineering-roadmap.md), [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md)
+* **`#ai-engineering`** (3): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md), [Capstone Roadmap](00_strategy_and_roadmaps/capstone-engineering-roadmap.md), [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md)
 * **`#ai-hawk`** (1): [AIHawk](06_developer_tools_and_apps/ai-hawk.md)
 * **`#ai-infra-book`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
 * **`#ai-infrastructure`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
@@ -174,9 +187,9 @@
 * **`#apk-reverse`** (1): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md)
 * **`#apparmor`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#apple-silicon`** (1): [Kev](01_llm_architecture_and_training/kev.md)
-* **`#appsec`** (2): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
+* **`#appsec`** (3): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md), [Coop](05_security_osint_and_guardrails/coop.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
 * **`#architecture`** (1): [System Design 101](06_developer_tools_and_apps/system-design-101.md)
-* **`#arxiv`** (2): [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [PRAXIST](04_scientific_research_and_discovery/praxist.md)
+* **`#arxiv`** (3): [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [PRAXIST](04_scientific_research_and_discovery/praxist.md)
 * **`#ast-analysis`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
 * **`#ast-merge`** (1): [Atlas](02_agent_runtimes_and_harnesses/atlas.md)
 * **`#audio-player`** (1): [Fastpotify](06_developer_tools_and_apps/fastpotify.md)
@@ -200,27 +213,31 @@
 * **`#burp-alternative`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#bytebytego`** (1): [System Design 101](06_developer_tools_and_apps/system-design-101.md)
 * **`#caching`** (1): [System Design 101](06_developer_tools_and_apps/system-design-101.md)
-* **`#canvas`** (1): [M3E Canvas](02_agent_runtimes_and_harnesses/m3e-canvas.md)
+* **`#canvas`** (2): [M3E Canvas](02_agent_runtimes_and_harnesses/m3e-canvas.md), [Univer](02_agent_runtimes_and_harnesses/univer.md)
 * **`#capabilities`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#capstone-project`** (1): [Capstone Roadmap](00_strategy_and_roadmaps/capstone-engineering-roadmap.md)
+* **`#career-roadmap`** (1): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md)
 * **`#catalog`** (1): [Awesome-Jev](02_agent_runtimes_and_harnesses/awesome-jev.md)
+* **`#catastrophic-forgetting`** (1): [Reef](02_agent_runtimes_and_harnesses/reef.md)
 * **`#cgroups`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#chat-copilot`** (1): [Jev-Chat Jarvis](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md)
 * **`#chemistry`** (1): [Scientific Agent Skills (K-Dense AI](04_scientific_research_and_discovery/scientific-agent-skills.md)
 * **`#chromium-extension`** (1): [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
 * **`#citation-audit`** (1): [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md)
 * **`#citation-verification`** (1): [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md)
-* **`#claude-code`** (13): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md), [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md), [SkillSpector](05_security_osint_and_guardrails/skillspector.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
+* **`#claude-code`** (15): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md), [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [Coop](05_security_osint_and_guardrails/coop.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md), [SkillSpector](05_security_osint_and_guardrails/skillspector.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md), [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
 * **`#claude-skills`** (1): [Claude-Red](05_security_osint_and_guardrails/claude-red.md)
+* **`#clm`** (1): [CLM](01_llm_architecture_and_training/clm.md)
 * **`#cloudflare`** (1): [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md)
 * **`#cloudflare-bypass`** (1): [AIHawk](06_developer_tools_and_apps/ai-hawk.md)
 * **`#cluster-runtime`** (1): [Google AX](02_agent_runtimes_and_harnesses/google-ax.md)
 * **`#cncf`** (1): [Pipelock](05_security_osint_and_guardrails/pipelock.md)
+* **`#code-diff`** (1): [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
 * **`#code-execution`** (1): [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md)
 * **`#code-mode`** (1): [Monty](02_agent_runtimes_and_harnesses/monty.md)
 * **`#code-review`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
 * **`#code-search`** (1): [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md)
-* **`#codex`** (4): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md)
+* **`#codex`** (5): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md), [Coop](05_security_osint_and_guardrails/coop.md)
 * **`#codex-cli`** (1): [GPT-5.6 Instruct](05_security_osint_and_guardrails/gpt-5.6-instruct.md)
 * **`#coding-agents`** (2): [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md)
 * **`#community-driven`** (1): [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
@@ -230,12 +247,15 @@
 * **`#context-compression`** (1): [SoL-Pi](02_agent_runtimes_and_harnesses/sol-pi.md)
 * **`#context-engineering`** (2): [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md)
 * **`#context-handoff`** (1): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md)
+* **`#continual-learning`** (2): [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md), [Reef](02_agent_runtimes_and_harnesses/reef.md)
 * **`#continuous-evolution`** (1): [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md)
+* **`#contrastive-learning`** (1): [CLM](01_llm_architecture_and_training/clm.md)
+* **`#coop`** (1): [Coop](05_security_osint_and_guardrails/coop.md)
 * **`#copy-on-write`** (1): [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md)
 * **`#crawl4ai`** (1): [Crawl4AI](06_developer_tools_and_apps/crawl4ai.md)
 * **`#credential-offloading`** (1): [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)
-* **`#curated-list`** (2): [Awesome-Jev](02_agent_runtimes_and_harnesses/awesome-jev.md), [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
-* **`#cursor`** (7): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
+* **`#curated-list`** (3): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md), [Awesome-Jev](02_agent_runtimes_and_harnesses/awesome-jev.md), [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
+* **`#cursor`** (8): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md), [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
 * **`#dast`** (1): [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
 * **`#data-visualization`** (1): [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md)
 * **`#databases`** (1): [System Design 101](06_developer_tools_and_apps/system-design-101.md)
@@ -253,14 +273,18 @@
 * **`#desktop-app`** (1): [Fastpotify](06_developer_tools_and_apps/fastpotify.md)
 * **`#deterministic-engineering`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
 * **`#developer-tools`** (1): [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
+* **`#devtools`** (1): [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
 * **`#diagrams`** (1): [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md)
 * **`#digital-footprint`** (1): [User Scanner](05_security_osint_and_guardrails/user-scanner.md)
 * **`#direct-logits`** (2): [Laya](01_llm_architecture_and_training/laya.md), [OpenJev](01_llm_architecture_and_training/openjev.md)
+* **`#disk-analyzer`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
+* **`#disktree`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
 * **`#distributed-inference`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
 * **`#distributed-systems`** (2): [RustFS](06_developer_tools_and_apps/rustfs.md), [System Design 101](06_developer_tools_and_apps/system-design-101.md)
 * **`#distributed-training`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
 * **`#dns-rebinding`** (1): [Smokescreen](05_security_osint_and_guardrails/smokescreen.md)
 * **`#docker`** (2): [Dormice](02_agent_runtimes_and_harnesses/dormice.md), [Crawl4AI](06_developer_tools_and_apps/crawl4ai.md)
+* **`#docs`** (1): [Univer](02_agent_runtimes_and_harnesses/univer.md)
 * **`#dpo`** (2): [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [MiniMind](01_llm_architecture_and_training/minimind.md)
 * **`#drug-discovery`** (1): [Scientific Agent Skills (K-Dense AI](04_scientific_research_and_discovery/scientific-agent-skills.md)
 * **`#e2b-compatible`** (1): [Dormice](02_agent_runtimes_and_harnesses/dormice.md)
@@ -272,13 +296,17 @@
 * **`#egress-proxy`** (1): [Smokescreen](05_security_osint_and_guardrails/smokescreen.md)
 * **`#egui`** (1): [Fastpotify](06_developer_tools_and_apps/fastpotify.md)
 * **`#email-recon`** (1): [User Scanner](05_security_osint_and_guardrails/user-scanner.md)
+* **`#embeddings`** (1): [CLM](01_llm_architecture_and_training/clm.md)
 * **`#engineering-ecosystem`** (1): [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
-* **`#enterprise-ai`** (1): [Google AX](02_agent_runtimes_and_harnesses/google-ax.md)
+* **`#enterprise-ai`** (2): [Google AX](02_agent_runtimes_and_harnesses/google-ax.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
+* **`#enterprise-data`** (1): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md)
 * **`#enterprise-guardrails`** (1): [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md)
 * **`#envoymesh`** (1): [EnvoyMesh](02_agent_runtimes_and_harnesses/envoymesh.md)
+* **`#episodic-memory`** (1): [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md)
 * **`#evenfire`** (1): [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md)
 * **`#evidence-ledger`** (1): [PRAXIST](04_scientific_research_and_discovery/praxist.md)
 * **`#evolutionary-search`** (1): [PRAXIST](04_scientific_research_and_discovery/praxist.md)
+* **`#experience-replay`** (1): [Reef](02_agent_runtimes_and_harnesses/reef.md)
 * **`#experiment-tracking`** (1): [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md)
 * **`#exploit-development`** (1): [Claude-Red](05_security_osint_and_guardrails/claude-red.md)
 * **`#fail-closed`** (1): [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
@@ -295,23 +323,30 @@
 * **`#github`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
 * **`#go`** (5): [Google AX](02_agent_runtimes_and_harnesses/google-ax.md), [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Pipelock](05_security_osint_and_guardrails/pipelock.md), [Smokescreen](05_security_osint_and_guardrails/smokescreen.md)
 * **`#google-ax`** (1): [Google AX](02_agent_runtimes_and_harnesses/google-ax.md)
+* **`#gpui`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
+* **`#graph-database`** (1): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md)
 * **`#grpo`** (2): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [Reasoning from Scratch (Себастьян Рашка](01_llm_architecture_and_training/reasoning-from-scratch.md)
 * **`#guardrails`** (2): [CL4R1T4S](05_security_osint_and_guardrails/CL4R1T4S.md), [GPT-5.6 Instruct](05_security_osint_and_guardrails/gpt-5.6-instruct.md)
 * **`#gvisor`** (1): [Dormice](02_agent_runtimes_and_harnesses/dormice.md)
 * **`#hardware-constraints`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
 * **`#harness-engineering`** (2): [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md), [Learn Harness Engineering (Курс WalkingLabs](02_agent_runtimes_and_harnesses/learn-harness-engineering.md)
 * **`#headless-browser`** (2): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md), [Obscura](06_developer_tools_and_apps/obscura.md)
-* **`#high-performance`** (2): [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md), [RustFS](06_developer_tools_and_apps/rustfs.md)
+* **`#high-performance`** (3): [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md), [Disktree](06_developer_tools_and_apps/disktree.md), [RustFS](06_developer_tools_and_apps/rustfs.md)
+* **`#hindsight`** (1): [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md)
 * **`#html`** (1): [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md)
+* **`#human-agent-society`** (1): [Reef](02_agent_runtimes_and_harnesses/reef.md)
 * **`#human-in-the-loop`** (1): [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
 * **`#huntproxy`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#hybrid-search`** (1): [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md)
+* **`#hydradb`** (1): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md)
 * **`#iceberg`** (1): [RustFS](06_developer_tools_and_apps/rustfs.md)
 * **`#idle-zero-cost`** (1): [Dormice](02_agent_runtimes_and_harnesses/dormice.md)
 * **`#inference-optimization`** (2): [Laya](01_llm_architecture_and_training/laya.md), [OpenJev](01_llm_architecture_and_training/openjev.md)
 * **`#inference-scaling`** (1): [Reasoning from Scratch (Себастьян Рашка](01_llm_architecture_and_training/reasoning-from-scratch.md)
+* **`#infonce`** (1): [CLM](01_llm_architecture_and_training/clm.md)
 * **`#interactive-learning`** (1): [OpenMAIC](02_agent_runtimes_and_harnesses/openmaic.md)
-* **`#interview-prep`** (1): [LLM-Master](01_llm_architecture_and_training/llm-master.md)
+* **`#interview-prep`** (2): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md)
+* **`#isolation`** (1): [Coop](05_security_osint_and_guardrails/coop.md)
 * **`#jadx`** (1): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md)
 * **`#jailbreak-analysis`** (1): [CL4R1T4S](05_security_osint_and_guardrails/CL4R1T4S.md)
 * **`#jailbreak-testing`** (1): [GPT-5.6 Instruct](05_security_osint_and_guardrails/gpt-5.6-instruct.md)
@@ -323,7 +358,7 @@
 * **`#jupyter`** (1): [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md)
 * **`#kernel-hardening`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#kev`** (1): [Kev](01_llm_architecture_and_training/kev.md)
-* **`#knowledge-graphs`** (2): [Semantica AGI](03_knowledge_graphs_and_ontologies/semantica.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md)
+* **`#knowledge-graphs`** (3): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md), [Semantica AGI](03_knowledge_graphs_and_ontologies/semantica.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md)
 * **`#knowledge-vault`** (1): [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md)
 * **`#kotlin`** (1): [Jev-Chat Jarvis](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md)
 * **`#kubernetes-for-agents`** (1): [Google AX](02_agent_runtimes_and_harnesses/google-ax.md)
@@ -338,6 +373,7 @@
 * **`#linux-insides`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#linux-kernel`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#llm`** (3): [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [MiniMind](01_llm_architecture_and_training/minimind.md)
+* **`#llm-infra`** (1): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md)
 * **`#llm-master`** (1): [LLM-Master](01_llm_architecture_and_training/llm-master.md)
 * **`#llm-ready`** (1): [Crawl4AI](06_developer_tools_and_apps/crawl4ai.md)
 * **`#llm-roadmap`** (1): [LLM-Master](01_llm_architecture_and_training/llm-master.md)
@@ -358,12 +394,13 @@
 * **`#micro-runtime`** (1): [Monty](02_agent_runtimes_and_harnesses/monty.md)
 * **`#micro-vm`** (2): [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md), [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md)
 * **`#microservices`** (1): [System Design 101](06_developer_tools_and_apps/system-design-101.md)
+* **`#microvm`** (1): [Coop](05_security_osint_and_guardrails/coop.md)
 * **`#minio-alternative`** (1): [RustFS](06_developer_tools_and_apps/rustfs.md)
 * **`#mitm-proxy`** (1): [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
 * **`#mlx`** (1): [Kev](01_llm_architecture_and_training/kev.md)
 * **`#mobile-agent`** (1): [Jev-Chat Jarvis](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md)
 * **`#model-substitution`** (1): [API Relay Audit](05_security_osint_and_guardrails/api-relay-audit.md)
-* **`#multi-agent`** (2): [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md), [OpenMAIC](02_agent_runtimes_and_harnesses/openmaic.md)
+* **`#multi-agent`** (3): [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md), [OpenMAIC](02_agent_runtimes_and_harnesses/openmaic.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
 * **`#multi-platform`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
 * **`#multilingual-ai`** (1): [Laya](01_llm_architecture_and_training/laya.md)
 * **`#namespaces`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
@@ -373,14 +410,16 @@
 * **`#non-autoregressive`** (2): [Laya](01_llm_architecture_and_training/laya.md), [Awesome-Jev](02_agent_runtimes_and_harnesses/awesome-jev.md)
 * **`#non-invasive`** (1): [Jev-Chat Jarvis](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md)
 * **`#nvidia`** (2): [SoL-Pi](02_agent_runtimes_and_harnesses/sol-pi.md), [SkillSpector](05_security_osint_and_guardrails/skillspector.md)
-* **`#object-storage`** (1): [RustFS](06_developer_tools_and_apps/rustfs.md)
+* **`#object-storage`** (2): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md), [RustFS](06_developer_tools_and_apps/rustfs.md)
 * **`#observation-pack`** (1): [SoL-Pi](02_agent_runtimes_and_harnesses/sol-pi.md)
 * **`#oci`** (1): [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md)
 * **`#offensive-security`** (1): [Claude-Red](05_security_osint_and_guardrails/claude-red.md)
+* **`#office-harness`** (1): [Univer](02_agent_runtimes_and_harnesses/univer.md)
 * **`#ontologies`** (1): [Utopia](03_knowledge_graphs_and_ontologies/utopia.md)
 * **`#open-code-review`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
 * **`#open-source-book`** (2): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md), [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md)
 * **`#open-source-curation`** (1): [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
+* **`#opencypher`** (1): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md)
 * **`#openjev`** (1): [OpenJev](01_llm_architecture_and_training/openjev.md)
 * **`#openresearch`** (1): [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md)
 * **`#openspec`** (1): [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md)
@@ -388,6 +427,8 @@
 * **`#orx-cli`** (1): [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md)
 * **`#osint`** (1): [User Scanner](05_security_osint_and_guardrails/user-scanner.md)
 * **`#p2p-mesh`** (1): [EnvoyMesh](02_agent_runtimes_and_harnesses/envoymesh.md)
+* **`#paperclip`** (1): [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
+* **`#pdf`** (1): [Univer](02_agent_runtimes_and_harnesses/univer.md)
 * **`#peer-review`** (2): [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md)
 * **`#peer-to-peer`** (1): [EnvoyMesh](02_agent_runtimes_and_harnesses/envoymesh.md)
 * **`#pen-testing`** (1): [Claude-Red](05_security_osint_and_guardrails/claude-red.md)
@@ -403,23 +444,26 @@
 * **`#prototyping`** (1): [M3E Canvas](02_agent_runtimes_and_harnesses/m3e-canvas.md)
 * **`#prov-o`** (1): [Semantica AGI](03_knowledge_graphs_and_ontologies/semantica.md)
 * **`#pubmed`** (1): [Scientific Agent Skills (K-Dense AI](04_scientific_research_and_discovery/scientific-agent-skills.md)
+* **`#pull-requests`** (1): [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
 * **`#pydantic`** (1): [Monty](02_agent_runtimes_and_harnesses/monty.md)
-* **`#python`** (7): [Kev](01_llm_architecture_and_training/kev.md), [Laya](01_llm_architecture_and_training/laya.md), [OpenJev](01_llm_architecture_and_training/openjev.md), [Jev Ultrafast](02_agent_runtimes_and_harnesses/jev-ultrafast.md), [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md), [User Scanner](05_security_osint_and_guardrails/user-scanner.md), [AIHawk](06_developer_tools_and_apps/ai-hawk.md)
+* **`#python`** (10): [CLM](01_llm_architecture_and_training/clm.md), [Kev](01_llm_architecture_and_training/kev.md), [Laya](01_llm_architecture_and_training/laya.md), [OpenJev](01_llm_architecture_and_training/openjev.md), [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md), [Jev Ultrafast](02_agent_runtimes_and_harnesses/jev-ultrafast.md), [Reef](02_agent_runtimes_and_harnesses/reef.md), [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md), [User Scanner](05_security_osint_and_guardrails/user-scanner.md), [AIHawk](06_developer_tools_and_apps/ai-hawk.md)
 * **`#python-interpreter`** (1): [Monty](02_agent_runtimes_and_harnesses/monty.md)
-* **`#pytorch`** (4): [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [Kev](01_llm_architecture_and_training/kev.md), [MiniMind](01_llm_architecture_and_training/minimind.md), [OpenJev](01_llm_architecture_and_training/openjev.md)
+* **`#pytorch`** (5): [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [CLM](01_llm_architecture_and_training/clm.md), [Kev](01_llm_architecture_and_training/kev.md), [MiniMind](01_llm_architecture_and_training/minimind.md), [OpenJev](01_llm_architecture_and_training/openjev.md)
 * **`#quantization`** (1): [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md)
 * **`#qwen`** (2): [Kev](01_llm_architecture_and_training/kev.md), [OpenJev](01_llm_architecture_and_training/openjev.md)
 * **`#r-and-d`** (1): [PRAXIST](04_scientific_research_and_discovery/praxist.md)
-* **`#rag`** (3): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md), [Crawl4AI](06_developer_tools_and_apps/crawl4ai.md)
+* **`#rag`** (5): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md), [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [CLM](01_llm_architecture_and_training/clm.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md), [Crawl4AI](06_developer_tools_and_apps/crawl4ai.md)
 * **`#rbac`** (1): [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md)
 * **`#rdma`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
-* **`#react`** (1): [M3E Canvas](02_agent_runtimes_and_harnesses/m3e-canvas.md)
+* **`#react`** (2): [M3E Canvas](02_agent_runtimes_and_harnesses/m3e-canvas.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
 * **`#reaper`** (1): [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
 * **`#reasoning`** (1): [Reasoning from Scratch (Себастьян Рашка](01_llm_architecture_and_training/reasoning-from-scratch.md)
 * **`#red-teaming`** (3): [CL4R1T4S](05_security_osint_and_guardrails/CL4R1T4S.md), [Claude-Red](05_security_osint_and_guardrails/claude-red.md), [GPT-5.6 Instruct](05_security_osint_and_guardrails/gpt-5.6-instruct.md)
 * **`#reddit`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
+* **`#reef`** (1): [Reef](02_agent_runtimes_and_harnesses/reef.md)
 * **`#reference-monitor`** (1): [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 * **`#reinforcement-learning`** (1): [Reasoning from Scratch (Себастьян Рашка](01_llm_architecture_and_training/reasoning-from-scratch.md)
+* **`#representation-learning`** (1): [CLM](01_llm_architecture_and_training/clm.md)
 * **`#reproducible-research`** (1): [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md)
 * **`#research-agents`** (1): [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md)
 * **`#rete`** (1): [Semantica AGI](03_knowledge_graphs_and_ontologies/semantica.md)
@@ -430,9 +474,10 @@
 * **`#roadmap`** (1): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md)
 * **`#roofline-model`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
 * **`#ruanyf-weekly`** (1): [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
-* **`#rust`** (12): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md), [Atlas](02_agent_runtimes_and_harnesses/atlas.md), [Monty](02_agent_runtimes_and_harnesses/monty.md), [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [HuntProxy](05_security_osint_and_guardrails/huntproxy.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md), [Fastpotify](06_developer_tools_and_apps/fastpotify.md), [Obscura](06_developer_tools_and_apps/obscura.md), [RustFS](06_developer_tools_and_apps/rustfs.md)
+* **`#rust`** (15): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md), [Atlas](02_agent_runtimes_and_harnesses/atlas.md), [Monty](02_agent_runtimes_and_harnesses/monty.md), [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md), [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [Coop](05_security_osint_and_guardrails/coop.md), [HuntProxy](05_security_osint_and_guardrails/huntproxy.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md), [Disktree](06_developer_tools_and_apps/disktree.md), [Fastpotify](06_developer_tools_and_apps/fastpotify.md), [Obscura](06_developer_tools_and_apps/obscura.md), [RustFS](06_developer_tools_and_apps/rustfs.md)
 * **`#rustfs`** (1): [RustFS](06_developer_tools_and_apps/rustfs.md)
 * **`#s3-compatible`** (1): [RustFS](06_developer_tools_and_apps/rustfs.md)
+* **`#s3-storage`** (1): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md)
 * **`#sandboxing`** (5): [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md), [Google AX](02_agent_runtimes_and_harnesses/google-ax.md), [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md), [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md), [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 * **`#sarif`** (1): [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md)
 * **`#sast`** (1): [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
@@ -443,21 +488,22 @@
 * **`#seccomp-bpf`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#secret-broker`** (1): [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 * **`#secret-scanner`** (1): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md)
-* **`#security`** (4): [Monty](02_agent_runtimes_and_harnesses/monty.md), [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md), [GPT-5.6 Instruct](05_security_osint_and_guardrails/gpt-5.6-instruct.md), [User Scanner](05_security_osint_and_guardrails/user-scanner.md)
+* **`#security`** (5): [Monty](02_agent_runtimes_and_harnesses/monty.md), [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md), [Coop](05_security_osint_and_guardrails/coop.md), [GPT-5.6 Instruct](05_security_osint_and_guardrails/gpt-5.6-instruct.md), [User Scanner](05_security_osint_and_guardrails/user-scanner.md)
 * **`#security-audit`** (2): [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md)
 * **`#security-audit-skill`** (1): [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md)
 * **`#security-rules`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
 * **`#security-workbench`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
-* **`#self-hosted`** (2): [Dormice](02_agent_runtimes_and_harnesses/dormice.md), [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md)
+* **`#self-hosted`** (3): [Dormice](02_agent_runtimes_and_harnesses/dormice.md), [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
 * **`#self-sovereign-identity`** (1): [EnvoyMesh](02_agent_runtimes_and_harnesses/envoymesh.md)
 * **`#selinux`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
-* **`#semantic-search`** (1): [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md)
+* **`#semantic-search`** (2): [CLM](01_llm_architecture_and_training/clm.md), [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md)
 * **`#sft`** (2): [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [MiniMind](01_llm_architecture_and_training/minimind.md)
 * **`#shacl`** (1): [Semantica AGI](03_knowledge_graphs_and_ontologies/semantica.md)
 * **`#sitemap-discovery`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#skill-md`** (1): [Claude-Red](05_security_osint_and_guardrails/claude-red.md)
 * **`#skill-registry`** (1): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md)
 * **`#skill-scanner`** (1): [SkillSpector](05_security_osint_and_guardrails/skillspector.md)
+* **`#slides`** (1): [Univer](02_agent_runtimes_and_harnesses/univer.md)
 * **`#smali`** (1): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md)
 * **`#snyk-agent-scan`** (1): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md)
 * **`#socratic-planning`** (1): [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md)
@@ -466,6 +512,7 @@
 * **`#spec-driven-development`** (1): [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md)
 * **`#specs`** (1): [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md)
 * **`#spotify`** (1): [Fastpotify](06_developer_tools_and_apps/fastpotify.md)
+* **`#spreadsheets`** (1): [Univer](02_agent_runtimes_and_harnesses/univer.md)
 * **`#sse-anomalies`** (1): [API Relay Audit](05_security_osint_and_guardrails/api-relay-audit.md)
 * **`#ssi`** (1): [EnvoyMesh](02_agent_runtimes_and_harnesses/envoymesh.md)
 * **`#ssrf-prevention`** (3): [Pipelock](05_security_osint_and_guardrails/pipelock.md), [Smokescreen](05_security_osint_and_guardrails/smokescreen.md), [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
@@ -481,36 +528,44 @@
 * **`#system-1`** (3): [Awesome-Jev](02_agent_runtimes_and_harnesses/awesome-jev.md), [Jev-Chat Jarvis](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md), [Jev Ultrafast](02_agent_runtimes_and_harnesses/jev-ultrafast.md)
 * **`#system-1-models`** (3): [Kev](01_llm_architecture_and_training/kev.md), [Laya](01_llm_architecture_and_training/laya.md), [OpenJev](01_llm_architecture_and_training/openjev.md)
 * **`#system-architecture`** (1): [Capstone Roadmap](00_strategy_and_roadmaps/capstone-engineering-roadmap.md)
-* **`#system-design`** (3): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md), [System Design 101](06_developer_tools_and_apps/system-design-101.md)
+* **`#system-design`** (4): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md), [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md), [System Design 101](06_developer_tools_and_apps/system-design-101.md)
 * **`#system-prompts`** (1): [CL4R1T4S](05_security_osint_and_guardrails/CL4R1T4S.md)
+* **`#system-tools`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
 * **`#tab-borrowing`** (1): [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
 * **`#tcb`** (3): [Pipelock](05_security_osint_and_guardrails/pipelock.md), [Smokescreen](05_security_osint_and_guardrails/smokescreen.md), [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 * **`#tech-digest`** (1): [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
 * **`#tencent`** (1): [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
+* **`#tobi-lutke`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
 * **`#token-diet`** (1): [SoL-Pi](02_agent_runtimes_and_harnesses/sol-pi.md)
 * **`#token-efficiency`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
 * **`#tool-broker`** (1): [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)
 * **`#tool-call-tampering`** (1): [API Relay Audit](05_security_osint_and_guardrails/api-relay-audit.md)
 * **`#tool-gateway`** (1): [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)
 * **`#tool-rag`** (1): [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)
+* **`#trailofbits`** (1): [Coop](05_security_osint_and_guardrails/coop.md)
+* **`#trajectory-logging`** (1): [Reef](02_agent_runtimes_and_harnesses/reef.md)
 * **`#transformers`** (3): [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md)
 * **`#transparency`** (1): [CL4R1T4S](05_security_osint_and_guardrails/CL4R1T4S.md)
 * **`#tree-sitter`** (1): [Atlas](02_agent_runtimes_and_harnesses/atlas.md)
+* **`#treemap`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
 * **`#trusted-computing-base`** (1): [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 * **`#twitter`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
 * **`#typed-decisions`** (1): [Laya](01_llm_architecture_and_training/laya.md)
-* **`#typescript`** (6): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [Dormice](02_agent_runtimes_and_harnesses/dormice.md), [EnvoyMesh](02_agent_runtimes_and_harnesses/envoymesh.md), [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md), [OpenMAIC](02_agent_runtimes_and_harnesses/openmaic.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md)
+* **`#typescript`** (9): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [Dormice](02_agent_runtimes_and_harnesses/dormice.md), [EnvoyMesh](02_agent_runtimes_and_harnesses/envoymesh.md), [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md), [OpenMAIC](02_agent_runtimes_and_harnesses/openmaic.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md), [Univer](02_agent_runtimes_and_harnesses/univer.md), [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
+* **`#ui-components`** (1): [Univer](02_agent_runtimes_and_harnesses/univer.md)
 * **`#ui-ux`** (2): [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [M3E Canvas](02_agent_runtimes_and_harnesses/m3e-canvas.md)
 * **`#ultrafast`** (1): [Jev Ultrafast](02_agent_runtimes_and_harnesses/jev-ultrafast.md)
+* **`#univer`** (1): [Univer](02_agent_runtimes_and_harnesses/univer.md)
 * **`#username-scanner`** (1): [User Scanner](05_security_osint_and_guardrails/user-scanner.md)
 * **`#ux`** (1): [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md)
 * **`#vcs`** (1): [Atlas](02_agent_runtimes_and_harnesses/atlas.md)
-* **`#vector-search`** (1): [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md)
+* **`#vector-search`** (2): [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md), [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md)
 * **`#verified-skills`** (1): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md)
 * **`#vibe-coding`** (1): [M3E Canvas](02_agent_runtimes_and_harnesses/m3e-canvas.md)
 * **`#virtualization`** (1): [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md)
+* **`#visual-architecture`** (1): [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
 * **`#visual-guide`** (1): [System Design 101](06_developer_tools_and_apps/system-design-101.md)
-* **`#vllm`** (4): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md)
+* **`#vllm`** (5): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md), [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md)
 * **`#vulnerability-assessment`** (1): [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md)
 * **`#vulnerability-research`** (1): [Claude-Red](05_security_osint_and_guardrails/claude-red.md)
 * **`#web-automation`** (2): [Jev Ultrafast](02_agent_runtimes_and_harnesses/jev-ultrafast.md), [AIHawk](06_developer_tools_and_apps/ai-hawk.md)
@@ -518,11 +573,13 @@
 * **`#web-scraping`** (4): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md), [Crawl4AI](06_developer_tools_and_apps/crawl4ai.md), [Obscura](06_developer_tools_and_apps/obscura.md)
 * **`#web-security`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#webrtc`** (1): [OpenMAIC](02_agent_runtimes_and_harnesses/openmaic.md)
-* **`#workflow-automation`** (1): [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md)
+* **`#whiteboard`** (1): [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
+* **`#workflow-automation`** (2): [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
 * **`#world-model`** (1): [Utopia](03_knowledge_graphs_and_ontologies/utopia.md)
 * **`#youtube`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
+* **`#zed`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
 * **`#zero-api-fees`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
 * **`#zero-trust`** (1): [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 
 ---
-*Сгенерировано автоматически: 2026-09-22 | Antigravity Knowledge Base*
+*Сгенерировано автоматически: 2026-09-25 | Antigravity Knowledge Base*
