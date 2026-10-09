@@ -103,7 +103,7 @@
 | 📄 **[Scientific Agent Skills (K-Dense AI: 165 научных навыков и 100+ баз)](04_scientific_research_and_discovery/scientific-agent-skills.md)** | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | `41.3k+` | `#ai-science` `#agent-skills` `#biology` `#chemistry` `#drug-discovery` `#pubmed` `#alphafold` |
 
 ### 🛡️ 05. Кибербезопасность, OSINT и тестирование барьеров
-*Дорожные карты наступательной безопасности AI/ML, Prompt Injection и MCP (AI-ML Pentest Roadmap Анмола Сачана), безопасный рантайм ядра и формальная верификация политик агентов от NVIDIA (OpenShell), энциклопедия прокси, туннелей и механизмов обхода DPI/GFW (FQ-Book), аппаратные микро-ВМ песочницы для кодинг-агентов (Coop от Trail of Bits), агентные навыки реверс-инжиниринга Android APK (APK-Reverse), AI-Native AppSec экосистема и MITM-прокси (Ghost Security: Reaper, Poltergeist, Wraith), анатомия ядра Linux и контейнеры (Linux Insides & NCC Group), шестифазный аудит уязвимостей от Cloudflare (Security Audit Skill), TCB & Reference Monitor, headless security воркбенчи (HuntProxy) и агентные файрволы (Pipelock).*
+*Автономный агентный пентестинг и шлюзы согласования Human-in-the-Loop (ARTEX), дорожные карты наступательной безопасности AI/ML, Prompt Injection и MCP (AI-ML Pentest Roadmap Анмола Сачана), безопасный рантайм ядра и формальная верификация политик агентов от NVIDIA (OpenShell), энциклопедия прокси, туннелей и механизмов обхода DPI/GFW (FQ-Book), аппаратные микро-ВМ песочницы для кодинг-агентов (Coop от Trail of Bits), агентные навыки реверс-инжиниринга Android APK (APK-Reverse), AI-Native AppSec экосистема и MITM-прокси (Ghost Security: Reaper, Poltergeist, Wraith), анатомия ядра Linux и контейнеры (Linux Insides & NCC Group), шестифазный аудит уязвимостей от Cloudflare (Security Audit Skill), TCB & Reference Monitor, headless security воркбенчи (HuntProxy) и агентные файрволы (Pipelock).*
 
 | Заметка | Репозиторий | Звёзды | Теги |
 | :--- | :--- | :--- | :--- |
@@ -111,6 +111,7 @@
 | 📄 **[AI/ML Pentesting Roadmap (2026 Edition): Руководство по тестированию на проникновение в LLM, Agentic AI, MCP и RAG](05_security_osint_and_guardrails/ai-ml-pentest-roadmap.md)** | [anmolksachan/AI-ML-Free-Resources-for-Security-and-Prompt-Injection](https://github.com/anmolksachan/AI-ML-Free-Resources-for-Security-and-Prompt-Injection) | `800+` | `#ai-ml-pentest` `#prompt-injection` `#agentic-security` `#mcp-security` `#rag-poisoning` `#owasp-llm` `#owasp-agentic` `#offensive-ai` `#red-teaming` `#bug-bounty` |
 | 📄 **[API Relay Audit: Локальный аудит безопасности LLM-прокси, API-релеев и подмены моделей](05_security_osint_and_guardrails/api-relay-audit.md)** | [toby-bridges/api-relay-audit](https://github.com/toby-bridges/api-relay-audit) | `820+` | `#llm-security` `#api-proxy` `#audit` `#prompt-injection` `#model-substitution` `#sse-anomalies` `#tool-call-tampering` |
 | 📄 **[APK-Reverse: Автоматизированный конвейер статического и динамического анализа безопасности Android APK](05_security_osint_and_guardrails/apk-reverse.md)** | [newliver666/apk-reverse](https://github.com/newliver666/apk-reverse) | `850+` | `#apk-reverse` `#android-security` `#reverse-engineering` `#decompilation` `#jadx` `#smali` `#static-analysis` `#secret-scanner` `#appsec` `#python` |
+| 📄 **[ARTEX: Автономная AI-система этичного хакинга и пентестинга с Human-in-the-Loop контролем (Baidu Challenge Winner)](05_security_osint_and_guardrails/artex.md)** | [mhtsec/ARTEX](https://github.com/mhtsec/ARTEX) | `1.9k+` | `#artex` `#ai-pentesting` `#offensive-security` `#human-in-the-loop` `#scopesentry` `#mcp` `#attack-graph` `#traffic-evidence` `#go` `#nextjs` `#security-guardrails` |
 | 📄 **[Claude-Red: Кураторская библиотека наступательных навыков (Offensive Security Skills) для Claude](05_security_osint_and_guardrails/claude-red.md)** | [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) | `3.7k+` | `#claude-skills` `#red-teaming` `#offensive-security` `#skill-md` `#prompt-engineering` `#pen-testing` `#exploit-development` `#edr-evasion` `#vulnerability-research` `#authorized-testing` |
 | 📄 **[Coop: Изолированная микро-ВМ песочница от Trail of Bits для безопасного запуска Claude Code и Codex](05_security_osint_and_guardrails/coop.md)** | [trailofbits/coop](https://github.com/trailofbits/coop) | `560+` | `#coop` `#trailofbits` `#agent-sandbox` `#microvm` `#isolation` `#security` `#claude-code` `#codex` `#rust` `#appsec` |
 | 📄 **[FQ-Book: Фундаментальная энциклопедия сетевых прокси, туннелей, VPN и механизмов цензуры GFW](05_security_osint_and_guardrails/fq-book.md)** | [hoochanlon/fq-book](https://github.com/hoochanlon/fq-book) | `6.8k+` | `#fq-book` `#network-security` `#proxy` `#vpn` `#shadowsocks` `#v2ray` `#gfw` `#tcp-rst` `#dns-poisoning` `#ipfs` `#anti-censorship` `#wireguard` |
@@ -192,7 +193,7 @@
 * **`#ai-infrastructure`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
 * **`#ai-memory`** (1): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md)
 * **`#ai-ml-pentest`** (1): [AI/ML Pentesting Roadmap (2026 Edition)](05_security_osint_and_guardrails/ai-ml-pentest-roadmap.md)
-* **`#ai-pentesting`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
+* **`#ai-pentesting`** (2): [ARTEX](05_security_osint_and_guardrails/artex.md), [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#ai-science`** (1): [Scientific Agent Skills (K-Dense AI](04_scientific_research_and_discovery/scientific-agent-skills.md)
 * **`#ai-security`** (1): [CL4R1T4S](05_security_osint_and_guardrails/CL4R1T4S.md)
 * **`#alex-xu`** (1): [System Design Notes](00_strategy_and_roadmaps/system-design-notes.md)
@@ -215,9 +216,11 @@
 * **`#apple-silicon`** (1): [Kev](01_llm_architecture_and_training/kev.md)
 * **`#appsec`** (3): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md), [Coop](05_security_osint_and_guardrails/coop.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
 * **`#architecture`** (2): [System Design Notes](00_strategy_and_roadmaps/system-design-notes.md), [System Design 101](06_developer_tools_and_apps/system-design-101.md)
+* **`#artex`** (1): [ARTEX](05_security_osint_and_guardrails/artex.md)
 * **`#arxiv`** (3): [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [PRAXIST](04_scientific_research_and_discovery/praxist.md)
 * **`#ast-analysis`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
 * **`#ast-merge`** (1): [Atlas](02_agent_runtimes_and_harnesses/atlas.md)
+* **`#attack-graph`** (1): [ARTEX](05_security_osint_and_guardrails/artex.md)
 * **`#audio-player`** (1): [Fastpotify](06_developer_tools_and_apps/fastpotify.md)
 * **`#audit`** (1): [API Relay Audit](05_security_osint_and_guardrails/api-relay-audit.md)
 * **`#audit-harness`** (1): [Learn Harness Engineering (Курс WalkingLabs](02_agent_runtimes_and_harnesses/learn-harness-engineering.md)
@@ -371,7 +374,7 @@
 * **`#git-integration`** (1): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md)
 * **`#git-worktrees`** (1): [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md)
 * **`#github`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
-* **`#go`** (6): [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [Google AX](02_agent_runtimes_and_harnesses/google-ax.md), [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Pipelock](05_security_osint_and_guardrails/pipelock.md), [Smokescreen](05_security_osint_and_guardrails/smokescreen.md)
+* **`#go`** (7): [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [Google AX](02_agent_runtimes_and_harnesses/google-ax.md), [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md), [ARTEX](05_security_osint_and_guardrails/artex.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Pipelock](05_security_osint_and_guardrails/pipelock.md), [Smokescreen](05_security_osint_and_guardrails/smokescreen.md)
 * **`#google-ax`** (2): [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [Google AX](02_agent_runtimes_and_harnesses/google-ax.md)
 * **`#gpui`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
 * **`#graph-database`** (1): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md)
@@ -387,7 +390,7 @@
 * **`#html`** (1): [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md)
 * **`#html-reporting`** (1): [Answer Me with HTML](02_agent_runtimes_and_harnesses/answer-me-with-html.md)
 * **`#human-agent-society`** (1): [Reef](02_agent_runtimes_and_harnesses/reef.md)
-* **`#human-in-the-loop`** (3): [OpenDots](02_agent_runtimes_and_harnesses/opendots.md), [VibeWise](02_agent_runtimes_and_harnesses/vibe-wise.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
+* **`#human-in-the-loop`** (4): [OpenDots](02_agent_runtimes_and_harnesses/opendots.md), [VibeWise](02_agent_runtimes_and_harnesses/vibe-wise.md), [ARTEX](05_security_osint_and_guardrails/artex.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
 * **`#huntproxy`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#hybrid-search`** (1): [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md)
 * **`#hydradb`** (1): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md)
@@ -446,7 +449,7 @@
 * **`#macbook`** (1): [Kev](01_llm_architecture_and_training/kev.md)
 * **`#markdown`** (1): [Crawl4AI](06_developer_tools_and_apps/crawl4ai.md)
 * **`#material-design`** (1): [M3E Canvas](02_agent_runtimes_and_harnesses/m3e-canvas.md)
-* **`#mcp`** (15): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md), [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md), [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md), [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md), [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [Learn Harness Engineering (Курс WalkingLabs](02_agent_runtimes_and_harnesses/learn-harness-engineering.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [HuntProxy](05_security_osint_and_guardrails/huntproxy.md), [SkillSpector](05_security_osint_and_guardrails/skillspector.md), [AIHawk](06_developer_tools_and_apps/ai-hawk.md), [cost-xray](06_developer_tools_and_apps/cost-xray.md)
+* **`#mcp`** (16): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md), [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md), [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md), [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md), [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [Learn Harness Engineering (Курс WalkingLabs](02_agent_runtimes_and_harnesses/learn-harness-engineering.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md), [ARTEX](05_security_osint_and_guardrails/artex.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [HuntProxy](05_security_osint_and_guardrails/huntproxy.md), [SkillSpector](05_security_osint_and_guardrails/skillspector.md), [AIHawk](06_developer_tools_and_apps/ai-hawk.md), [cost-xray](06_developer_tools_and_apps/cost-xray.md)
 * **`#mcp-router`** (1): [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)
 * **`#mcp-security`** (2): [AI/ML Pentesting Roadmap (2026 Edition)](05_security_osint_and_guardrails/ai-ml-pentest-roadmap.md), [Pipelock](05_security_osint_and_guardrails/pipelock.md)
 * **`#mediator-receipts`** (1): [Pipelock](05_security_osint_and_guardrails/pipelock.md)
@@ -468,6 +471,7 @@
 * **`#namespaces`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#ncc-group`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#network-security`** (2): [FQ-Book](05_security_osint_and_guardrails/fq-book.md), [Smokescreen](05_security_osint_and_guardrails/smokescreen.md)
+* **`#nextjs`** (1): [ARTEX](05_security_osint_and_guardrails/artex.md)
 * **`#no-mermaid`** (1): [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md)
 * **`#non-autoregressive`** (2): [Laya](01_llm_architecture_and_training/laya.md), [Awesome-Jev](02_agent_runtimes_and_harnesses/awesome-jev.md)
 * **`#non-invasive`** (1): [Jev-Chat Jarvis](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md)
@@ -477,7 +481,7 @@
 * **`#oci`** (1): [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md)
 * **`#oci-runtime`** (1): [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md)
 * **`#offensive-ai`** (1): [AI/ML Pentesting Roadmap (2026 Edition)](05_security_osint_and_guardrails/ai-ml-pentest-roadmap.md)
-* **`#offensive-security`** (1): [Claude-Red](05_security_osint_and_guardrails/claude-red.md)
+* **`#offensive-security`** (2): [ARTEX](05_security_osint_and_guardrails/artex.md), [Claude-Red](05_security_osint_and_guardrails/claude-red.md)
 * **`#office-harness`** (1): [Univer](02_agent_runtimes_and_harnesses/univer.md)
 * **`#ontologies`** (1): [Utopia](03_knowledge_graphs_and_ontologies/utopia.md)
 * **`#open-code-review`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
@@ -560,6 +564,7 @@
 * **`#sca`** (1): [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
 * **`#scalability`** (1): [System Design Notes](00_strategy_and_roadmaps/system-design-notes.md)
 * **`#scientific-writing`** (1): [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md)
+* **`#scopesentry`** (1): [ARTEX](05_security_osint_and_guardrails/artex.md)
 * **`#sdd`** (1): [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md)
 * **`#search`** (1): [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md)
 * **`#seccomp-bpf`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
@@ -568,7 +573,7 @@
 * **`#security`** (5): [Monty](02_agent_runtimes_and_harnesses/monty.md), [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md), [Coop](05_security_osint_and_guardrails/coop.md), [GPT-5.6 Instruct](05_security_osint_and_guardrails/gpt-5.6-instruct.md), [User Scanner](05_security_osint_and_guardrails/user-scanner.md)
 * **`#security-audit`** (2): [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md)
 * **`#security-audit-skill`** (1): [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md)
-* **`#security-guardrails`** (1): [NVIDIA OpenShell](05_security_osint_and_guardrails/openshell.md)
+* **`#security-guardrails`** (2): [ARTEX](05_security_osint_and_guardrails/artex.md), [NVIDIA OpenShell](05_security_osint_and_guardrails/openshell.md)
 * **`#security-rules`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
 * **`#security-workbench`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#self-hosted`** (3): [Dormice](02_agent_runtimes_and_harnesses/dormice.md), [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
@@ -631,6 +636,7 @@
 * **`#tool-call-tampering`** (1): [API Relay Audit](05_security_osint_and_guardrails/api-relay-audit.md)
 * **`#tool-gateway`** (1): [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)
 * **`#tool-rag`** (1): [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)
+* **`#traffic-evidence`** (1): [ARTEX](05_security_osint_and_guardrails/artex.md)
 * **`#trailofbits`** (1): [Coop](05_security_osint_and_guardrails/coop.md)
 * **`#trajectory-logging`** (1): [Reef](02_agent_runtimes_and_harnesses/reef.md)
 * **`#transformers`** (3): [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md)
@@ -678,4 +684,4 @@
 * **`#zero-trust`** (2): [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 
 ---
-*Сгенерировано автоматически: 2026-10-08 | Antigravity Knowledge Base*
+*Сгенерировано автоматически: 2026-10-09 | Antigravity Knowledge Base*
