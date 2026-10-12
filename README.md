@@ -39,7 +39,7 @@
 | 📄 **[Reasoning from Scratch (Себастьян Рашка: DeepSeek-R1, GRPO, RLVR)](01_llm_architecture_and_training/reasoning-from-scratch.md)** | [rasbt/reasoning-from-scratch](https://github.com/rasbt/reasoning-from-scratch) | `18.2k+` | `#reasoning` `#deepseek-r1` `#grpo` `#rlvr` `#reinforcement-learning` `#inference-scaling` |
 
 ### 🤖 02. Агентные рантаймы, харнесы и оркестрация
-*Универсальный локальный AI-шлюз и роутер квот для кодинг-агентов (Magpie), декларативные OCI-рантаймы, песочницы и паспорта безопасности агентов от Docker Engineering (Docker Agent), официальный стек корпоративных ролевых плагинов Anthropic (Claude Knowledge Work Plugins), инженерное менторство и сохранение контроля при вайб-кодинге (VibeWise), мышление сеньора и анти-оверинжиниринг (Ponytail), дизайн-системы и правила верстки AI-агентов (Impeccable Пола Бакауса), визуальные HTML-ответы с экономией токенов (Answer Me with HTML), постоянные цифровые коллеги с виртуальными ПК (OpenDots), самообучающиеся слои навыков кодинг-агентов (AutoHarness), операционные системы управления штатом агентов (Paperclip), самообучающаяся долговременная память (Hindsight), непрерывное обучение агентов (Reef), офисные рантаймы документов (Univer), кластерные оркестраторы от Google (AX), кросс-агентная память на Rust (AI-Memory), децентрализованные P2P-сети агентов (EnvoyMesh), управляемое исполнение (Evenfire), экранные копилоты (Jev-Chat Jarvis), экосистемы Option-Attention (Awesome-Jev), ультрабыстрые браузерные агенты (Jev Ultrafast), спецификации (OpenSpec) и учебники по агентам.*
+*Нативная изоляция рабочих сред, антидетект и ротация профилей Claude (CCBaga), универсальный локальный AI-шлюз и роутер квот для кодинг-агентов (Magpie), декларативные OCI-рантаймы, песочницы и паспорта безопасности агентов от Docker Engineering (Docker Agent), официальный стек корпоративных ролевых плагинов Anthropic (Claude Knowledge Work Plugins), инженерное менторство и сохранение контроля при вайб-кодинге (VibeWise), мышление сеньора и анти-оверинжиниринг (Ponytail), дизайн-системы и правила верстки AI-агентов (Impeccable Пола Бакауса), визуальные HTML-ответы с экономией токенов (Answer Me with HTML), постоянные цифровые коллеги с виртуальными ПК (OpenDots), самообучающиеся слои навыков кодинг-агентов (AutoHarness), операционные системы управления штатом агентов (Paperclip), самообучающаяся долговременная память (Hindsight), непрерывное обучение агентов (Reef), офисные рантаймы документов (Univer), кластерные оркестраторы от Google (AX), кросс-агентная память на Rust (AI-Memory), децентрализованные P2P-сети агентов (EnvoyMesh), управляемое исполнение (Evenfire), экранные копилоты (Jev-Chat Jarvis), экосистемы Option-Attention (Awesome-Jev), ультрабыстрые браузерные агенты (Jev Ultrafast), спецификации (OpenSpec) и учебники по агентам.*
 
 | Заметка | Репозиторий | Звёзды | Теги |
 | :--- | :--- | :--- | :--- |
@@ -53,6 +53,7 @@
 | 📄 **[AutoHarness: Самообучающийся слой навыков для кодинг-агентов (Self-Learning Skill Layer)](02_agent_runtimes_and_harnesses/autoharness.md)** | [tigerless-labs/autoharness](https://github.com/tigerless-labs/autoharness) | `4.6k+` | `#autoharness` `#claude-code` `#skill-learning` `#agent-harness` `#continual-learning` `#core-bench` `#python` `#self-improving` |
 | 📄 **[Awesome DESIGN.md: Спецификации дизайн-систем для AI-агентов кодинга](02_agent_runtimes_and_harnesses/awesome-design-md.md)** | [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | `113.5k+` | `#design-systems` `#ai-coding` `#claude-code` `#cursor` `#codex` `#ui-ux` `#prompt-engineering` `#frontend` |
 | 📄 **[Awesome-Jev: Экосистемный курируемый каталог архитектуры Option-Attention и System-1 агентов (430+ проектов)](02_agent_runtimes_and_harnesses/awesome-jev.md)** | [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) | `300+` | `#awesome-jev` `#option-attention` `#jev-ecosystem` `#curated-list` `#system-1` `#non-autoregressive` `#browser-agents` `#decision-engine` `#catalog` |
+| 📄 **[CCBaga: Нативный десктопный комплекс для чистой изоляции окружений, ротации профилей Claude Code, антидетекта браузера и верифицируемого сетевого туннелирования](02_agent_runtimes_and_harnesses/ccbaga.md)** | [liseami/CCBaga](https://github.com/liseami/CCBaga) | `1.4k+` | `#ccbaga` `#claude-code` `#tauri` `#rust` `#fingerprint-chromium` `#anti-detect` `#agent-environment` `#identity-vault` `#residential-proxy` `#xray` `#tun-routing` `#ai-network-skill` |
 | 📄 **[Claude Knowledge Work Plugins: Официальный стек плагинов Anthropic для Claude Cowork и Claude Code](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md)** | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | `27.0k+` | `#claude-plugins` `#claude-cowork` `#claude-code` `#anthropic` `#mcp` `#knowledge-work` `#agent-skills` `#enterprise-ai` `#productivity` |
 | 📄 **[Diagram Design: 39 журнальных типов диаграмм на чистом HTML+SVG для AI-агентов](02_agent_runtimes_and_harnesses/diagram-design.md)** | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | `30.2k+` | `#data-visualization` `#diagrams` `#html` `#svg` `#ai-agents` `#claude-code` `#codex` `#no-mermaid` |
 | 📄 **[Docker Agent: Декларативный OCI-рантайм, песочницы и паспорта безопасности для AI-агентов (Docker Engineering)](02_agent_runtimes_and_harnesses/docker-agent.md)** | [docker/docker-agent](https://github.com/docker/docker-agent) | `4.2k+` | `#docker-agent` `#agent-passport` `#threat-modeling` `#tcb` `#sandboxing` `#oci-runtime` `#permissions` `#mcp` `#google-ax` `#zero-trust` `#go` |
@@ -161,6 +162,7 @@
 * **`#adhd`** (1): [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md)
 * **`#adversarial-verification`** (1): [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md)
 * **`#agent-architecture`** (1): [Learn Harness Engineering (Курс WalkingLabs](02_agent_runtimes_and_harnesses/learn-harness-engineering.md)
+* **`#agent-environment`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#agent-evals`** (1): [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md)
 * **`#agent-eyes`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
 * **`#agent-firewall`** (1): [Pipelock](05_security_osint_and_guardrails/pipelock.md)
@@ -195,6 +197,7 @@
 * **`#ai-infrastructure`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
 * **`#ai-memory`** (1): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md)
 * **`#ai-ml-pentest`** (1): [AI/ML Pentesting Roadmap (2026 Edition)](05_security_osint_and_guardrails/ai-ml-pentest-roadmap.md)
+* **`#ai-network-skill`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#ai-pentesting`** (2): [ARTEX](05_security_osint_and_guardrails/artex.md), [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#ai-science`** (1): [Scientific Agent Skills (K-Dense AI](04_scientific_research_and_discovery/scientific-agent-skills.md)
 * **`#ai-security`** (1): [CL4R1T4S](05_security_osint_and_guardrails/CL4R1T4S.md)
@@ -209,7 +212,7 @@
 * **`#anthropic`** (1): [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md)
 * **`#anti-bot-bypass`** (2): [AIHawk](06_developer_tools_and_apps/ai-hawk.md), [Obscura](06_developer_tools_and_apps/obscura.md)
 * **`#anti-censorship`** (1): [FQ-Book](05_security_osint_and_guardrails/fq-book.md)
-* **`#anti-detect`** (1): [AIHawk](06_developer_tools_and_apps/ai-hawk.md)
+* **`#anti-detect`** (2): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md), [AIHawk](06_developer_tools_and_apps/ai-hawk.md)
 * **`#antigravity`** (1): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md)
 * **`#api-gateway`** (1): [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md)
 * **`#api-proxy`** (1): [API Relay Audit](05_security_osint_and_guardrails/api-relay-audit.md)
@@ -253,6 +256,7 @@
 * **`#career-roadmap`** (2): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md), [Up (人生进阶指南)](00_strategy_and_roadmaps/up.md)
 * **`#catalog`** (1): [Awesome-Jev](02_agent_runtimes_and_harnesses/awesome-jev.md)
 * **`#catastrophic-forgetting`** (1): [Reef](02_agent_runtimes_and_harnesses/reef.md)
+* **`#ccbaga`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#cdp`** (1): [Moli](06_developer_tools_and_apps/moli.md)
 * **`#cgroups`** (1): [Анатомия ядра Linux и харденинг контейнеров](05_security_osint_and_guardrails/linux-kernel-and-container-hardening.md)
 * **`#chat-copilot`** (1): [Jev-Chat Jarvis](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md)
@@ -260,7 +264,7 @@
 * **`#chromium-extension`** (1): [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
 * **`#citation-audit`** (1): [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md)
 * **`#citation-verification`** (1): [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md)
-* **`#claude-code`** (23): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Answer Me with HTML](02_agent_runtimes_and_harnesses/answer-me-with-html.md), [AutoHarness](02_agent_runtimes_and_harnesses/autoharness.md), [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md), [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md), [Impeccable](02_agent_runtimes_and_harnesses/impeccable.md), [Magpie](02_agent_runtimes_and_harnesses/magpie.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md), [Ponytail](02_agent_runtimes_and_harnesses/ponytail.md), [VibeWise](02_agent_runtimes_and_harnesses/vibe-wise.md), [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [Coop](05_security_osint_and_guardrails/coop.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md), [SkillSpector](05_security_osint_and_guardrails/skillspector.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md), [cost-xray](06_developer_tools_and_apps/cost-xray.md), [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
+* **`#claude-code`** (24): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [Answer Me with HTML](02_agent_runtimes_and_harnesses/answer-me-with-html.md), [AutoHarness](02_agent_runtimes_and_harnesses/autoharness.md), [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md), [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md), [Diagram Design](02_agent_runtimes_and_harnesses/diagram-design.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md), [Impeccable](02_agent_runtimes_and_harnesses/impeccable.md), [Magpie](02_agent_runtimes_and_harnesses/magpie.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md), [Ponytail](02_agent_runtimes_and_harnesses/ponytail.md), [VibeWise](02_agent_runtimes_and_harnesses/vibe-wise.md), [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [Coop](05_security_osint_and_guardrails/coop.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [Cloudflare Security Audit Skill](05_security_osint_and_guardrails/security-audit-skill.md), [SkillSpector](05_security_osint_and_guardrails/skillspector.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md), [cost-xray](06_developer_tools_and_apps/cost-xray.md), [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
 * **`#claude-cowork`** (1): [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md)
 * **`#claude-plugin`** (1): [VibeWise](02_agent_runtimes_and_harnesses/vibe-wise.md)
 * **`#claude-plugins`** (1): [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md)
@@ -365,6 +369,7 @@
 * **`#fail-closed`** (1): [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 * **`#fallback-routing`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
 * **`#fine-tuning`** (1): [LLM-Master](01_llm_architecture_and_training/llm-master.md)
+* **`#fingerprint-chromium`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#formal-verification`** (1): [NVIDIA OpenShell](05_security_osint_and_guardrails/openshell.md)
 * **`#formatting`** (1): [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md)
 * **`#fq-book`** (1): [FQ-Book](05_security_osint_and_guardrails/fq-book.md)
@@ -398,6 +403,7 @@
 * **`#hybrid-search`** (1): [zvec-grep (zg)](02_agent_runtimes_and_harnesses/zvec-grep.md)
 * **`#hydradb`** (1): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md)
 * **`#iceberg`** (1): [RustFS](06_developer_tools_and_apps/rustfs.md)
+* **`#identity-vault`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#idle-zero-cost`** (1): [Dormice](02_agent_runtimes_and_harnesses/dormice.md)
 * **`#impeccable`** (1): [Impeccable](02_agent_runtimes_and_harnesses/impeccable.md)
 * **`#inference-optimization`** (2): [Laya](01_llm_architecture_and_training/laya.md), [OpenJev](01_llm_architecture_and_training/openjev.md)
@@ -555,6 +561,7 @@
 * **`#representation-learning`** (1): [CLM](01_llm_architecture_and_training/clm.md)
 * **`#reproducible-research`** (1): [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md)
 * **`#research-agents`** (1): [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md)
+* **`#residential-proxy`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#rete`** (1): [Semantica AGI](03_knowledge_graphs_and_ontologies/semantica.md)
 * **`#reverse-engineering`** (1): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md)
 * **`#rlcd`** (1): [Laya](01_llm_architecture_and_training/laya.md)
@@ -563,7 +570,7 @@
 * **`#roadmap`** (1): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md)
 * **`#roofline-model`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
 * **`#ruanyf-weekly`** (1): [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
-* **`#rust`** (17): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md), [Atlas](02_agent_runtimes_and_harnesses/atlas.md), [Monty](02_agent_runtimes_and_harnesses/monty.md), [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md), [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [Coop](05_security_osint_and_guardrails/coop.md), [HuntProxy](05_security_osint_and_guardrails/huntproxy.md), [NVIDIA OpenShell](05_security_osint_and_guardrails/openshell.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md), [Disktree](06_developer_tools_and_apps/disktree.md), [Fastpotify](06_developer_tools_and_apps/fastpotify.md), [Moli](06_developer_tools_and_apps/moli.md), [Obscura](06_developer_tools_and_apps/obscura.md), [RustFS](06_developer_tools_and_apps/rustfs.md)
+* **`#rust`** (18): [AI-Memory](02_agent_runtimes_and_harnesses/ai-memory.md), [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md), [Atlas](02_agent_runtimes_and_harnesses/atlas.md), [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md), [Monty](02_agent_runtimes_and_harnesses/monty.md), [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md), [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md), [alphaXiv OpenResearch](04_scientific_research_and_discovery/openresearch.md), [Coop](05_security_osint_and_guardrails/coop.md), [HuntProxy](05_security_osint_and_guardrails/huntproxy.md), [NVIDIA OpenShell](05_security_osint_and_guardrails/openshell.md), [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md), [Disktree](06_developer_tools_and_apps/disktree.md), [Fastpotify](06_developer_tools_and_apps/fastpotify.md), [Moli](06_developer_tools_and_apps/moli.md), [Obscura](06_developer_tools_and_apps/obscura.md), [RustFS](06_developer_tools_and_apps/rustfs.md)
 * **`#rustfs`** (1): [RustFS](06_developer_tools_and_apps/rustfs.md)
 * **`#s3-compatible`** (1): [RustFS](06_developer_tools_and_apps/rustfs.md)
 * **`#s3-storage`** (1): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md)
@@ -631,6 +638,7 @@
 * **`#system-tools`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
 * **`#systems-thinking`** (1): [Up (人生进阶指南)](00_strategy_and_roadmaps/up.md)
 * **`#tab-borrowing`** (1): [Tencent BrowserSkill](06_developer_tools_and_apps/browserskill.md)
+* **`#tauri`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#tcb`** (4): [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [Pipelock](05_security_osint_and_guardrails/pipelock.md), [Smokescreen](05_security_osint_and_guardrails/smokescreen.md), [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 * **`#tcp-rst`** (1): [FQ-Book](05_security_osint_and_guardrails/fq-book.md)
 * **`#tech-digest`** (1): [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
@@ -653,6 +661,7 @@
 * **`#tree-sitter`** (1): [Atlas](02_agent_runtimes_and_harnesses/atlas.md)
 * **`#treemap`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
 * **`#trusted-computing-base`** (1): [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
+* **`#tun-routing`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#twitter`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
 * **`#typed-decisions`** (1): [Laya](01_llm_architecture_and_training/laya.md)
 * **`#typescript`** (11): [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [Dormice](02_agent_runtimes_and_harnesses/dormice.md), [EnvoyMesh](02_agent_runtimes_and_harnesses/envoymesh.md), [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md), [Magpie](02_agent_runtimes_and_harnesses/magpie.md), [OpenDots](02_agent_runtimes_and_harnesses/opendots.md), [OpenMAIC](02_agent_runtimes_and_harnesses/openmaic.md), [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md), [Univer](02_agent_runtimes_and_harnesses/univer.md), [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
@@ -686,6 +695,7 @@
 * **`#wireguard`** (1): [FQ-Book](05_security_osint_and_guardrails/fq-book.md)
 * **`#workflow-automation`** (2): [Evenfire](02_agent_runtimes_and_harnesses/evenfire.md), [Paperclip](02_agent_runtimes_and_harnesses/paperclip.md)
 * **`#world-model`** (1): [Utopia](03_knowledge_graphs_and_ontologies/utopia.md)
+* **`#xray`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#yagni`** (1): [Ponytail](02_agent_runtimes_and_harnesses/ponytail.md)
 * **`#youtube`** (1): [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md)
 * **`#zed`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
@@ -693,4 +703,4 @@
 * **`#zero-trust`** (2): [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 
 ---
-*Сгенерировано автоматически: 2026-10-10 | Antigravity Knowledge Base*
+*Сгенерировано автоматически: 2026-10-12 | Antigravity Knowledge Base*
