@@ -22,10 +22,11 @@
 | 📄 **[Up (人生进阶指南): Системное руководство по непрерывному обучению, созданию продуктов и карьере в эпоху AI](00_strategy_and_roadmaps/up.md)** | [byoungd/up](https://github.com/byoungd/up) | `67.0k+` | `#up` `#career-roadmap` `#lifelong-learning` `#ai-engineering` `#systems-thinking` `#personal-growth` `#evidence-based` `#problem-solving` |
 
 ### 🧠 01. Архитектура LLM и обучение моделей с нуля
-*Компиляция императивного JS в точные дифференцируемые нейросети Чэн Лоу (Handwired), трансформеры с нуля, модели рассуждения (DeepSeek-R1/GRPO), контрастивные модели действий System-1 (CLM), системный дизайн AI-инфраструктуры (AI Infra Book Ли Боцзе), ультралегкие LLM (MiniMind), мультиязычные неавторегрессионные движки решений (Laya), фундаментальные курсы (Dive into LLMs), полностековые роадмапы (LLM Master), локальный System-1 Option-Attention (OpenJev, Kev) и сквозная AI-инженерия.*
+*30 фундаментальных статей Ильи Суцкевера за 30 дней с реализациями на CPU и теорией информации (30u30), компиляция императивного JS в точные дифференцируемые нейросети Чэн Лоу (Handwired), трансформеры с нуля, модели рассуждения (DeepSeek-R1/GRPO), контрастивные модели действий System-1 (CLM), системный дизайн AI-инфраструктуры (AI Infra Book Ли Боцзе), ультралегкие LLM (MiniMind), мультиязычные неавторегрессионные движки решений (Laya), фундаментальные курсы (Dive into LLMs), полностековые роадмапы (LLM Master), локальный System-1 Option-Attention (OpenJev, Kev) и сквозная AI-инженерия.*
 
 | Заметка | Репозиторий | Звёзды | Теги |
 | :--- | :--- | :--- | :--- |
+| 📄 **[30u30: 30 фундаментальных статей Ильи Суцкевера за 30 дней — практический роадмап от теории информации до RLHF](01_llm_architecture_and_training/30u30.md)** | [Ojhaharsh/30u30](https://github.com/Ojhaharsh/30u30) | `800+` | `#30u30` `#ilya-sutskever` `#deep-learning` `#transformers` `#kolmogorov-complexity` `#mdl` `#information-theory` `#scaling-laws` `#ppo` `#rlhf` `#from-scratch` `#python` `#roadmap` |
 | 📄 **[LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md)** | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | `47.5k+` | `#llm` `#pytorch` `#transformers` `#from-scratch` `#education` `#deep-learning` |
 | 📄 **[AI Engineering from Scratch (Рохит Гумаре: 511 уроков, 20 фаз)](01_llm_architecture_and_training/ai-engineering-from-scratch.md)** | [blackzeshi/Git/ai-engineering-from-scratch](https://github.com/blackzeshi/Git/ai-engineering-from-scratch) | `57.2k+` | `#ai-engineering` `#roadmap` `#mcp` `#vllm` `#grpo` `#rag` `#agent-orchestration` |
 | 📄 **[AI Infra Book: Количественный анализ и системный дизайн AI-инфраструктуры (Ли Боцзе / Bojie Li)](01_llm_architecture_and_training/ai-infra-book.md)** | [bojieli/ai-infra-book](https://github.com/bojieli/ai-infra-book) | `2.2k+` | `#ai-infra-book` `#ai-infrastructure` `#system-design` `#hardware-constraints` `#kv-cache` `#roofline-model` `#distributed-inference` `#distributed-training` `#rdma` `#vllm` `#bojie-li` `#open-source-book` |
@@ -156,6 +157,7 @@
 
 ## 🏷️ Облако тегов (Tag Index)
 
+* **`#30u30`** (1): [30u30](01_llm_architecture_and_training/30u30.md)
 * **`#aacr-bench`** (1): [Open Code Review](02_agent_runtimes_and_harnesses/open-code-review.md)
 * **`#academic-research`** (2): [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md)
 * **`#accessibility-api`** (1): [Jev-Chat Jarvis](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md)
@@ -323,7 +325,7 @@
 * **`#decision-making`** (1): [OpenJev](01_llm_architecture_and_training/openjev.md)
 * **`#declarative-workflows`** (1): [Google AX](02_agent_runtimes_and_harnesses/google-ax.md)
 * **`#decompilation`** (1): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md)
-* **`#deep-learning`** (2): [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md)
+* **`#deep-learning`** (3): [30u30](01_llm_architecture_and_training/30u30.md), [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md)
 * **`#deep-research`** (1): [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md)
 * **`#deepseek-r1`** (1): [Reasoning from Scratch (Себастьян Рашка](01_llm_architecture_and_training/reasoning-from-scratch.md)
 * **`#design-quality`** (1): [Impeccable](02_agent_runtimes_and_harnesses/impeccable.md)
@@ -386,7 +388,7 @@
 * **`#formatting`** (1): [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md)
 * **`#fp32`** (1): [Handwired](01_llm_architecture_and_training/handwired.md)
 * **`#fq-book`** (1): [FQ-Book](05_security_osint_and_guardrails/fq-book.md)
-* **`#from-scratch`** (1): [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md)
+* **`#from-scratch`** (2): [30u30](01_llm_architecture_and_training/30u30.md), [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md)
 * **`#frontend`** (2): [Awesome DESIGN.md](02_agent_runtimes_and_harnesses/awesome-design-md.md), [Impeccable](02_agent_runtimes_and_harnesses/impeccable.md)
 * **`#fuzzing`** (1): [HuntProxy](05_security_osint_and_guardrails/huntproxy.md)
 * **`#gfw`** (1): [FQ-Book](05_security_osint_and_guardrails/fq-book.md)
@@ -421,11 +423,13 @@
 * **`#iceberg`** (1): [RustFS](06_developer_tools_and_apps/rustfs.md)
 * **`#identity-vault`** (1): [CCBaga](02_agent_runtimes_and_harnesses/ccbaga.md)
 * **`#idle-zero-cost`** (1): [Dormice](02_agent_runtimes_and_harnesses/dormice.md)
+* **`#ilya-sutskever`** (1): [30u30](01_llm_architecture_and_training/30u30.md)
 * **`#impeccable`** (1): [Impeccable](02_agent_runtimes_and_harnesses/impeccable.md)
 * **`#inference-optimization`** (2): [Laya](01_llm_architecture_and_training/laya.md), [OpenJev](01_llm_architecture_and_training/openjev.md)
 * **`#inference-scaling`** (1): [Reasoning from Scratch (Себастьян Рашка](01_llm_architecture_and_training/reasoning-from-scratch.md)
 * **`#infonce`** (1): [CLM](01_llm_architecture_and_training/clm.md)
 * **`#information-filtering`** (1): [Horizon](06_developer_tools_and_apps/horizon.md)
+* **`#information-theory`** (1): [30u30](01_llm_architecture_and_training/30u30.md)
 * **`#intent-routing`** (1): [Magpie](02_agent_runtimes_and_harnesses/magpie.md)
 * **`#interactive-learning`** (1): [OpenMAIC](02_agent_runtimes_and_harnesses/openmaic.md)
 * **`#interview-prep`** (2): [AI Engineering Interviews](00_strategy_and_roadmaps/ai-engineering-interviews.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md)
@@ -446,6 +450,7 @@
 * **`#knowledge-graphs`** (3): [HydraDB](03_knowledge_graphs_and_ontologies/hydradb.md), [Semantica AGI](03_knowledge_graphs_and_ontologies/semantica.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md)
 * **`#knowledge-vault`** (1): [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md)
 * **`#knowledge-work`** (1): [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md)
+* **`#kolmogorov-complexity`** (1): [30u30](01_llm_architecture_and_training/30u30.md)
 * **`#kotlin`** (1): [Jev-Chat Jarvis](02_agent_runtimes_and_harnesses/jev-chat-jarvis.md)
 * **`#kubernetes`** (1): [NVIDIA OpenShell](05_security_osint_and_guardrails/openshell.md)
 * **`#kubernetes-for-agents`** (1): [Google AX](02_agent_runtimes_and_harnesses/google-ax.md)
@@ -483,6 +488,7 @@
 * **`#mcp`** (19): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md), [Agent-Reach](02_agent_runtimes_and_harnesses/agent-reach.md), [Agent-Skills](02_agent_runtimes_and_harnesses/agent-skills.md), [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md), [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md), [Claude Code Plugins Official](02_agent_runtimes_and_harnesses/claude-plugins-official.md), [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [Learn Harness Engineering (Курс WalkingLabs](02_agent_runtimes_and_harnesses/learn-harness-engineering.md), [Utopia](03_knowledge_graphs_and_ontologies/utopia.md), [XERJ](03_knowledge_graphs_and_ontologies/xerj.md), [Hyperresearch](04_scientific_research_and_discovery/hyperresearch.md), [ARTEX](05_security_osint_and_guardrails/artex.md), [Ghost Security](05_security_osint_and_guardrails/ghost-security.md), [HuntProxy](05_security_osint_and_guardrails/huntproxy.md), [SkillSpector](05_security_osint_and_guardrails/skillspector.md), [AIHawk](06_developer_tools_and_apps/ai-hawk.md), [cost-xray](06_developer_tools_and_apps/cost-xray.md), [Horizon](06_developer_tools_and_apps/horizon.md)
 * **`#mcp-router`** (1): [Архитектура Tool Broker & Execution Blocker](02_agent_runtimes_and_harnesses/tool-broker-architecture.md)
 * **`#mcp-security`** (2): [AI/ML Pentesting Roadmap (2026 Edition)](05_security_osint_and_guardrails/ai-ml-pentest-roadmap.md), [Pipelock](05_security_osint_and_guardrails/pipelock.md)
+* **`#mdl`** (1): [30u30](01_llm_architecture_and_training/30u30.md)
 * **`#mediator-receipts`** (1): [Pipelock](05_security_osint_and_guardrails/pipelock.md)
 * **`#micro-runtime`** (1): [Monty](02_agent_runtimes_and_harnesses/monty.md)
 * **`#micro-vm`** (2): [ArcBox](02_agent_runtimes_and_harnesses/arcbox.md), [ZeroBoot](02_agent_runtimes_and_harnesses/zeroboot.md)
@@ -550,6 +556,7 @@
 * **`#plugins`** (1): [Claude Code Plugins Official](02_agent_runtimes_and_harnesses/claude-plugins-official.md)
 * **`#ponytail`** (1): [Ponytail](02_agent_runtimes_and_harnesses/ponytail.md)
 * **`#post-training`** (1): [AI Agent Book](02_agent_runtimes_and_harnesses/ai-agent-book.md)
+* **`#ppo`** (1): [30u30](01_llm_architecture_and_training/30u30.md)
 * **`#pretraining`** (2): [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [MiniMind](01_llm_architecture_and_training/minimind.md)
 * **`#problem-solving`** (1): [Up (人生进阶指南)](00_strategy_and_roadmaps/up.md)
 * **`#productivity`** (2): [Claude Knowledge Work Plugins](02_agent_runtimes_and_harnesses/claude-knowledge-work-plugins.md), [i-have-adhd](02_agent_runtimes_and_harnesses/i-have-adhd.md)
@@ -563,7 +570,7 @@
 * **`#pubmed`** (1): [Scientific Agent Skills (K-Dense AI](04_scientific_research_and_discovery/scientific-agent-skills.md)
 * **`#pull-requests`** (1): [Whiteboard](06_developer_tools_and_apps/whiteboard.md)
 * **`#pydantic`** (1): [Monty](02_agent_runtimes_and_harnesses/monty.md)
-* **`#python`** (14): [CLM](01_llm_architecture_and_training/clm.md), [Kev](01_llm_architecture_and_training/kev.md), [Laya](01_llm_architecture_and_training/laya.md), [OpenJev](01_llm_architecture_and_training/openjev.md), [AutoHarness](02_agent_runtimes_and_harnesses/autoharness.md), [Claude Code Plugins Official](02_agent_runtimes_and_harnesses/claude-plugins-official.md), [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md), [Jev Ultrafast](02_agent_runtimes_and_harnesses/jev-ultrafast.md), [Reef](02_agent_runtimes_and_harnesses/reef.md), [VibeWise](02_agent_runtimes_and_harnesses/vibe-wise.md), [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md), [User Scanner](05_security_osint_and_guardrails/user-scanner.md), [AIHawk](06_developer_tools_and_apps/ai-hawk.md), [Horizon](06_developer_tools_and_apps/horizon.md)
+* **`#python`** (15): [30u30](01_llm_architecture_and_training/30u30.md), [CLM](01_llm_architecture_and_training/clm.md), [Kev](01_llm_architecture_and_training/kev.md), [Laya](01_llm_architecture_and_training/laya.md), [OpenJev](01_llm_architecture_and_training/openjev.md), [AutoHarness](02_agent_runtimes_and_harnesses/autoharness.md), [Claude Code Plugins Official](02_agent_runtimes_and_harnesses/claude-plugins-official.md), [Hindsight](02_agent_runtimes_and_harnesses/hindsight.md), [Jev Ultrafast](02_agent_runtimes_and_harnesses/jev-ultrafast.md), [Reef](02_agent_runtimes_and_harnesses/reef.md), [VibeWise](02_agent_runtimes_and_harnesses/vibe-wise.md), [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md), [User Scanner](05_security_osint_and_guardrails/user-scanner.md), [AIHawk](06_developer_tools_and_apps/ai-hawk.md), [Horizon](06_developer_tools_and_apps/horizon.md)
 * **`#python-interpreter`** (1): [Monty](02_agent_runtimes_and_harnesses/monty.md)
 * **`#pytorch`** (5): [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [CLM](01_llm_architecture_and_training/clm.md), [Kev](01_llm_architecture_and_training/kev.md), [MiniMind](01_llm_architecture_and_training/minimind.md), [OpenJev](01_llm_architecture_and_training/openjev.md)
 * **`#quantization`** (1): [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md)
@@ -591,9 +598,9 @@
 * **`#rete`** (1): [Semantica AGI](03_knowledge_graphs_and_ontologies/semantica.md)
 * **`#reverse-engineering`** (1): [APK-Reverse](05_security_osint_and_guardrails/apk-reverse.md)
 * **`#rlcd`** (1): [Laya](01_llm_architecture_and_training/laya.md)
-* **`#rlhf`** (1): [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md)
+* **`#rlhf`** (2): [30u30](01_llm_architecture_and_training/30u30.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md)
 * **`#rlvr`** (1): [Reasoning from Scratch (Себастьян Рашка](01_llm_architecture_and_training/reasoning-from-scratch.md)
-* **`#roadmap`** (1): [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md)
+* **`#roadmap`** (2): [30u30](01_llm_architecture_and_training/30u30.md), [AI Engineering from Scratch (Рохит Гумаре](01_llm_architecture_and_training/ai-engineering-from-scratch.md)
 * **`#roofline-model`** (1): [AI Infra Book](01_llm_architecture_and_training/ai-infra-book.md)
 * **`#rss`** (1): [Horizon](06_developer_tools_and_apps/horizon.md)
 * **`#ruanyf-weekly`** (1): [RuanYF Weekly](06_developer_tools_and_apps/ruanyf-weekly.md)
@@ -606,6 +613,7 @@
 * **`#sast`** (1): [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
 * **`#sca`** (1): [Ghost Security](05_security_osint_and_guardrails/ghost-security.md)
 * **`#scalability`** (1): [System Design Notes](00_strategy_and_roadmaps/system-design-notes.md)
+* **`#scaling-laws`** (1): [30u30](01_llm_architecture_and_training/30u30.md)
 * **`#scientific-writing`** (1): [Academic Research Skills](04_scientific_research_and_discovery/academic-research-skills.md)
 * **`#scopesentry`** (1): [ARTEX](05_security_osint_and_guardrails/artex.md)
 * **`#sdd`** (1): [OpenSpec](02_agent_runtimes_and_harnesses/openspec.md)
@@ -686,7 +694,7 @@
 * **`#traffic-evidence`** (1): [ARTEX](05_security_osint_and_guardrails/artex.md)
 * **`#trailofbits`** (1): [Coop](05_security_osint_and_guardrails/coop.md)
 * **`#trajectory-logging`** (1): [Reef](02_agent_runtimes_and_harnesses/reef.md)
-* **`#transformers`** (3): [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md)
+* **`#transformers`** (4): [30u30](01_llm_architecture_and_training/30u30.md), [LLMs from Scratch (Себастьян Рашка)](01_llm_architecture_and_training/LLMs-from-scratch.md), [Dive into LLMs (动手学大模型)](01_llm_architecture_and_training/dive-into-llms.md), [LLM-Master](01_llm_architecture_and_training/llm-master.md)
 * **`#transparency`** (1): [CL4R1T4S](05_security_osint_and_guardrails/CL4R1T4S.md)
 * **`#tree-sitter`** (1): [Atlas](02_agent_runtimes_and_harnesses/atlas.md)
 * **`#treemap`** (1): [Disktree](06_developer_tools_and_apps/disktree.md)
@@ -737,4 +745,4 @@
 * **`#zero-trust`** (2): [Docker Agent](02_agent_runtimes_and_harnesses/docker-agent.md), [TCB & Reference Monitor](05_security_osint_and_guardrails/tcb-agent-security.md)
 
 ---
-*Сгенерировано автоматически: 2026-10-16 | Antigravity Knowledge Base*
+*Сгенерировано автоматически: 2026-10-17 | Antigravity Knowledge Base*
