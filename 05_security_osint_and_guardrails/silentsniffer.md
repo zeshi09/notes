@@ -10,7 +10,7 @@ date: 2026-10-18
 # 🛡️ SilentSniffer: Модульный фреймворк деанонимизации и аппаратного фингерпринтинга браузеров
 
 > **Ссылка на репозиторий:** [https://github.com/AhmadHassan-BTed/SilentSniffer](https://github.com/AhmadHassan-BTed/SilentSniffer)  
-> **Интерактивный демонстрационный стенд:** [https://AhmadHassan-BTed.github.io/Pinpoint-Location-Tracker/](https://AhmadHassan-BTed.github.io/Pinpoint-Location-Tracker/)  
+> **Интерактивный демонстрационный стенд:** [https://ahmadhassan-bted.github.io/SilentSniffer/](https://ahmadhassan-bted.github.io/SilentSniffer/)  
 > **Автор проекта:** Ахмад Хассан (Ahmad Hassan / B-Ted)  
 > **Категория:** `05_security_osint_and_guardrails`  
 > **Звёзды GitHub:** 500+ ★ (#23 в мировом Daily топе Trendshift)  
